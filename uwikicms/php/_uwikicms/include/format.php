@@ -58,7 +58,7 @@ function uwc_format_text_to_html($str) {
    * case we want to change its behavior.
    */
 
-  return uwc_format_htmlfriendly(htmlentities($str),ENT_COMPAT|ENT_XHTML,"ISO-8859-15");
+  return uwc_format_htmlfriendly(htmlentities($str,ENT_COMPAT|ENT_XHTML,"ISO-8859-15"));
 }
 
 function uwc_format_html_to_xul($str) {
