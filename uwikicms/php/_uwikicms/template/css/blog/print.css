@@ -1,0 +1,76 @@
+/*
+ UWiKiCMS is a lightweight web content management system.
+ Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of
+ the License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public
+ License along with this program; if not, write to the Free
+ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,
+ MA  02110-1301  USA
+*/
+
+body {
+       font-size: small;
+       }
+#nav { 
+       display:none;
+       }  
+
+#langs { 
+         display: none;
+         } 
+#children { 
+            display: none;
+            }
+#google { 
+            display: none;
+            }
+#actions { 
+           display: none;
+           }
+#content { 
+           text-align: justify;
+           }
+img {
+      border-style: none;
+      }
+.image {
+         border-width: 1px;		
+         border-style: solid;
+         padding: 1em;
+         margin: 1em;
+         text-align: center;
+         }
+.status0 { 
+           border-bottom-width: 1px;		
+           border-bottom-style: solid;
+           padding: 1em;
+           margin-bottom: 1em;
+           }
+.status1 { 
+           border-bottom-width: 1px;		
+           border-bottom-style: solid;
+           padding: 1em;
+           margin-bottom: 1em;
+           }
+.status2 { 
+           border-bottom-width: 1px;		
+           border-bottom-style: solid;
+           padding: 1em;
+           margin-bottom: 1em;
+           }
+.status3 { 
+           border-bottom-width: 1px;		
+           border-bottom-style: solid;
+           padding: 1em;
+           margin-bottom: 1em;
+           }

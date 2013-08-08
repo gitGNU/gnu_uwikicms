@@ -1,0 +1,379 @@
+/*
+ UWiKiCMS is a lightweight web content management system.
+ Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of
+ the License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public
+ License along with this program; if not, write to the Free
+ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,
+ MA  02110-1301  USA
+*/
+
+body {
+       font-size: medium;
+       color: #ffffff;
+       background-color: #ffa516;
+       background-image: url('../../images/blog/orange.jpg');
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-position: center center;
+       }
+/* see .default for default text color */
+a { 
+    text-decoration: underline; 
+    color: #fcd605;
+    background-color: transparent;
+    }
+a:active { 
+           text-decoration: underline; 
+           color: #fcd605; 
+           background-color: transparent;
+           }
+a:visited { 
+            text-decoration: underline; 
+            color: #fcd605; 
+            background-color: transparent;
+            }
+a:hover { 
+          text-decoration: underline; 
+          color: #ffa516; 
+          background-color: transparent;
+          }
+.status0 a { 
+             text-decoration: underline; 
+             color: #fcd605; 
+             background-color: transparent;
+             }
+.status0 a:active { 
+                    text-decoration: underline; 
+                    color: #fcd605;
+                    background-color: transparent;
+                    }
+.status0 a:visited { 
+                     text-decoration: underline; 
+                     color: #fcd605;
+                     background-color: transparent;
+                     }
+.status0 a:hover { 
+                   text-decoration: underline; 
+                   color: #ffa516; 
+                   background-color: transparent;
+                   }
+.status1 a { 
+             text-decoration: underline; 
+             color: #fcd605; 
+             background-color: transparent;
+             }
+.status1 a:active { 
+                    text-decoration: underline; 
+                    color: #fcd605; 
+                    background-color: transparent;
+                    }
+.status1 a:visited { 
+                     text-decoration: underline; 
+                     color: #fcd605; 
+                     background-color: transparent;
+                     }
+.status1 a:hover { 
+                   text-decoration: underline; 
+                   color: #ffa516; 
+                   background-color: transparent;
+                   }
+.status2 a { 
+             text-decoration: underline; 
+             color: #fcd605; 
+             background-color: transparent;
+             }
+.status2 a:active { 
+                    text-decoration: underline; 
+                    color: #fcd605; 
+                    background-color: transparent;
+                    }
+.status2 a:visited { 
+                     text-decoration: underline; 
+                     color: #fcd605; 
+                     background-color: transparent;
+                     }
+.status2 a:hover { 
+                   text-decoration: underline; 
+                   color: #ffa516; 
+                   background-color: transparent;
+                   }
+.status3 a { 
+             text-decoration: underline; 
+             color: #fcd605; 
+             background-color: transparent;
+             }
+.status3 a:active { 
+                    text-decoration: underline; 
+                    color: #fcd605; 
+                    background-color: transparent;
+                    }
+.status3 a:visited { 
+                     text-decoration: underline; 
+                     color: #fcd605; 
+                     background-color: transparent;
+                     }
+.status3 a:hover { 
+                   text-decoration: underline; 
+                   color: #ffa516; 
+                   background-color: transparent;
+                   }
+.box a { 
+         text-decoration: underline; 
+         color: #fcd605; 
+         background-color: transparent;
+         }
+.box a:active { 
+                text-decoration: underline; 
+                color: #fcd605
+                background-color: transparent;
+                }
+.box a:visited { 
+                 text-decoration: underline; 
+                 color: #fcd605; 
+                 background-color: transparent;
+                 }
+.box a:hover { 
+               text-decoration: underline; 
+               color: #ffa516; 
+               background-color: transparent;
+               }
+.image a { 
+           text-decoration: underline; 
+           color: #2b190b; 
+           background-color: transparent;
+           }
+.image a:active { 
+                  text-decoration: underline; 
+                  color: #2b190b; 
+                  background-color: transparent;
+                  }
+.image a:visited { 
+                   text-decoration: underline; 
+                   color: #2b190b; 
+                   background-color: transparent;
+                   }
+.image a:hover { 
+                 text-decoration: underline; 
+                 color: #406215; 
+                 background-color: transparent;
+                 }
+.default {  
+           color: #ffffff;
+           background-color: transparent;
+           margin-bottom: 1em;
+           }
+.status0 { 
+           color: #ffffff;
+           background-color: #2b190b;
+           background-image: url('../../images/blog/chocolate.jpg');
+           border-width: 1px;		
+           border-style: solid;
+           border-color: #000000;
+           margin-bottom: 1em;
+           }
+.status1 { 
+           color: #ffffff;
+           background-color: #2b190b;
+           background-image: url('../../images/blog/chocolate.jpg');
+           border-width: 4px;		
+           border-style: solid;
+           border-color: #ff0000;
+           margin-bottom: 1em;
+           }
+.status2 { 
+           color: #ffffff;
+           background-color: #2b190b;
+           background-image: url('../../images/blog/chocolate.jpg');
+           border-width: 4px;		
+           border-style: dotted;
+           border-color: #ff0000;
+           margin-bottom: 1em;
+           }
+.status3 { 
+           color: #ffffff;
+           background-color: #2b190b;
+           background-image: url('../../images/blog/chocolate.jpg');
+           border-width: 4px;		
+           border-style: dashed;
+           border-color: #ff0000;
+           margin-bottom: 1em;
+           }
+.box {
+       font-size: small; 
+       color: #ffffff; 
+       background-color: #406215;
+       background-image: url('../../images/blog/mint.jpg');
+       }
+.image { 
+         font-size: small;
+         color: #000000;
+         background-color: #fcd605;
+         background-image: url('../../images/blog/banana.jpg');
+         }
+.default input { 
+                 font-size: medium;
+                 color: #ffffff; 
+                 background-color: #2b190b;
+                 }
+.status0 input { 
+                 font-size: medium;
+                 color: #ffffff; 
+                 background-color: #2b190b;
+                 }
+.status1 input { 
+                 font-size: medium;
+                 color: #ffffff; 
+                 background-color: #2b190b;
+                 }
+.status2 input { 
+                 font-size: medium;
+                 color: #ffffff; 
+                 background-color: #2b190b;
+                 }
+.status3 input { 
+                 font-size: medium;
+                 color: #ffffff; 
+                 background-color: #2b190b;
+                 }
+.box input { 
+             font-size: small;
+             color: #ffffff; 
+             background-color: #406215;
+             }
+.default textarea { 
+                    font-size: large;
+                    color: #ffffff; 
+                    background-color: #2b190b;
+                    }
+.status0 textarea { 
+                    font-size: large;
+                    color: #ffffff; 
+                    background-color: #2b190b;
+                    }
+.status1 textarea { 
+                    font-size: large;
+                    color: #ffffff; 
+                    background-color: #2b190b;
+                    }
+.status2 textarea { 
+                    font-size: large;
+                    color: #ffffff; 
+                    background-color: #2b190b;
+                    }
+.status3 textarea { 
+                    font-size: large;
+                    color: #ffffff; 
+                    background-color: #2b190b;
+                    }
+.box textarea { 
+                font-size: medium;
+                color: #ffffff; 
+                background-color: #406215;
+                }
+.default select { 
+                  font-size: medium;
+                  color: #ffffff; 
+                  background-color: #2b190b;
+                  }
+.status0 select { 
+                  font-size: medium;
+                  color: #ffffff; 
+                  background-color: #2b190b;
+                  }
+.status1 select { 
+                  font-size: medium;
+                  color: #ffffff; 
+                  background-color: #2b190b;
+                  }
+.status2 select { 
+                  font-size: medium;
+                  color: #ffffff; 
+                  background-color: #2b190b;
+                  }
+.status3 select { 
+                  font-size: medium;
+                  color: #ffffff; 
+                  background-color: #2b190b;
+                  }
+.box select { 
+              font-size: small;
+              color: #ffffff; 
+              background-color: #406215;
+              }
+/* Buggy MSIE (Internet Explorer) can't inherit colors in IMG tag */
+.msiehackbox { 
+               border-color: #fcd605;
+               }
+a:hover .msiehackbox { 
+                       border-color: #ffa516; 
+                       }
+.msiehackimage { 
+                 border-color: #2b190b; 
+                 }
+a:hover .msiehackimage { 
+                         border-color: #406215; 
+                         }
+img { 
+      border-style: solid;
+      border-width: 1px;
+      margin: 2px;
+      } 
+input { 
+        margin: 1px;
+        }
+input.button { 
+               border-style: outset; 
+               } 
+input.edit { 
+             border-style: inset; 
+             } 
+.box {
+       border-width: 1px;		
+       border-style: solid;
+       border-color: #000000;
+       padding: 2px;
+       /*
+          border-radius: 8px;
+          moz-border-radius: 8px;
+          */
+       }
+.image {
+         border-width: 1px;		
+         border-style: solid;
+         border-color: #000000;
+         padding: 2px;
+         margin: 8px;
+         text-align: center;
+         }
+.odd { 
+       float: left;
+       width: 25%;
+       } 
+.even { 
+        float: right;
+        width: 25%;
+        }
+.menu { 
+        font-weight: bold;
+        }
+.admin { 
+
+         }
+.system { 
+          font-style: italic;
+          }
+.textmode { 
+            display: none;
+            }
+

@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Language" content="fr" />
+    <title>Manuel utilisateur</title>
+    <meta name="Author" content="U-Foot" />
+    <meta name="Description" content="Manuel utilisateur (pas de description d&eacute;taill&eacute;e)" />
+    <meta name="Keywords" content="U-Foot, Christian Mauduit, www.ufoot.org, UWiKiCMS, Documentation, Manuel utilisateur" />
+    <meta name="Copyright" content="Copyleft &copy; 2005, 2006, 2007 Christian Mauduit" />
+    <meta name="Generator" content="UWiKiCMS" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/_uwikicms/template/css/ufoot/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/_uwikicms/template/css/ufoot/layout.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="/_uwikicms/template/css/ufoot/print.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+
+    <div id="block1">
+
+    <div id="title" class="default">
+    <h1>Manuel utilisateur</h1>
+    </div>
+
+    </div>
+
+    <div id="block2">
+
+    <div id="control" class="box menu">
+
+        <div id="nav">
+    <span class="textmode"> [ </span>
+
+        <a href="/?lang=fr"><img src="/_uwikicms/template/images/default/home.png" width="16" height="16" alt="Accueil&nbsp;: www.ufoot.org" title="www.ufoot.org" class="msiehackbox" /></a>
+    
+        <span class="textmode"> | </span><a href="/uwikicms/doc/features?lang=fr"><img src="/_uwikicms/template/images/default/arrow_left.png" width="16" height="16" alt="Pr&eacute;c&eacute;dent&nbsp;: Fonctionnalit&eacute;s" title="Fonctionnalit&eacute;s" class="msiehackbox" /></a>
+    
+        <span class="textmode"> | </span><a href="/uwikicms/doc?lang=fr"><img src="/_uwikicms/template/images/default/arrow_up.png" width="16" height="16" alt="Parent&nbsp;: Documentation" title="Documentation" class="msiehackbox" /></a>
+    
+        <span class="textmode"> | </span><a href="/uwikicms/doc/syntax?lang=fr"><img src="/_uwikicms/template/images/default/arrow_right.png" width="16" height="16" alt="Suivant&nbsp;: Syntaxe" title="Syntaxe" class="msiehackbox" /></a>
+    
+    <span class="textmode"> ] </span>
+    </div>
+    
+    
+        <div id="parents">
+        <a href="/?lang=fr">
+www.ufoot.org    </a> &gt; 
+        <a href="/uwikicms?lang=fr">
+UWiKiCMS    </a> &gt; 
+        <a href="/uwikicms/doc?lang=fr">
+Documentation    </a> &gt; 
+        Manuel utilisateur    </div>
+    
+    
+        <div id="google">
+       <form action="http://www.google.fr/search" method="get" id="google_form">
+       <p>
+	    <input type="hidden" id="google_ie" name="ie" value="latin1" />
+	    <input type="hidden" id="google_as_dt" name="as_dt" value="i" />
+	    <input type="hidden" id="google_as_sitesearch" name="as_sitesearch" value="www.ufoot.org" />
+	    <input type="text" size="16" maxlength="192" id="google_q" name="q" />
+	    <input type="submit" id="google_search" name="search" value="Recherche Google" />
+       </p>
+        </form>
+    </div> 
+    
+    </div>
+
+    </div>
+
+    <div id="block3"><div id="content" class="status0">
+<h2>
+A qui s'adresse ce manuel?
+</h2>
+<p>
+Il s'adresse aux personnes qui souhaitent éditer, manipuler du contenu sous UWiKiCMS. Par exemple taper des articles et insérer des images.
+</p>
+<p>
+Il ne couvre pas <a href="/uwikicms/doc/install?lang=fr">l'installation</a>
+ et suppose donc qu'un administrateur système et/ou un bidouilleur fou (on peut cumuler les rôles) a déjà installé la bête.
+</p>
+<h2>
+Démo
+</h2>
+<p>
+Afin de pouvoir tester UWiKiCMS sans avoir nécessairement besoin de l'installer, je maintiens un <a href="http://ufoot.free.fr/uwikicmsdemo/">site de démonstration</a> ouvert au public, qui permet de saisir librement du contenu, à des fins de test. N'hésitez-pas à vous y connecter pour tester tout ce qui est décrit dans ce manuel. C'est fait pour.
+</p>
+<h2>
+Principes
+</h2>
+<h3>
+Edition par le web
+</h3>
+<p>
+Pour saisir du contenu sur UWiKiCMS, il suffit d'un simple navigateur web (IE, Firefox, Lynx...).
+Il n'y a pas d'interface séparée ("back-office" pour les amateurs d'anglicismes et de vocabulaire de consultant) pour éditer les pages. Il suffit de:
+</p>
+<ol>
+<li> s'identifier (utiliser pour cela le couple identifiant / mot de passe correspondant à l'installation du système)
+<li> utiliser les fonctions modifier, créer une page, ou autres, qui apparaissent automatiquement dans la liste des actions (en bas de page)
+</ol>
+<h3>
+Un dossier &lt;-&gt; une page
+</h3>
+<p>
+Une des aspects particuliers d'UWiKiCMS est qu'il n'y a aucune distinction entre dossiers et pages. Dans un système "classique" il existe une structure de dossiers organisés plus ou moins en arborescence, et ces dossiers peuvent contenir des pages ou des dossiers. Dans UWiKiCMS les dossiers ne peuvent contenir que des... ...dossiers. Et à chaque dossier on peut associer un contenu, un peu à la manière d'une "page" index.html. Une autre façon de voir les choses est de dire qu'il n'y a pas de dossiers mais uniquement des pages, et que chaque page peut contenir des sous-pages.
+</p>
+<p>
+Mon avis est que ce système simplifie davantage les choses qu'il ne les complexifie.
+</p>
+<h3>
+Texte et images
+</h3>
+<p>
+UWiKiCMS permet de saisir du texte et des images UN POINT C'EST TOUT.
+</p>
+<h2>
+Premiers pas
+</h2>
+<h3>
+Créer la page d'accueil
+</h3>
+<p>
+La première fois que vous vous connectez à un site UWiKiCMS vierge, en anonyme (sans taper aucun identifiant / mot de passe) vous devriez obtenir une erreur "404 non trouvé". C'est normal l page d'accueil n'existe pas.
+</p>
+<p>
+Si vous vous connectez sous un compte privilégié (niveau 2, contributeur au minimum) et que vous accédez à la même adresse, vous obtenez un formulaire de saisie "Sans titre". Vous pouvez modifier les champs de ce formulaire.
+</p>
+<dl>
+<dt>titre<dd>correspond au titre de la page
+<dt>contenu<dd>correspond à son contenu, des règles typographiques permettent de gérer des paragraphes, des listes, des hyperliens, mais pour l'instant contentez-vous de saisir du texte "brut"
+<dt>statut<dd>définit si la page doit être visible par tout le monde ou pas. ATTENTION sur un site UWiKiCMS fraîchement installé le statut par défaut de la page d'accueil est privé ou confidentiel, il faut prendre le temps de le changer en "public" si vous voulez que les internautes accèdent à votre site.
+</dl>
+<p>
+Validez ce formulaire de saisie. Et voila, la page d'accueil est créée.
+</p>
+<h2>
+Opérations courantes
+</h2>
+<p>
+Par la suite, on suppose que l'utilisateur est connecté avec un profil privilégié, qui permet d'éditer du contenu et donne donc accès aux fonctions ad hoc dans la liste des actions en bas de page.
+</p>
+<h3>
+Créer une nouvelle page
+</h3>
+<p>
+Dans la liste des actions en bas de page, un mini-formulaire avec une petite zone de saisie et un bouton permet de créer une nouvelle page. Le texte que vous saisissez dans la zone de saisie sera l'adresse, l'URL utilisée pour accéder à la page. Ce n'est pas forcément la même chose que le titre.
+</p>
+<p>
+Vous obtenez alors un formulaire de création de page, le même que pour la page d'accueil.
+</p>
+<h3>
+Modification d'une page
+</h3>
+<p>
+Aller sur la page en visualisation (mode par défaut) et cliquer sur "Modifier" dans la liste des actions.
+</p>
+<p>
+Noter qu'un champ supplémentaire apparaît, nommé "Ordre". Ce champ permet de contrôler l'ordre dans lequel les pages apparaîssent dans les liens automatiques générés automatiquement en début de page. Par défaut les pages créées en dernier apparaissent en bas de liste, mais on peut changer ce comportement. Il suffit de modifier le champ "Ordre" de chaque page concernée, le tri s'appuie sur ce champ. Je reconnais que c'est un peu fastidieux, mais ça reste simple.
+</p>
+<h3>
+Ajouter une image
+</h3>
+<p>
+Cliquer sur "Ajouter une image" dans la liste des actions, et procéder comme pour une page. Il y a deux différences subtiles.
+</p>
+<p>
+D'une part, il faut aller chercher le fichier "image" quelque part sur votre disque dur pour le stocker dans UWiKiCMS. Un bouton système avec en général écrit "Parcourir" ou un truc du genre vous permet de le faire. Les formats acceptés sont JPEG, PNG et GIF. Les images seront dans tous les cas transformées en JPEG. Il est recommandé de ne pas télécharger des images trop grosses. En ce qui me concerne 640x480 ou 800x600 est un maximum. En effet, bien qu'UWiKiCMS génère automatiquement des versions réduites des images ("thumbnails") il est en général inutile de mettre des images trop lourdes en ligne: ça surcharge le serveur en espace disque, ça augmente les temps de chargement, et souvent ce n'est pas pratique à visualiser.
+</p>
+<p>
+D'autre part, quand on fait "Ajouter une image", l'image n'apparaît pas immédiatement dans la page. Il faut aussi modifier le contenu de la page pour y faire apparaître l'image. Passer en mode modification de page, et vous verrez apparaître la liste des images en-dessous du formulaire d'édition. Dans cette liste d'image, chaque image est précédée d'un code cryptique du type [ img:123 ]. Il suffit de copier/coller ce code dans la zone de contenu pour faire apparaître l'image. En général j'insère ce type de code entre deux paragraphes, mais ce n'est pas obligatoire. Il suffit donc d'ouvrir les crochets ([) et de taper "img:le_numéro_de_l'image" puis de fermer les crochets, et le tour est joué.
+</p>
+<p>
+Pour ce qui est du rendu des images au sein d'une page (savoir si l'image sera à gauche, à droite, ou au centre par exemple), ceci est géré automatiquement par UWiKiCMS, vous n'avez pas le contrôle dessus. Enfin pas tout à fait, l'idée est que le placement des images est principalement géré par les CSS. UWiKiCMS se contente d'appliquer un style (class) de type "odd" (impair) ou "even" (pair) à chaque image, et ensuite la feuille de style décide de ce qu'il faut faire. Par défaut les images sont placées un coup à droite, un coup à gauche, et systématiquement au centre pour les impressions.
+</p>
+<p>
+Concernant les zones du formulaire de saisie, quelques explications concernant leur utilisation:
+</p>
+<dl>
+<dt>titre<dd>utilisé en tant que titre lorsque vous êtes en visualisation "grandeur nature" de l'image, et en tant que tag "alt" lorsque l'image est insérée en version réduite dans une page. Ca peut paraître inutile mais c'est pratique pour ceux qui visualisent votre site en mode non-graphique: plutôt que de voir une URL cryptique, ils savent ainsi rapidement en quelques mots de quoi parle l'image.
+<dt>description<dd>description plus détaillée affichée en-dessous de l'image. N'accepte pas de paragraphes, listes, liens ou autre. C'est juste du texte brut.
+</dl>
+<p>
+Note pour les puristes: en théorie il aurait été possible d'avoir un champ distinct pour le titre et le tag alt. D'ailleurs on aurait aussi pu avoir une description dans les pages, distincte du titre et du contenu. En pratique il m'est impossible de maintenir ces champs. N'en déplaise aux irréductibles de la métadonnée, saisir une description pour chaque élément, distinguer la description détaillée de la description courte etc. etc. sont des opérations qui complexifient les opérations, et finissent par dissuader les contributeurs de saisir du contenu. En clair, je ne suis pas prêt à prendre 1 minute par image/page pour faire un résumé ou une description rapide. Oui, je suis à 1 minute près.
+</p>
+<h3>
+Modifier une image
+</h3>
+<p>
+Comme pour une page, visualiser l'image puis cliquer sur "Modifier". Vous pouvez ne modifier que l'image JPEG ou que la légende, ou les deux, UWiKiCMS gardera les anciennes valeurs pour tous les champs que vous n'aurez pas explictement modifiés.
+</p>
+<h3>
+Traduire
+</h3>
+<p>
+Ne nous méprenons-pas, UWiKiCMS ne va pas traduire votre page par un coup de baguette magique. Quand on dit "traduire", c'est un raccourci pour "créer la version traduite de ce document dans la langue XY", sachant que le travail de traduction est 100% à votre charge.
+</p>
+<p>
+Voila.
+</p>
+<p>
+UWiKiCMS propose par défaut un certain nombre de langues, qui correspondent à celles dont je suis susceptible d'avoir besoin. Pour étendre cette liste, il faut modifier le code.
+</p>
+<p>
+Le lien entre les différentes traductions d'une page est géré automatiquement.
+</p>
+<p>
+Noter que la notion de traduction existe aussi bien pour les images que pour les pages. Ainsi les tags "alt" et les descriptions en dessous des images changent selon qu'on visualise une page dans une langue ou dans une autre. A vous de veiller à ce que les traductions soient cohérentes.
+</p>
+<p>
+Une des particularités d'UWiKiCMS est que les images sont partagées entre les différentes langues d'un document. Concrètement vous pouvez utiliser les mêmes images JPEG pour les versions anglaise et française d'une page, et changer seulement la légende.
+</p>
+<h3>
+Supprimer
+</h3>
+<p>
+Le lien supprimer fonctionne logiquement et fait ce qu'on lui demande: supprimer un élément.
+</p>
+<p>
+Noter que:
+</p>
+<ol>
+<li>Les suppressions sont irréversibles.
+<li>Supprimer une page supprime toutes les images qu'elle contient, mais conserve les sous-pages. La fonction "Plan du site" permet d'accéder aux sous-pages orphelines.
+<li>Supprimer une page ou une image ne supprime l'élément que dans la langue en cours.
+<li>Supprimer une image ne retire pas les références à l'image dans le contenu (de type [ img:123 ]). Il faut supprimer ces références à la main. Inversement enlever la référence dans le contenu ne retire pas l'image de la base de données.
+</ol>
+<h3>
+Mise en forme (paragraphes, listes...)
+</h3>
+<p>
+Parce que cette fonctionnalité est au coeur d'UWiKiCMS et qu'elle est distincte du reste, elle fait l'objet d'un document annexe, qui décrit donc en détail la <a href="/uwikicms/doc/syntax?lang=fr">syntaxe de mise en forme</a>
+.
+</p>
+<h2>
+Fonctionnalités avancées
+</h2>
+<h3>
+Vider le cache
+</h3>
+<p>
+UWiKiCMS dispose d'un système de cache interne qui lui permet d'améliorer les performances.
+</p>
+<p>
+Un des effets de bord est que quand vous modifiez une page, celle-ci n'apparaît pas immédiatement aux internautes dans version modfiée. Pire, une page qui n'existait pas avant et récemment créée pourra continuer à renvoyer des "erreurs 404" pendant un certain temps. Le certain temps en question étant de plusieurs heures (jusqu'à 18h en théorie) dans la configuration par défaut.
+</p>
+<p>
+Il est donc possible de vider le cache. Ainsi toute trace d'une quelconque version périmée d'une page est nettoyée. Pour lancer cette opération, cliquer simplement sur "Vider le cache" dans la liste des actions en bas de page, et confirmer.
+</p>
+<p>
+Le cache est normalement vidé automatiquement à intervalles réguliers, il n'est donc pas nécessaire de le vider manuellement, à part si on vient d'éditer le site et qu'on veut que les changements apparaissent immédiatement.
+</p>
+<p>
+Pour info il y a dans le fichier config.php une regex (expression rationnelle) qui permet de spécifier que certaines pages doivent être exclues du mécanisme de cache.
+</p>
+<p>
+Et pour les curieux, il est possible de voir le contenu du cache en allant dans le répertoire <a href="http://www.ufoot.org/_uwikicms/cache/">/_uwikicms/cache/</a>.
+</p>
+<h3>
+Tout sur une page
+</h3>
+<p>
+En cliquant sur "Tout sur une page" vous accédez à une version monolithique d'un site ou d'une sous-section, qui inclut donc:
+</p>
+<ul>
+<li>le contenu de la page en cours
+<li>le contenu de toutes les sous-pages
+<li>toutes les images dans leur résolution maximale
+</ul>
+<p>
+Un formulaire intermédiaire permet de choisir quel type de page on désire afficher (le contenu public, le contenu privé...) et en quelle résolution maximum. Ce dernier paramètre est pratique pour adapter le rendu à votre écran / imprimante, mais ne change rien à la qualité et au poids des images affichées.
+</p>
+<p>
+J'utilise cette fonctionalité pour faire des impressions de mes sites à intervalles régulier, et en garder une trace physique.
+</p>
+<p>
+Evidemment ce type de requête est gourmand en ressouces, c'est pour cela que cette fonctionnalité n'est offertes qu'aux utilisateurs privilégiés.
+</p>
+<h3>
+Inclusion de code PHP
+</h3>
+<p>
+Le grand problème d'un CMS comme UWiKiCMS (le problème de tous les CMS en fait) c'est qu'il arrive toujours un moment où vous voulez faire quelque chose, mais ce quelque chose n'est pas prévu par le système.
+</p>
+<p>
+UWiKiCMS apporte une réponse simple et originale à ce problème. Plutôt que d'avoir des tests par-ci par-là dans le code qui détectent telle ou telle condition particulière, ou de mettre en place des templates différents pour certaines pages, la solution est tout simplement la possibilité d'inclure du code PHP arbitraire.
+</p>
+<p>
+Comme c'est du code PHP et pas seulement du HTML, les possibilités sont infinies. Par exemple sur mon site web j'utilise une moulinette sur mesure pour gérer les fichiers téléchargeables, les différents mirroirs, les checksums MD5 et les signatures GnuPG. Cette moulinette magique est un bout de code PHP qui puise ses informations dans une base MySQL, elle utilise donc le mécanisme d'inclusion générique de pages PHP proposé par UWiKiCMS.
+</p>
+<p>
+Comment ça marche? C'est simple: au niveau de la racine de votre site, créez un dossier /_external, juste à côté du dossier /_uwikicms. UWiKiCMS détecte automatiquement dans ce dossier la présence de pages PHP ou HTML. Par exemple si vous créez une page /_external/toto.php alors quand vous visualiserez la page /toto dans UWiKiCMS, le contenu de /_external/toto.php sera inclus juste en dessous du contenu saisi via le formulaire d'édition.
+</p>
+<p>
+De même visualiser /toto/titi/tata ira automatiquement chercher et inclure le contenu de /_external/toto/titi/tata.php s'il existe. Pour la page d'accueil la règle de nommage est un peu particulière le fichier à inclure doit s'appeler /_external.php.
+</p>
+<p>
+Les fichiers .html, .php, .php3, .php4 sont donc ainsi automatiquement inclus.
+</p>
+<p>
+Il est aussi possible de distinguer les langues. Pour inclure un fichier seulement dans la version française de /toto, il suffit de créer un fichier /_external/toto.fr.html.
+</p>
+<p>
+Ce mécanisme rudimentaire est AMHA redoutablement efficace. Il m'a évité de coder dans UWiKiCMS des fonctionnalités qui n'avaient rien à faire dans un CMS générique, et permet de garder une bonne visibilité sur ce qui est "spécial" dans un site donné. En effet l'analyse du répertoire /_external donne une vision d'ensemble sur tout ce qui "sort de l'ordinaire".
+</p>
+</div>
+  </div>
+
+  <div id="block4">
+
+  <div id="actions" class="box admin">
+  <ul>
+         
+    <li><a href="/?lang=fr">Accueil</a></li>
+	
+    <li>
+  <a href="/uwikicms/doc/manual?lang=fr&amp;action=loginform">Se connecter</a>
+</li>
+  </ul>
+  </div>
+
+  </div>
+
+  <div id="block5">
+
+  <div id="infos" class="box system">
+    <div id="credits">
+    Page g&eacute;n&eacute;r&eacute;e par <a href="http://www.ufoot.org/uwikicms">UWiKiCMS</a> 1.0.9 le mercredi 21 décembre 2005.    </div>
+        <div id="rights">
+    Copyright &copy; 2005 <a href="mailto:ufoot@ufoot.org">Christian Mauduit</a>. Document plac&eacute; sous licence <a href="http://www.gnu.org/copyleft/fdl.html">GNU FDL</a>.    </div>
+            <div id="lastupdate">
+    Mis &agrave; jour le dimanche 05 juin 2005.    </div>
+            <div id="absoluteurl">
+      Source&nbsp;:      <a href="http://www.ufoot.org/uwikicms/doc/manual?lang=fr">http://www.ufoot.org/uwikicms/doc/manual?lang=fr</a>
+    </div>
+      </div>
+
+  </div>
+
+  </body>
+</html>
+

@@ -1,0 +1,3 @@
+# No one should ever read this directory through the web
+Order allow,deny
+Deny from all

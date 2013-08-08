@@ -1,0 +1,178 @@
+/*
+ UWiKiCMS is a lightweight web content management system.
+ Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of
+ the License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public
+ License along with this program; if not, write to the Free
+ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,
+ MA  02110-1301  USA
+*/
+
+body {
+       font-size: large;
+       color: #4f544c;
+       background-color: #eeffe6;
+       }
+/* see .default for default text color */
+a { 
+    text-decoration: underline; 
+    color: #4f54ff; 
+    background-color: #eeffe6;
+    }
+a:active { 
+           text-decoration: underline; 
+           color: #4f54ff;
+           background-color: #eeffe6;
+           }
+a:visited { 
+            text-decoration: underline; 
+            color: #4f54ff;
+            background-color: #eeffe6;
+            }
+a:hover { 
+          text-decoration: underline; 
+          color: #a74fff;
+          background-color: #eeffe6;
+          }
+.box a { 
+         text-decoration: underline; 
+         color: #4f54ff; 
+         background-color: #c6e6b8;
+         }
+.box a:active { 
+                text-decoration: underline; 
+                color: #4f54ff; 
+                background-color: #c6e6b8;
+                }
+.box a:visited { 
+                 text-decoration: underline; 
+                 color: #4f54ff; 
+                 background-color: #c6e6b8;
+                 }
+.box a:hover { 
+               text-decoration: underline; 
+               color: #a74fff; 
+               background-color: #c6e6b8;
+               }
+.image a { 
+         text-decoration: underline; 
+         color: #4f54ff; 
+         background-color: #f5fff1;
+         }
+.image a:active { 
+                text-decoration: underline; 
+                color: #4f54ff; 
+                background-color: #f5fff1;
+                }
+.image a:visited { 
+                 text-decoration: underline; 
+                 color: #4f54ff; 
+                 background-color: #f5fff1;
+                 }
+.image a:hover { 
+               text-decoration: underline; 
+               color: #a74fff; 
+               background-color: #f5fff1;
+               }
+.default {  
+           color: #4f544c;
+           background-color: #eeffe6;
+           }
+.box {
+       font-size: small; 
+       color: #4f544c; 
+       background-color: #c6e6b8;
+       }
+.image { 
+         font-size: small;
+         color: #4f544c;
+         background-color: #f5fff1;
+         }
+.default input { 
+                 color: #4f544c; 
+                 background-color: #ffffff;
+                 }
+.default textarea { 
+                    color: #4f544c; 
+                    background-color: #ffffff;
+                    }
+.default select { 
+                  color: #4f544c; 
+                  background-color: #ffffff;
+                  }
+/* Buggy MSIE (Internet Explorer) can't inherit colors in IMG tag */
+.msiehackbox { 
+               border-color: #4f54ff; 
+               }
+a:hover .msiehackbox { 
+                       border-color: #a74fff; 
+                       }
+.msiehackimage { 
+                 border-color: #4f54ff; 
+                 }
+a:hover .msiehackimage { 
+                         border-color: #a74fff; 
+                         }
+img { 
+      border-style: solid;
+      border-width: 2px;
+      margin: 1px;
+      } 
+.image img { 
+             border: none;
+             margin: 5px;             
+             }
+input { 
+        margin: 1px;
+        }
+input.button { 
+               border-style: outset; 
+               } 
+input.edit { 
+             border-style: inset; 
+             } 
+.box {
+       border-width: 2px;		
+       border-style: solid;
+       border-color: #84997a;
+       padding: 2px;
+       }
+.image {
+         border-width: 2px;		
+         border-style: solid;
+         border-color: #84997a;
+         padding: 5px;
+         margin: 10px;
+         text-align: center;
+       }
+.odd { 
+        float: left;
+        width: 30%;
+        } 
+.even { 
+         float: right;
+         width: 30%;
+         }
+.menu { 
+        font-weight: bold;
+}
+.admin { 
+
+       }
+.system { 
+          font-style: italic;
+}
+.textmode { 
+            display: none;
+            }
+

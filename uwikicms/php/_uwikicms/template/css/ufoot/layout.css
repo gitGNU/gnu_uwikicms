@@ -1,0 +1,126 @@
+/*
+ UWiKiCMS is a lightweight web content management system.
+ Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of
+ the License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public
+ License along with this program; if not, write to the Free
+ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,
+ MA  02110-1301  USA
+*/
+
+#title { 
+         text-align: right;
+         } 
+
+#control { 
+           margin: 16px;
+           padding: 4px;
+           float: left;
+           }
+
+#parents {  
+           } 
+
+#nav { 
+       text-align: center;
+       }  
+
+#langs { 
+         text-align: center;
+         } 
+
+#children { 
+            } 
+
+#google { 
+         text-align: center;
+         } 
+
+#message { 
+           clear: both;
+           text-align: center;
+           margin: 8px;
+           padding: 4px;
+           }
+
+#continue { 
+            text-align: center;
+            margin: 8px;
+            padding: 4px;
+            } 
+
+#content { 
+           margin: 8px;
+           padding: 4px;
+           }
+
+#edit { 
+        margin: 8px;
+        padding: 4px;
+        }
+
+#tree { 
+        clear: both;
+        margin: 8px;
+        padding: 4px;
+        }
+
+#actions { 
+           float: right;
+           position: fixed;
+           right: 4px;
+           bottom: 4px;
+           text-align: right;
+           /* Opacity is in the layout file for it's linked
+              to the fact that the position is fixed */
+           /* opacity: 0.66; */
+           }
+
+#infos {  
+         clear: both;
+         text-align: right;
+         margin-top: 10em;
+         margin-bottom: 16px;
+         margin-left: 16px;
+         margin-right: 16px;
+         width: 66%;
+         }
+
+#absoluteurl { 
+               display: inline;
+               }
+
+#rights { 
+          display: inline;
+          }
+
+#lastupdate { 
+              display: inline;
+              }
+
+#credits { 
+           display: inline;
+           }
+
+/*
+#block2 {
+          float: left;
+          width: 20%;
+          }
+
+#block3 {
+          float: left;
+          width: 80%;
+          }
+*/
+

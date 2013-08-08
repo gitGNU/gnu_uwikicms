@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Language" content="en" />
+    <title>Formatting rules</title>
+    <meta name="Author" content="U-Foot" />
+    <meta name="Description" content="Formatting rules (no detailed description)" />
+    <meta name="Keywords" content="U-Foot, Christian Mauduit, www.ufoot.org, UWiKiCMS, Documentation, Formatting rules" />
+    <meta name="Copyright" content="Copyleft &copy; 2005, 2006, 2007 Christian Mauduit" />
+    <meta name="Generator" content="UWiKiCMS" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/_uwikicms/template/css/ufoot/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/_uwikicms/template/css/ufoot/layout.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="/_uwikicms/template/css/ufoot/print.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+
+    <div id="block1">
+
+    <div id="title" class="default">
+    <h1>Formatting rules</h1>
+    </div>
+
+    </div>
+
+    <div id="block2">
+
+    <div id="control" class="box menu">
+
+        <div id="nav">
+    <span class="textmode"> [ </span>
+
+        <a href="/?lang=en"><img src="/_uwikicms/template/images/default/home.png" width="16" height="16" alt="Home: www.ufoot.org" title="www.ufoot.org" class="msiehackbox" /></a>
+    
+        <span class="textmode"> | </span><a href="/uwikicms/doc/install?lang=en"><img src="/_uwikicms/template/images/default/arrow_left.png" width="16" height="16" alt="Prev: Install" title="Install" class="msiehackbox" /></a>
+    
+        <span class="textmode"> | </span><a href="/uwikicms/doc?lang=en"><img src="/_uwikicms/template/images/default/arrow_up.png" width="16" height="16" alt="Up: Documentation" title="Documentation" class="msiehackbox" /></a>
+    
+    
+    <span class="textmode"> ] </span>
+    </div>
+    
+        
+    <div id="langs">
+    <span class="textmode"> [ </span>
+          <a href="/uwikicms/doc/syntax?lang=fr"><img src="/_uwikicms/template/images/default/flag_fr.png" width="24" height="16" alt="Fran&ccedil;ais" title="Fran&ccedil;ais" class="msiehackbox" /></a>
+        <span class="textmode"> ] </span>
+    </div>
+    
+        <div id="parents">
+        <a href="/?lang=en">
+www.ufoot.org    </a> &gt; 
+        <a href="/uwikicms?lang=en">
+UWiKiCMS    </a> &gt; 
+        <a href="/uwikicms/doc?lang=en">
+Documentation    </a> &gt; 
+        Formatting rules    </div>
+    
+    
+        <div id="google">
+       <form action="http://www.google.fr/search" method="get" id="google_form">
+       <p>
+	    <input type="hidden" id="google_ie" name="ie" value="latin1" />
+	    <input type="hidden" id="google_as_dt" name="as_dt" value="i" />
+	    <input type="hidden" id="google_as_sitesearch" name="as_sitesearch" value="www.ufoot.org" />
+	    <input type="text" size="16" maxlength="192" id="google_q" name="q" />
+	    <input type="submit" id="google_search" name="search" value="Google search" />
+       </p>
+        </form>
+    </div> 
+    
+    </div>
+
+    </div>
+
+    <div id="block3"><div id="content" class="status0">
+<h2>
+Introduction
+</h2>
+<p>
+This section describes the syntax used to format a UWiKiCMS page and make it display paragraphs, lists, links, and so on. Basically all other operations (creating pages, images) do not truely require any documentation. However these formatting rules might not be so easily guessed.
+</p>
+<p>
+That's why this documentation exists.
+</p>
+<p>
+Note that most of the formatting rules here are inherited from
+<a href="http://phpwiki.sourceforge.net/">PhpWiki</a>,
+indeed UWiKiCMS HTML engine borrows 99% of code from PhpWiki. This
+very documentation is itself largely inspired from PhpWiki.
+</p>
+<h2>
+Standard PhpWiki rules
+</h2>
+<p>
+All this is heavily inspired from
+<a href="http://phpwiki.sourceforge.net/phpwiki/TextFormattingRules">PhpWiki formatting rules</a>.
+</p>
+<h3>
+ Paragraphs
+</h3>
+<ul>
+<li> Don't indent paragraphs
+<li> Words wrap and fill as needed
+<li> Use blank lines as separators
+<li> Four or more minus signs make a horizontal rule
+<li> %%<em></em>% makes a linebreak (in headings and lists too)
+</ul>
+<h3>
+ Lists
+</h3>
+<ul>
+<li> asterisk for first level
+<ul>
+<li> asterisk-asterisk for second level, etc.
+</ul>
+<li> Use * for bullet lists, # for numbered lists (mix at will)
+<li> semicolon-term-colon-definition for definition lists:
+</ul>
+<dl>
+<dt>term here<dd>definition here, as in the &lt;DL&gt;&lt;DT&gt;&lt;DD&gt; list
+</dl>
+<ul>
+<li> One line for each item
+<li> Other leading whitespace signals preformatted text, changes font.
+</ul>
+<h3>
+ Headings
+</h3>
+<ul>
+<li> '!' at the start of a line makes a small heading
+<li> '!!' at the start of a line makes a medium heading
+<li> '!!!' at the start of a line makes a large heading
+</ul>
+<h3>
+ Fonts
+</h3>
+<ul>
+<li> Indent with one or more spaces to use a monospace font:
+</ul>
+<pre>
+ This is in monospace
+</pre>
+<p>
+This is not
+</p>
+<h3>
+Indented Paragraphs
+</h3>
+<ul>
+<li> semicolon-colon -- works like &lt;BLOCKQUOTE&gt;
+</ul>
+<dl>
+<dd> this is an indented block of text
+</dl>
+<h3>
+ Emphasis
+</h3>
+<ul>
+<li> Use doubled single-quotes ('<strong></strong>') for emphasis (usually <em>italics</em>)
+<li> Use doubled underscores (_<em></em>_) for strong emphasis (usually <strong>bold</strong>)
+<li> Mix them at will: <strong><em>bold italics</em></strong>
+<li> <em>Emphasis</em> can be used <em>multiple</em> times within a line, but <em>cannot</em> cross line boundaries:
+</ul>
+<p>
+''this
+will not work''
+</p>
+<h3>
+ References (a bit different from PhpWiki)
+</h3>
+<ul>
+<li> To make a link to an external site you can put it explicitly into bracketys [ <a href="http://www.ufoot.org/uwikicms">http://www.ufoot.org/uwikicms</a> ].
+<li> You can specify a name for a link, for instance [ UWiKiCMS | <a href="http://www.ufoot.org/uwikicms">http://www.ufoot.org/uwikicms</a> ].
+<li> Even ommitting brackets, a valid URL starting by a known protocol such as "http:", "ftp:" or "mailto:" will be automatically be made an HTML link.
+</ul>
+<h3>
+ HTML Mark-Up Language
+</h3>
+<ul>
+<li> Don't bother
+<li> &lt; and &gt; are themselves
+<li> The &amp; characters will not work
+</ul>
+<h2>
+UWiKiCMS specific stuff
+</h2>
+<p>
+Here are a few extensions which I added for UWiKiCMS. Basically they are all
+of the same type: new protocols of the form "protocol:" which can be used in links.
+</p>
+<h3>
+Images
+</h3>
+<p>
+[ img:123 ] includes image 123.
+</p>
+<p>
+Note that the list of available images appears at the bottom of the page when you enter page modification mode. Then you can simply copy/paste the code which appears before each image.
+</p>
+<h3>
+Links to other UWiKiCMS pages
+</h3>
+<p>
+[ page:xyz ] or [ Page description | page:xyz ] makes a link to a relative page.
+</p>
+<p>
+Use relative links. In page "/foo" a link of type [ Bar | page:bar ] points to "/foo/bar". A link to [ Foo2 | page:../foo2 ] points to "/foo2". A link to [ Foobug page:/foobug ] points to nothing good.
+</p>
+<h3>
+Translations
+</h3>
+<p>
+[ lang:xy ] or [ Language | lang:xy ] creates a link to the translation in the given language.
+</p>
+<p>
+For instance [ in French | lang:fr ].
+</p>
+</div>
+  </div>
+
+  <div id="block4">
+
+  <div id="actions" class="box admin">
+  <ul>
+         
+    <li><a href="/?lang=en">Home</a></li>
+	
+    <li>
+  <a href="/uwikicms/doc/syntax?lang=en&amp;action=loginform">Login</a>
+</li>
+  </ul>
+  </div>
+
+  </div>
+
+  <div id="block5">
+
+  <div id="infos" class="box system">
+    <div id="credits">
+    Page generated by <a href="http://www.ufoot.org/uwikicms">UWiKiCMS</a> 1.0.9 on Wed Dec 21 2005.    </div>
+        <div id="rights">
+    Copyright &copy; 2005 <a href="mailto:ufoot@ufoot.org">Christian Mauduit</a>. Permission is granted to copy, distribute and/or modify this document under the terms of the <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>, Version 1.2 or any later version published by the <a href="http://www.fsf.org/">Free Software Foundation</a>; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.    </div>
+            <div id="lastupdate">
+    Updated on Sun Jun 05 2005.    </div>
+            <div id="absoluteurl">
+      Source:      <a href="http://www.ufoot.org/uwikicms/doc/syntax?lang=en">http://www.ufoot.org/uwikicms/doc/syntax?lang=en</a>
+    </div>
+      </div>
+
+  </div>
+
+  </body>
+</html>
+

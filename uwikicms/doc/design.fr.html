@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Language" content="fr" />
+    <title>Choix techniques</title>
+    <meta name="Author" content="U-Foot" />
+    <meta name="Description" content="Choix techniques (pas de description d&eacute;taill&eacute;e)" />
+    <meta name="Keywords" content="U-Foot, Christian Mauduit, www.ufoot.org, UWiKiCMS, Documentation, Choix techniques" />
+    <meta name="Copyright" content="Copyleft &copy; 2005, 2006, 2007 Christian Mauduit" />
+    <meta name="Generator" content="UWiKiCMS" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/_uwikicms/template/css/ufoot/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/_uwikicms/template/css/ufoot/layout.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="/_uwikicms/template/css/ufoot/print.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+
+    <div id="block1">
+
+    <div id="title" class="default">
+    <h1>Choix techniques</h1>
+    </div>
+
+    </div>
+
+    <div id="block2">
+
+    <div id="control" class="box menu">
+
+        <div id="nav">
+    <span class="textmode"> [ </span>
+
+        <a href="/?lang=fr"><img src="/_uwikicms/template/images/default/home.png" width="16" height="16" alt="Accueil&nbsp;: www.ufoot.org" title="www.ufoot.org" class="msiehackbox" /></a>
+    
+        <span class="textmode"> | </span><a href="/uwikicms/doc/syntax?lang=fr"><img src="/_uwikicms/template/images/default/arrow_left.png" width="16" height="16" alt="Pr&eacute;c&eacute;dent&nbsp;: Syntaxe" title="Syntaxe" class="msiehackbox" /></a>
+    
+        <span class="textmode"> | </span><a href="/uwikicms/doc?lang=fr"><img src="/_uwikicms/template/images/default/arrow_up.png" width="16" height="16" alt="Parent&nbsp;: Documentation" title="Documentation" class="msiehackbox" /></a>
+    
+        <span class="textmode"> | </span><a href="/uwikicms/doc/w3cwai?lang=fr"><img src="/_uwikicms/template/images/default/arrow_right.png" width="16" height="16" alt="Suivant&nbsp;: XHTML 1.0 et accessibilit&eacute;" title="XHTML 1.0 et accessibilit&eacute;" class="msiehackbox" /></a>
+    
+    <span class="textmode"> ] </span>
+    </div>
+    
+    
+        <div id="parents">
+        <a href="/?lang=fr">
+www.ufoot.org    </a> &gt; 
+        <a href="/uwikicms?lang=fr">
+UWiKiCMS    </a> &gt; 
+        <a href="/uwikicms/doc?lang=fr">
+Documentation    </a> &gt; 
+        Choix techniques    </div>
+    
+    
+        <div id="google">
+       <form action="http://www.google.fr/search" method="get" id="google_form">
+       <p>
+	    <input type="hidden" id="google_ie" name="ie" value="latin1" />
+	    <input type="hidden" id="google_as_dt" name="as_dt" value="i" />
+	    <input type="hidden" id="google_as_sitesearch" name="as_sitesearch" value="www.ufoot.org" />
+	    <input type="text" size="16" maxlength="192" id="google_q" name="q" />
+	    <input type="submit" id="google_search" name="search" value="Recherche Google" />
+       </p>
+        </form>
+    </div> 
+    
+    </div>
+
+    </div>
+
+    <div id="block3"><div id="content" class="status0">
+<h2>
+Choix structurants
+</h2>
+<h3>
+PHP/MySQL
+</h3>
+<p>
+Incontournable.
+</p>
+<p>
+Pour moi le seul moyen économique d'avoir un site dynamique en ligne 24h/24 7j/7 avec une qualité de service correcte, c'est de m'offrir les services d'un
+hébergeur "petit budget". Et aucun de ces hébergeurs ne propose du Zope ou
+autres architectures J2EE.
+</p>
+<p>
+Au passage, c'est je pense là qu'on trouve 90% des fondements du succès de PHP:
+sa simplicité d'administration et de mise en oeuvre a fait que les fournisseurs
+d'accès et hébergeurs ont pu fournir le service "j'héberge des pages PHP" quand
+mod_perl et les pages .asp sont restées sur la touche, malgré leur antériorité.
+</p>
+<p>
+Donc la solution technique c'était PHP/MySQL, à cause de la facilité d'hébergement. Sinon j'aurais vraisemblablement choisi Zope.
+</p>
+<h3>
+Réécriture "from scratch"
+</h3>
+<p>
+Le choix constestable par excellence donc. Pourquoi ne pas avoir patché SPIP? Pourquoi ne pas s'appuyer complètement sur PhpWiki?
+</p>
+<p>
+La réponse:
+</p>
+<ul>
+<li> vu la taille du code source d'UWiKiCMS et le peu d'envergure de ses  fonctionnalités, SPIP ressemble à un mammouth à côté. Et de toutes façons la taille du patch aurait été au moins la même que celle d'une réécriture. C'est l'éternel problème du compromis entre réécriture complète ou adaptation d'une solution existante. Et j'ai vu des cas d'adaptation de l'existant (par exemple sur des ERP en milieu professionnel) ou la configuration d'un logiciel/progiciel était largement plus complexe et coûteuse que toute autre option.
+<li> j'adore coder.
+</ul>
+<h2>
+Les idées récupérées
+</h2>
+<p>
+Une liste d'idées que j'ai pêchées à droite à gauche et qui m'ont servi
+à structurer UWiKiCMS.
+</p>
+<h3>
+Le <a href="http://www.zope.org">Zope</a> traversal
+</h3>
+<p>
+Oui enfin, récupérer c'est un bien grand mot. UWiKiCMS ne fait que le quart de la moitié du douzième de ce que fait le traversal en question. Mais dans l'esprit c'est la même chose. 
+</p>
+<p>
+L'idée est que l'URL est interprétée non pas comme un nom de fichier, mais moulinée par le système, pour en déduire une action. Essentiellement, UWiKiCMS se contente de:
+</p>
+<ul>
+<li> déterminer si l'URL concerne une image ou pas
+<li> simplifier l'URL (la débarasser de scories, vérifier sa syntaxe) pour obtenir l'identifiant de l'élément
+<li> récupérer l'élément dans la base de donnéés, à l'aide du "path" précédemment calculé.
+</ul>
+<p>
+Dis comme ça ça a l'ai compliqué, en fait c'est très simple, quand vous accédez à <a href="http://www.ufoot.org/uwikicms">http://www.ufoot.org/uwikicms</a> c'est simplement l'élément "/uwikicms" de la base de données MySQL qui sera restitué à l'écran.
+</p>
+<p>
+Il s'en suit que 100% (enfin pas tout à fait mais presque on le verra plus tard) du contenu d'un site UWiKiCMS est stocké en base de données. Y compris les images. Comme dans Zope d'ailleurs.
+</p>
+<h3>
+L'inclusion d'images "à la" <a href="http://www.spip.net">SPIP</a>
+</h3>
+<p>
+Plutôt que de monter une usine à gaz comme dans de nombreux CMS pour intercaler des images dans des blocs de texte et autres barbaries, UWiKiCMS utilise la stratégie de SPIP qui consiste à placer des marqueurs simples de type [ identifiant_image ] dans le texte.
+</p>
+<p>
+Redoutablement efficace.
+</p>
+<h3>
+ <a href="http://c2.com/cgi/wiki?WikiWikiWeb">Wiki</a> like
+</h3>
+<p>
+Du Wiki, j'ai gardé le concept "si un lien pointe vers un truc qui n'existe pas, alors proposer la création de ce truc".
+</p>
+<p>
+Cela simplifie énormément le développement. Et l'utilisation.
+</p>
+<p>
+Et ça explique donc en partie le nom "UWiKiCMS". Mais pas complètement.
+</p>
+<h3>
+ Formattage du HTML façon <a href="http://phpwiki.sourceforge.net/">PhpWiki</a>
+</h3>
+<p>
+J'ai bêtement intégré quasi à 100% le système de rendu HTML de PhpWiki
+(copiage/collage de code brut et massif).
+D'autres candidats étaient en lice, notemment (re)structured text,
+mais je n'ai trouvé aucune implémentation en PHP vraiment fiable.
+</p>
+<h2>
+Idées originales
+</h2>
+<h3>
+Interception de l'erreur 404
+</h3>
+<p>
+L'idée paraît simple mais elle fourmille de pièges techniques.
+</p>
+<p>
+Au départ le concept est de dire: je met en place un ErrorDocument 404 qui pointe sur une page PHP, laquelle interprètera l'URL, calculera un "path", et
+restituera les informations ad hoc à partir du contenu de la base de
+données. 
+</p>
+<p>
+Jusqu'ici c'est simple.
+</p>
+<p>
+Sauf qu'avec Apache (et pire, Apache 1.3 au lieu d'Apache 2.0, je ne maîtrise
+pas la plate-forme de mon hébergeur...) il se passe les choses suivantes:
+</p>
+<ul>
+<li> les paramètres de formulaire (POST) ne sont pas passés à la page "erreur 404".
+<li> les sessions PHP ne fonctionnent pas lorsqu'on passe par cette erreur 404.
+<li> les paramètres d'authentification HTTP, qu'on peut normalement récupérer en PHP, sont inaccessibles (ça c'est une spécialité de mon hébergeur, mais enfin...)
+</ul>
+<p>
+Bref, avec tout ça, j'ai été contraint:
+</p>
+<ol>
+<li> de gérer les sessions à la main à coup de &amp;session=un_truc_cryptique dans l'URL.
+<li> de passer par des "vraies" pages PHP (et pas une redirection) pour toutes les opérations qui traitent un résultat de formulaire.
+</ol>
+<p>
+Enfin au final, ça marche quand même, mais, si on peut me pardonner l'expression, j'en ai chié.
+</p>
+<p>
+Et à ceux qui me diront que j'aurais pu faire un milliard de fois plus simple avec mod_rewrite et une simple réécriture d'URL, je réponds par avance "oui je suis au courant mais je ne PEUX PAS accéder au httpd.conf du serveur sur lequel j'héberge mes pages". Point final.
+</p>
+<h3>
+Cron sans cron
+</h3>
+<p>
+Certains appeleront ça de la bidouille, d'autres de l'astuce.
+</p>
+<p>
+Pour faire tourner des programmes à intervalle régulier (ce qui normalement
+se fait avec cron mais encore une fois je n'ai pas la main sur le serveur...),
+la technique consiste donc à vérifier à chaque génération de page la
+date d'un fichier sur le filesystem, et lancer les opérations si le
+fichier est suffisamment ancien. Il suffit ensuite de changer la
+date du fichier et le tour est joué.
+</p>
+<p>
+Cette ruse primaire est utilisée pour vider le cache régulièrement.
+</p>
+<h3>
+Domaine d'authentification par regex
+</h3>
+<p>
+Comment donner des droits à tel utilisateur sur telle ou telle zone du site sans 
+tomber dans l'infernale complexité des modèles relationnels, lorsqu'on a juste
+4 utilisateurs et 3 pauvres droits à donner?
+</p>
+<p>
+La solution que j'ai adoptée est d'utiliser les expressions rationnelles. Si
+une URL "matche" la regex associé à un utilisateur, alors cet utilisateur
+a le droit de modifier le contenu correspondant.
+</p>
+<p>
+D'autant plus simple à code que PHP aussi bien que MySQL savent traiter
+les expressions rationnelles de manière simple et sans module additionnel.
+</p>
+<h3>
+Insertion de code PHP via /_external
+</h3>
+<p>
+Idée toute simple mais très pratique: lorsqu'une page est affichée
+UWiKiCMS va automatiquement voir si la page /_external/chemin/complet/de/la/page.php n'existerait pas par hasard sur le système de fichier.
+</p>
+<p>
+Ca permet de spécialiser comme on le désire certaines pages, tout en évitant
+de monter une "usine à gaz". Temps d'implémentation: quelques heures. Services rendus: énormes car ça m'a évité d'avoir à "rentrer" dans UWiKiCMS des fonctionnalités ésotériques dont j'ai besoin pour certaines pages mais qui n'ont rien à faire dans du code générique.
+</p>
+</div>
+  </div>
+
+  <div id="block4">
+
+  <div id="actions" class="box admin">
+  <ul>
+         
+    <li><a href="/?lang=fr">Accueil</a></li>
+	
+    <li>
+  <a href="/uwikicms/doc/design?lang=fr&amp;action=loginform">Se connecter</a>
+</li>
+  </ul>
+  </div>
+
+  </div>
+
+  <div id="block5">
+
+  <div id="infos" class="box system">
+    <div id="credits">
+    Page g&eacute;n&eacute;r&eacute;e par <a href="http://www.ufoot.org/uwikicms">UWiKiCMS</a> 1.0.9 le mercredi 21 décembre 2005.    </div>
+        <div id="rights">
+    Copyright &copy; 2005 <a href="mailto:ufoot@ufoot.org">Christian Mauduit</a>. Document plac&eacute; sous licence <a href="http://www.gnu.org/copyleft/fdl.html">GNU FDL</a>.    </div>
+            <div id="lastupdate">
+    Mis &agrave; jour le dimanche 05 juin 2005.    </div>
+            <div id="absoluteurl">
+      Source&nbsp;:      <a href="http://www.ufoot.org/uwikicms/doc/design?lang=fr">http://www.ufoot.org/uwikicms/doc/design?lang=fr</a>
+    </div>
+      </div>
+
+  </div>
+
+  </body>
+</html>
+

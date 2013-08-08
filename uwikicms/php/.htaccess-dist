@@ -1,0 +1,3 @@
+#ErrorDocument 403 /uwikicms/_uwikicms/403.php
+ErrorDocument 404 /uwikicms/_uwikicms/404.php
+

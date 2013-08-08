@@ -1,0 +1,167 @@
+
+2013-01-10 : Christian Mauduit <ufoot@ufoot.org>
+	* Added whitetweed theme for ultra.
+	* Fixed by reference calls to be compliant with recent 5.x versions of PHP
+
+2012-03-03 : Christian Mauduit <ufoot@ufoot.org>
+	* Added Barclay theme for ultra.
+
+2009-12-12 : Christian Mauduit <ufoot@ufoot.org>
+	* Vap fonts are no more cursive.
+
+2009-10-19 : Christian Mauduit <ufoot@ufoot.org>
+	* Added deca.ufoot.org draft theme.
+
+2007-09-29 : Christian Mauduit <ufoot@ufoot.org>
+	* Added with/without CSS toggle mode.
+
+2007-09-27 : Christian Mauduit <ufoot@ufoot.org>
+	* Removed PHP warnings (undefined constants)
+
+2007-05-22 : Christian Mauduit <ufoot@ufoot.org>
+	* Reorganized ufoot.org sites
+	* Description == Home title
+
+2007-03-08 : Christian Mauduit <ufoot@ufoot.org>
+	* Added garance style.
+
+2007-01-10 : Christian Mauduit <ufoot@ufoot.org>
+	* Copyright 2005, 2006 -> 2005, 2006, 2007
+	* Added empty QuoiQu'euX theme for upcoming www.quoiqueux.org
+
+2006-02-04 : Christian Mauduit <ufoot@ufoot.org>
+	* Copyright 2005 -> 2005, 2006
+	* Added new moto theme for moto.ufoot.org
+	* Replaced test.streets by localhost in test URLs.
+
+2005-12-21 : Christian Mauduit <ufoot@ufoot.org>
+	* Released 1.0.9.
+
+2005-12-11 : Christian Mauduit <ufoot@ufoot.org>
+	* Moved Arch depot to Savannah.
+	* Updated docs.
+
+2005-12-04 : Christian Mauduit <ufoot@ufoot.org>
+	* Fixed custom styles for h4 h5 h6
+
+2005-12-03 : Christian Mauduit <ufoot@ufoot.org>
+	* Updated docs, and minor change in the footer copyright notice.
+	* Added GNU FDL + README for misc/images (copyright notice)
+
+2005-12-01 : Christian Mauduit <ufoot@ufoot.org>
+	* Updated copyright notices.
+
+2005-11-24 : Christian Mauduit <ufoot@ufoot.org>
+	* Released 1.0.8.
+	* FS#36 (implemented) Google search
+	* FS#35 (fixed) Image border invisible on Konqueror
+	* FS#35 (fixed) Image border invisible on Konqueror
+	* FS#13 (implemented) Install script for ufoot.org
+
+2005-11-23 : Christian Mauduit <ufoot@ufoot.org>
+	* FS#34 Free input field on "all on one page".
+	* FS#12 Added theme for blog.
+	* FS#33 Added theme for Valerie.
+
+2005-11-18 : Christian Mauduit <ufoot@ufoot.org>
+	* Added images for upcoming blog theme.
+
+2005-11-17 : Christian Mauduit <ufoot@ufoot.org>
+	* Released 1.0.7.
+	* Implemented FS#31 Add direct link to help
+	* Fixed FS#14 Right/next button ALT is "No Title"
+	* Implemented FS#11 : Page order by step of 10.
+	* Rewrote UFO theme.
+
+2005-10-26 : Christian Mauduit <ufoot@ufoot.org>
+	* Added plus and minus icons (for pygpsweb in fact)
+
+2005-09-28 : Christian Mauduit <ufoot@ufoot.org>
+	* Released 1.0.6.
+	* Redirection with session=XYZ when password is in URL.
+	* Released 1.0.5.
+	* Code cleanup.
+	* Changed the logout process (cosmetic).
+	* login screen removed, directly on view page after login.
+
+2005-09-27 : Christian Mauduit <ufoot@ufoot.org>
+	* There's now a size limit when viewing images in html and xul gallery.
+
+2005-09-23 : Christian Mauduit <ufoot@ufoot.org>
+	* Released 1.0.4.
+	* Version is now displayed at bottom of pages
+	* Implemented next/prev xul buttons, plus xul breadcrumbs
+
+2005-09-22 : Christian Mauduit <ufoot@ufoot.org>
+	* Released 1.0.3.
+	* XUL image gallery completed.
+	
+2005-09-21 : Christian Mauduit <ufoot@ufoot.org>
+	* Started to implement XUL image gallery.
+
+2005-09-20 : Christian Mauduit <ufoot@ufoot.org>
+	* Fixed bug which caused "subimages" to be creatable.
+	* Inline images [img:123] now automatically separated from the rest.
+	
+2005-09-07 : Christian Mauduit <ufoot@ufoot.org>
+	* Added example external script which clears database.
+	* Changed the way images are inlined for better XHTML 1.0 conformance.
+
+2005-06-15 : Christian Mauduit <ufoot@ufoot.org>
+	* Minor XHTML fix: added double quotes arround some images sizes
+
+2005-06-13 : Christian Mauduit <ufoot@ufoot.org>
+	* Released 1.0.2.
+	* Updated the docs (added install in English).
+	* Updated session lifetime from 1 to 3 hours
+	* Changed external include code to offer $page object in included pages
+
+2005-06-05 : Christian Mauduit <ufoot@ufoot.org>
+	* Released 1.0.1.
+	* Added documentation (mostly in French)
+
+2005-05-31 : Christian Mauduit <ufoot@ufoot.org>
+	* Action "all in one" available in external mode.
+	* Cache now distinguishes default and i18n enforced pages.
+	* Image binaries are now retrieved from proper locations.
+	* Minor fix concerning page footer.
+
+2005-05-31 : Christian Mauduit <ufoot@ufoot.org>
+	* Removed htprefix=/uwikicms in ufoot.org setup
+	* After many changes not referenced here, finally released 1.0.0
+
+2005-04-18 : Christian Mauduit <ufoot@ufoot.org>
+	* Imported in new version (mainline 0.2) because of a servre crash.
+
+2005-04-16 : Christian Mauduit <ufoot@ufoot.org>
+	* Removed unused code (restructured text).
+	* Fixed some path & continue_url issues.
+	* Re-major change, used Horde Cipher instead of Mcrypt.
+	* Major change, switched from HTTP based login to session stuff.
+	
+2005-04-15 : Christian Mauduit <ufoot@ufoot.org>
+	* Site map / treeview more user friendly.
+	* Added an input field to create new pages.
+	* Finally fixed the ./configure script.
+	
+2005-04-14 : Christian Mauduit <ufoot@ufoot.org>
+	* Prepared empty image related templates.
+	* Heavy CSS work.
+
+2005-04-13 : Christian Mauduit <ufoot@ufoot.org>
+	* Fixed URL at bottom of the page.
+	* Better CSS hierarchy, different links colors handled.
+
+2005-04-12 : Christian Mauduit <ufoot@ufoot.org>
+	* Added a subdir level to handle different look and feels (css/images)
+
+2005-04-11 : Christian Mauduit <ufoot@ufoot.org>
+	* Work on CSS.
+	* Splitted css file.
+	* Changed files attributes/rights.
+
+2005-04-10 : Christian Mauduit <ufoot@ufoot.org>
+	* PHPWiki parsing is enabled, works but for images/links.
+	* Added code from PHPWiki 1.2.8.
+	* Debug RST parser implemented.
+

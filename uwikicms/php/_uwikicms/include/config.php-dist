@@ -1,0 +1,68 @@
+<?
+/*
+ UWiKiCMS is a lightweight web content management system.
+ Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of
+ the License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public
+ License along with this program; if not, write to the Free
+ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,
+ MA  02110-1301  USA
+*/
+
+error_reporting(E_ALL ^ E_NOTICE); // setup by ./configure
+
+class UWC_Config {
+  var $version = "1.1.0alpha7";
+
+  var $siteurl = "http://test.streets:8080"; // setup by ./configure
+  var $htprefix = "/uwikicms"; // setup by ./configure
+  var $dbprefix = ""; // setup by ./configure
+  var $dbhost = "localhost"; // setup by ./configure
+  var $dbname = "sql_ufoot_org"; // setup by ./configure
+  var $dbuser = "ufoot"; // setup by ./configure
+  var $dbpasswd = "ufoot"; // setup by ./configure
+
+  var $mcrypt_key = "b581a06a699556a967a1cc479d3d9f67"; // setup by ./configure
+  var $mcrypt_iv = "648f869164338df2"; // setup by ./configure
+
+  var $prefix = "/"; // updated when object is constructed
+
+  // Change these folders to customize the look'n'feel.
+  var $images_dir = "/_uwikicms/template/images/default"; // setup by ./configure
+  var $css_dir = "/_uwikicms/template/css/default"; // setup by ./configure
+
+  // This name will appear at the bottom of each public page.
+  var $copyright_holder = "Christian Mauduit"; // setup by ./configure
+
+  var $session_lifetime = 10800; // 3 hours by default
+
+  var $cache_time = 21600; // 6*3600, 6 hours by default
+  var $cache_minsize = 1000; // 1k by default	
+  var $cache_maxsize = 100000; // 100k by default	
+  var $nocache_regex = "/(metaserver|start)\$/"; // pages matching this won't be cached
+
+  var $debug = true; // setup by ./configure
+
+  var $arrow_width=16; // icon size
+  var $arrow_height=16; // icon size
+  var $lang_width=24; // icon size
+  var $lang_height=16; // icon size
+
+  var $control_focus=""; // free HTML on top of "control" box
+  var $actions_focus=""; // free HTML on top of "actions" box
+
+  function UWC_Config() {
+    $this->prefix = dirname(__FILE__) . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "..";
+  }
+}
+?>

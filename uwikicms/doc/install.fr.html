@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Language" content="fr" />
+    <title>Installation</title>
+    <meta name="Author" content="U-Foot" />
+    <meta name="Description" content="Installation (pas de description d&eacute;taill&eacute;e)" />
+    <meta name="Keywords" content="U-Foot, Christian Mauduit, www.ufoot.org, UWiKiCMS, Documentation, Installation" />
+    <meta name="Copyright" content="Copyleft &copy; 2005, 2006, 2007 Christian Mauduit" />
+    <meta name="Generator" content="UWiKiCMS" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/_uwikicms/template/css/ufoot/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/_uwikicms/template/css/ufoot/layout.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="/_uwikicms/template/css/ufoot/print.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+
+    <div id="block1">
+
+    <div id="title" class="default">
+    <h1>Installation</h1>
+    </div>
+
+    </div>
+
+    <div id="block2">
+
+    <div id="control" class="box menu">
+
+        <div id="nav">
+    <span class="textmode"> [ </span>
+
+        <a href="/?lang=fr"><img src="/_uwikicms/template/images/default/home.png" width="16" height="16" alt="Accueil&nbsp;: www.ufoot.org" title="www.ufoot.org" class="msiehackbox" /></a>
+    
+    
+        <span class="textmode"> | </span><a href="/uwikicms/doc?lang=fr"><img src="/_uwikicms/template/images/default/arrow_up.png" width="16" height="16" alt="Parent&nbsp;: Documentation" title="Documentation" class="msiehackbox" /></a>
+    
+        <span class="textmode"> | </span><a href="/uwikicms/doc/features?lang=fr"><img src="/_uwikicms/template/images/default/arrow_right.png" width="16" height="16" alt="Suivant&nbsp;: Fonctionnalit&eacute;s" title="Fonctionnalit&eacute;s" class="msiehackbox" /></a>
+    
+    <span class="textmode"> ] </span>
+    </div>
+    
+        
+    <div id="langs">
+    <span class="textmode"> [ </span>
+          <a href="/uwikicms/doc/install?lang=en"><img src="/_uwikicms/template/images/default/flag_en.png" width="24" height="16" alt="English" title="English" class="msiehackbox" /></a>
+        <span class="textmode"> ] </span>
+    </div>
+    
+        <div id="parents">
+        <a href="/?lang=fr">
+www.ufoot.org    </a> &gt; 
+        <a href="/uwikicms?lang=fr">
+UWiKiCMS    </a> &gt; 
+        <a href="/uwikicms/doc?lang=fr">
+Documentation    </a> &gt; 
+        Installation    </div>
+    
+    
+        <div id="google">
+       <form action="http://www.google.fr/search" method="get" id="google_form">
+       <p>
+	    <input type="hidden" id="google_ie" name="ie" value="latin1" />
+	    <input type="hidden" id="google_as_dt" name="as_dt" value="i" />
+	    <input type="hidden" id="google_as_sitesearch" name="as_sitesearch" value="www.ufoot.org" />
+	    <input type="text" size="16" maxlength="192" id="google_q" name="q" />
+	    <input type="submit" id="google_search" name="search" value="Recherche Google" />
+       </p>
+        </form>
+    </div> 
+    
+    </div>
+
+    </div>
+
+    <div id="block3"><div id="content" class="status0">
+<h2>
+Prérequis
+</h2>
+<p>
+Installer UWiKiCMS nécessite impérativement de disposer d'un serveur Apache 1.3 / PHP 4.3 et d'une base MySQL 3.23. Ces versions sont les versions minimales nécessaires, il est possible et vraisemblable que cela fonctionne avec des versions plus récentes (Apache 2, PHP 5, MySQL 4), mais ceci n'a pas été réellement testé.
+</p>
+<p>
+L'installation par défaut suppose que le serveur Apache prend en compte les fichiers .htaccess placé dans le DocumentRoot, et que la directive ErrorDocument y est acceptée.
+</p>
+<p>
+Un accès <a href="http://www.phpmyadmin.net/home_page/index.php">PhpMyAdmin</a> ou à défaut une bonne habitude à manier les requêtes SQL "à la main" sont un plus appréciable, car certaines opérations nécessitent des manipulations directement en base de données.
+</p>
+<p>
+Le script de configuration ne fonctionne qu'en environnement UNIX, ceci risque de ne pas être pratique pour les utilisateurs Windows. Réponse au lance-pierre: le jour où Windows disposera d'un système de script digne de ce nom on pourra peut-être trouver une solution, en attendant Cygwin et GNU/Linux sont tes amis.
+</p>
+<h2>
+Téléchargement
+</h2>
+<p>
+Les versions officielles d'UWiKiCMS sont disponibles sur:
+</p>
+<ul>
+<li> <a href="http://www.ufoot.org/uwikicms/download">http://www.ufoot.org/uwikicms/download</a>
+<li> <a href="http://download.savannah.nongnu.org/releases/uwikicms/">http://download.savannah.nongnu.org/releases/uwikicms/</a>
+</ul>
+<p>
+Il n'y a pas de serveur CVS pour UWiKiCMS,
+mais il est aussi possible d'accéder à un dépôt
+<a href="http://www.gnu.org/software/gnu-arch/">GNU Arch</a> sur
+<a href="http://arch.sv.gnu.org/archives/uwikicms/">http://arch.sv.gnu.org/archives/uwikicms/</a> .
+Pour récupérer la dernière version de développement,
+utiliser des commandes du type:
+</p>
+<pre>
+ tla register-archive <a href="http://arch.sv.gnu.org/archives/uwikicms/">http://arch.sv.gnu.org/archives/uwikicms/</a>
+ tla get -A uwikicms@sv.gnu.org uwikicms--stable
+</pre>
+<h2>
+Procédure d'installation
+</h2>
+<h3>
+Code PHP
+</h3>
+<p>
+Le script ./configure appelle ./configure.php. Pour s'exécuter ce script php doit être disponible en ligne de commande dans /usr/bin ou équivalent (package php4-cli sous Debian par exemple).
+</p>
+<p>
+./configure.php se contente en fait de:
+</p>
+<ul>
+<li> copier les fichiers .htaccess-dist en .htaccess
+<li> copier les fichiers config.php-dist en config.php
+<li> modifier ces fichiers à la volée si nécessaire
+</ul>
+<p>
+Donc si le script de fonctionne pas, pas de panique, il suffit de copier les fichiers "avec le -dist" dans des fichiers "sans le -dist", et de les éditer à la main.
+</p>
+<p>
+./configure accepte des options du type --key="value", voir les différents scripts dans le répertoire ./misc, que j'utilise pour paramétrer mes sites et qui sont AMHA d'excellents exemples. Copiez un de ces scripts et modifiez-le, l'avantage de cette technique est que comme ces scripts sont régulièrement exécutés et utilisés par moi, ils sont à jour, à l'inverse de toute documentation 8-)
+</p>
+<p>
+Les options acceptées sont:
+</p>
+<ul>
+<li> --siteurl=... : le protocole (http ou https) + le nom de domaine, par exemple <a href="http://www.ufoot.org">http://www.ufoot.org</a> .
+<li> --htprefix=... : le chemin racine du site UWiKiCMS, sans le nom de domaine, par exemple si la cible est <a href="http://www.ufoot.org/uwikicms">http://www.ufoot.org/uwikicms</a>, utiliser --htprefix=/uwikicms
+<li> --dbprefix=... : permet de gérer des sous-sites. Typiquement j'utilise cela pour faire en sorte que <a href="http://ufo.ufoot.org">http://ufo.ufoot.org</a> corresponde à <a href="http://www.ufoot.org/perso/ufo">http://www.ufoot.org/perso/ufo</a> . Dans ce cas on paramètre --dbprefix=/perso/ufo pour que le site spécialisé n'affiche qu'une sous-arborescence du site complet.
+<li> --dbhost=... : le nom du serveur de base de données (nom de machine au sens DNS)
+<li> --dbname=... : le nom de la base MySQL
+<li> --dbuser=... : l'utilisateur pour se connecter à MySQL
+<li> --dbpasswd=... : le mot de passe pour se connecter à MySQL
+<li> --images_dir=... : le chemin pour accéder aux différents boutons et autres fonds d'écrans, par défaut "/_uwikicms/template/images/default" (permet de gérer les thèmes).
+<li> --css_dir=... : le chemin pour accéder aux CSS, par défaut "/_uwikicms/template/css/default" (idem, permet de gérer les thèmes).
+<li> --copyright_holder=... : un nom de personne qui sera utilisé dans les copyrights (copyleft!) par défaut.
+<li> --debug : active le mode "debug". Essentiellement PHP renvoie des messages d'erreur plus verbeux. C'est le mode par défaut.
+<li> --release : active le mode "release". Pas très pratique en test car PHP ne dit rien en cas d'erreur, mais pertinent en production.
+</ul>
+<p>
+Une fois la configuration effectuée, poser les fichiers sur le serveur PHP, via ftp par exemple.
+</p>
+<p>
+Noter qu'il y a un peu de magie noire dans UWiKiCMS, et qu'il est très important que le fichier .htaccess à la racine du site existe et contienne la bonne valeur au niveau de la directive ErrorDocument. Sinon rien ne marche.
+</p>
+<h3>
+ Base de données
+</h3>
+<p>
+UWiKiCMS ne dispose d'aucun moyen (type "back-office" par exemple) d'éditer la liste des utilisateurs du système. La raison fondamentale est que PhpMyAdmin fait AMHA ça aussi bien que n'importe quelle interface bancale que j'aurais pu bricoler. Dont acte.
+</p>
+<p>
+Donc il s'agit d'éditer le script ./sql/mysql.sql et:
+</p>
+<ul>
+<li> soit supprimer les lignes commençant par "INSERT INTO uwikicms_user..." et reporter le problème de la gestion des utilisateurs à plus tard.
+<li> soit modifier directement les lignes en question, en remplaçant par des valeurs qui vous conviennent. Ce sont essentiellement les mots de passe (les valeurs passées dans la fonction MD5) qu'il s'agit de modifier, car sinon n'importe qui pourra se loguer sur votre site en utilisant le couple user/passwd "admin/admin".
+</ul>
+<p>
+Passer ensuite ce script sur le serveur MySQL.
+</p>
+<p>
+Laisser le charme agir.
+</p>
+<h2>
+ Première connexion
+</h2>
+<p>
+Essayez d'accéder à l'URL du site, qui est en fait la concaténation de $siteurl et $htprefix (rappelez-vous, les valeurs passées à ./configure...)
+</p>
+<p>
+Normalement vous devriez avoir une erreur de type "Erreur 404", habillée à la sauce UWiKiCMS (vérifiez qu'UWiKiCMS est mentionné en bas de page par exemple). Cette erreur est normale, il n'y a pas encore de contenu dans votre site. Cliquez sur "Se connecter", une mire de login apparaît. Taper le couple user/passwd correspondant au profil administrateur (par défaut admin/admin, hautement sécurisé). "Continuer". Et normalement vous obtenez une page de création de document "Sans titre". Vous pouvez éditer ce document, ce sera la page d'accueil de votre site.
+</p>
+<p>
+Dernier test, essayez d'accéder à la page $siteurl$htprefix/titi/toto. Concrètement si votre site est installé sur "localhost/foo", essayez d'accéder à "localhost/foo/titi/toto". Si vous obtenez la même page que tout à l'heure (l'erreur 404 habillée "à la" UWiKiCMS), c'est gagné. Sinon, si vous avez la page d'erreur 404 par défaut d'Apache, il y a un problème avec le fichier "localhost/foo/.htaccess".
+</p>
+<p>
+Voilà, logiquement c'est terminé, à ce stade ça fonctionne.
+</p>
+<p>
+Suivez votre intuition, bidouillez sans lire le <a href="/uwikicms/doc/manual?lang=fr">manuel utilisateur</a>
+ (j'aurais fait pareil), UWiKiCMS est assez pauvre en fonctionnalités pour qu'on en fasse vite le tour.
+</p>
+<h2>
+Gestion des utilisateurs
+</h2>
+<h3>
+Pas de "back-office", pourquoi?
+</h3>
+<p>
+Simplement parce qu'en codant une interface "ajouter un utilisateur, le modifier, etc." j'aurais eu l'impression (et pour cause!) de réinventer la roue.
+</p>
+<p>
+D'autant que l'esprit d'UWiKiCMS, c'est deux ou trois contributeurs qui saisissent et c'est tout. UWiKiCMS met très peu l'accent sur le collaboratif et le multi-utilisateurs.
+</p>
+<p>
+Dans ce contexte manipuler les utilisateurs via PhpMyAdmin me paraît acceptable, voire préférable.
+</p>
+<h3>
+Structure de la table uwikicms_user
+</h3>
+<dl>
+<dt>user_id<dd>le login utilisé pour se connecter
+<dt>user_passwd<dd>le mot de passe associé, crypté via l'algrithme md5
+<dt>user_label<dd>le libellé de l'utilisateur (prénom + nom par exemple)
+<dt>user_copyright_holder<dd>le détenteur du copyright des contenus saisis par cet utilisateur. Noter qu'UWiKiCMS fait apparaître en bas de chaque page un message qui dit en substance que le document est "copylefté" (via la GNU FDL) et que le copyright appartient donc à ce fameux "copyright holder". Pour changer ce comportement, il faut modifier le code, ce qui est évidemment parfaitement autorisé et possible.
+<dt>user_email<dd>l'email de l'utilisateur, il n'est pas nécessaire de le préciser, surtout si on veut éviter de recevoir 500 tonnes de spam, car cet email apparaîtra en bas de chaque page saisie
+<dt>user_status<dd>le statut de l'utilisateur, entre 0 et 3. 
+<dt>user_domain_regex<dd>pour les contributeurs de statut 2, définit les zones qu'ils peuvent éditer
+</dl>
+<p>
+La signification du champ user_status est la suivante:
+</p>
+<dl>
+<dt>"0"<dd>anonyme, créer un tel utilisateur n'a pas de sens
+<dt>"1"<dd>visiteur, invité. Ce type d'utilisateur ne peut pas saisir de contenu, mais il peut lire tous les documents "protégés par un mot de passe". Typiquement je me sers de ce profil pour donner accès à des informations dont je ne veux pas qu'elles soient lues par n'importe qui ni n'importe quel robot d'indexation, mais qui n'ont pas un caractère privé très fort. Si quelqu'un arrivait à trouver le mot de passe sans que je sois au courant, ce n'est pas très grave.
+<dt>"2"<dd>contributeur. Ces utilisateurs peuvent saisir du contenu. Il est possible de restreindre la zone sur laquelle ils peuvent éditer grâce à une regex (expression rationnelle). Par exemple pour limiter l'édition à la zone toto, la regex "/toto" convient.
+<dt>"3"<dd>administrateur. A le droit de tout faire. Peut entre autres saisir du contenu "confidentiel", que personne hormis un administrateur ne peut lire.
+</dl>
+<h3>
+Exemples pratiques
+</h3>
+<p>
+Voici quelques requêtes SQL qui permettent de manipuler des utilisateurs.
+</p>
+<p>
+Création d'un contributeur:
+</p>
+<pre>
+ INSERT INTO uwikicms_user 
+ (user_id, user_passwd, user_label, user_copyright_holder, user_email, user_status, user_domain_regex)
+ VALUES ('toto',MD5('0+0=0'),'Mr Toto','Toto','toto@ufoot.org',2,'/toto');
+</pre>
+<p>
+Changement de mot de passe:
+</p>
+<pre>
+ UPDATE uwikicms_user 
+ SET user_passwd=MD5('lateteatoto') 
+ WHERE user_id='toto';
+ 
+</pre>
+<p>
+Suppression d'un utilisateur:
+</p>
+<pre>
+ DELETE FROM uwikicms_user
+ WHERE user_id='toto';
+</pre>
+</div>
+  </div>
+
+  <div id="block4">
+
+  <div id="actions" class="box admin">
+  <ul>
+         
+    <li><a href="/?lang=fr">Accueil</a></li>
+	
+    <li>
+  <a href="/uwikicms/doc/install?lang=fr&amp;action=loginform">Se connecter</a>
+</li>
+  </ul>
+  </div>
+
+  </div>
+
+  <div id="block5">
+
+  <div id="infos" class="box system">
+    <div id="credits">
+    Page g&eacute;n&eacute;r&eacute;e par <a href="http://www.ufoot.org/uwikicms">UWiKiCMS</a> 1.0.9 le mercredi 21 décembre 2005.    </div>
+        <div id="rights">
+    Copyright &copy; 2005 <a href="mailto:ufoot@ufoot.org">Christian Mauduit</a>. Document plac&eacute; sous licence <a href="http://www.gnu.org/copyleft/fdl.html">GNU FDL</a>.    </div>
+            <div id="lastupdate">
+    Mis &agrave; jour le mercredi 21 décembre 2005.    </div>
+            <div id="absoluteurl">
+      Source&nbsp;:      <a href="http://www.ufoot.org/uwikicms/doc/install?lang=fr">http://www.ufoot.org/uwikicms/doc/install?lang=fr</a>
+    </div>
+      </div>
+
+  </div>
+
+  </body>
+</html>
+
