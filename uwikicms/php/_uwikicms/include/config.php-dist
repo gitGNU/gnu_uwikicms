@@ -20,7 +20,7 @@
 */
 
 error_reporting(E_ALL ^ E_NOTICE); // setup by ./configure
-include "version.php"
+include "version.php";
 
 class UWC_Config {
   var $version = UWC_VERSION;

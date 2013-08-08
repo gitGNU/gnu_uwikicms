@@ -1,4 +1,6 @@
 2013-08-08 : Christian Mauduit <ufoot@ufoot.org>
+	* Fixed accent conversion bug (htmlentities was defaulting to UTF-8).
+	* Added version.php file separated from config.php.
 	* Using long explicit <?php tags to mark PHP code.
 
 2013-01-10 : Christian Mauduit <ufoot@ufoot.org>

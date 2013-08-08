@@ -690,7 +690,7 @@ class UWC_Page {
   }
 
   function make_url($path,$params=false) {
-    return htmlentities($this->make_url_no_esc($path,$params));
+    return htmlentities($this->make_url_no_esc($path,$params),ENT_COMPAT|ENT_XHTML,"ISO-8859-15");
   }
 
   function make_img_link($image_id,$linkname) { 
