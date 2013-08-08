@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  UWiKiCMS is a lightweight web content management system.
  Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
@@ -19,30 +19,30 @@
  MA  02110-1301  USA
 */
 ?>
-<form method="post" action="<? echo $this->get_create_url(); ?>">
+<form method="post" action="<?php echo $this->get_create_url(); ?>">
 
-<div id="edit"  class="<? echo $this->get_status_style(); ?>">
-<input type="hidden" name="path" value="<? echo $this->get_path(); ?>" />
+<div id="edit"  class="<?php echo $this->get_status_style(); ?>">
+<input type="hidden" name="path" value="<?php echo $this->get_path(); ?>" />
 <dl>
-<dt><? echo $this->translate("title"); ?></dt>
-<dd><input type="text" size="<? echo $this->get_input_width1(); ?>" maxlength="255" name="title" value="" class="edit" /> </dd>
-<dt><? echo $this->translate("text"); ?></dt>
-<dd><textarea cols="<? echo $this->get_input_width2(); ?>" rows="<? echo $this->get_input_height2(); ?>" name="text"></textarea></dd>
-<dt><? echo $this->translate("status"); ?></dt>
+<dt><?php echo $this->translate("title"); ?></dt>
+<dd><input type="text" size="<?php echo $this->get_input_width1(); ?>" maxlength="255" name="title" value="" class="edit" /> </dd>
+<dt><?php echo $this->translate("text"); ?></dt>
+<dd><textarea cols="<?php echo $this->get_input_width2(); ?>" rows="<?php echo $this->get_input_height2(); ?>" name="text"></textarea></dd>
+<dt><?php echo $this->translate("status"); ?></dt>
 <dd><select name="status">
-<? for ($i=0;$i<=$this->get_user_status();++$i) {
+<?php for ($i=0;$i<=$this->get_user_status();++$i) {
    if ($this->get_status()==$i) {
-     ?><option value="<? echo $i; ?>" selected="selected"><? echo $this->translate("status_".$i); ?></option>
-     <? } else {
-     ?><option value="<? echo $i; ?>"><? echo $this->translate("status_".$i); ?></option>
-     <? } 
+     ?><option value="<?php echo $i; ?>" selected="selected"><?php echo $this->translate("status_".$i); ?></option>
+     <?php } else {
+     ?><option value="<?php echo $i; ?>"><?php echo $this->translate("status_".$i); ?></option>
+     <?php } 
    } ?>
 </select></dd>
 </dl>
 </div>
 
 <div id="message" class="default">
-<input type="submit" name="submit" value="<? echo $this->translate("create"); ?>" class="button" />
+<input type="submit" name="submit" value="<?php echo $this->translate("create"); ?>" class="button" />
 </div>
 
 </form>

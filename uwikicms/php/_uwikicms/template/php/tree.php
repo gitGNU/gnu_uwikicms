@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  UWiKiCMS is a lightweight web content management system.
  Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
@@ -20,7 +20,7 @@
 */
 ?>
 <div id="tree" class="default">
-<?
+<?php
 function display_tree($tree,&$page) {
    //  if ($tree->get_path()!=$page->get_path()) {
     echo "<a href=\"";

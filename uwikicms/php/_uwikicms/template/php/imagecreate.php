@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  UWiKiCMS is a lightweight web content management system.
  Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
@@ -20,17 +20,17 @@
 */
 ?>
 <div id="message" class="default">
-<? echo $this->translate("image_created"); ?>.
+<?php echo $this->translate("image_created"); ?>.
 </div>
 
-<div id="content" class="<? echo $this->get_status_style(); ?>">
+<div id="content" class="<?php echo $this->get_status_style(); ?>">
 
 <div class="image">
-<a href="<? echo $this->get_image_full_url(); ?>"><img src="<? echo $this->get_image_preview_url(); ?>" width="<? echo $this->get_image_preview_w(); ?>" height="<? echo $this->get_image_preview_h(); ?>" alt="<? echo $this->get_legend_alt(); ?>" title="<? echo $this->translate4("filename_width_height_size",$this->get_image_filename(),$this->get_image_full_w(),$this->get_image_full_h(),$this->get_image_size()); ?>" class="msiehackimage" /></a>
+<a href="<?php echo $this->get_image_full_url(); ?>"><img src="<?php echo $this->get_image_preview_url(); ?>" width="<?php echo $this->get_image_preview_w(); ?>" height="<?php echo $this->get_image_preview_h(); ?>" alt="<?php echo $this->get_legend_alt(); ?>" title="<?php echo $this->translate4("filename_width_height_size",$this->get_image_filename(),$this->get_image_full_w(),$this->get_image_full_h(),$this->get_image_size()); ?>" class="msiehackimage" /></a>
 </div>
 
 <div>
-<? echo $this->get_legend_longdesc(); ?>
+<?php echo $this->get_legend_longdesc(); ?>
 </div>
 
 </div>

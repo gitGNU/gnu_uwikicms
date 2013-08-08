@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  UWiKiCMS is a lightweight web content management system.
  Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
@@ -20,11 +20,11 @@
 */
 ?>
 <div id="message" class="default">
-<? echo $this->translate("doc_created"); ?>.
+<?php echo $this->translate("doc_created"); ?>.
 </div>
 
-<div id="content" class="<? echo $this->get_status_style(); ?>">
-<? echo $this->get_text(); ?>
+<div id="content" class="<?php echo $this->get_status_style(); ?>">
+<?php echo $this->get_text(); ?>
 </div>
 
 

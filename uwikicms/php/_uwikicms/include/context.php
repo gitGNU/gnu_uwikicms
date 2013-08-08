@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  UWiKiCMS is a lightweight web content management system.
  Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>

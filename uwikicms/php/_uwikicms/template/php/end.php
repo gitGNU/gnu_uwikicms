@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  UWiKiCMS is a lightweight web content management system.
  Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
@@ -24,77 +24,77 @@
   <div id="block4">
   <div id="actions" class="box admin">
 
-    <? if ($this->need_actions_focus()) { ?>
-    <div id="actionsfocus"><? echo $this->get_actions_focus(); ?></div>
-    <? } ?>
+    <?php if ($this->need_actions_focus()) { ?>
+    <div id="actionsfocus"><?php echo $this->get_actions_focus(); ?></div>
+    <?php } ?>
 
   <div id="actionslist">
   <ul>
-  <? if ($this->need_action_help()) { ?>
-     <li><a href="<? echo $this->get_help_url(); ?>"><? echo $this->translate("action_help"); ?></a></li>
-  <? } ?>
-  <? if ($this->need_action_root()) { ?>     
-    <li><a href="<? echo $this->make_url(""); ?>"><? echo $this->translate("action_root"); ?></a></li>
-<? } ?>	
+  <?php if ($this->need_action_help()) { ?>
+     <li><a href="<?php echo $this->get_help_url(); ?>"><?php echo $this->translate("action_help"); ?></a></li>
+  <?php } ?>
+  <?php if ($this->need_action_root()) { ?>     
+    <li><a href="<?php echo $this->make_url(""); ?>"><?php echo $this->translate("action_root"); ?></a></li>
+<?php } ?>	
     <li>
-  <? if ($this->get_user_id()) { ?>
-  <a href="<? echo $this->get_logout_url(); ?>"><?
+  <?php if ($this->get_user_id()) { ?>
+  <a href="<?php echo $this->get_logout_url(); ?>"><?php
        echo sprintf($this->translate("action_logout"), $this->get_user_label()); 
        ?></a>
-<?
+<?php
    } else {
-     ?><a href="<? echo $this->get_loginform_url(); ?>"><?
+     ?><a href="<?php echo $this->get_loginform_url(); ?>"><?php
        echo $this->translate("action_login");
        ?></a>
-<? } ?>
+<?php } ?>
 </li>
-<? if ($this->need_action_view()) { ?>
-     <li><a href="<? echo $this->get_view_url(); ?>"><? echo $this->translate("action_view"); ?></a></li>
-<? } ?>
-<? if ($this->need_action_tree()) { ?>
-     <li><a href="<? echo $this->get_tree_url(); ?>"><? echo $this->translate("action_tree"); ?></a></li>
-<? } ?>
-<? if ($this->need_action_css_yes()) { ?>
-     <li><a href="<? echo $this->get_css_yes_url(); ?>"><? echo $this->translate("action_css_yes"); ?></a></li>
-<? } ?>
-<? if ($this->need_action_css_no()) { ?>
-     <li><a href="<? echo $this->get_css_no_url(); ?>"><? echo $this->translate("action_css_no"); ?></a></li>
-<? } ?>
-<? if ($this->need_action_gallery()) { ?>
-     <li><a href="<? echo $this->get_gallery_url(); ?>"><? echo $this->translate("action_gallery"); ?></a></li>
-<? } ?>
-<? if ($this->need_action_allinone()) { ?>
-     <li><a href="<? echo $this->get_allinoneform_url(); ?>"><? echo $this->translate("action_allinone"); ?></a></li>
-<? } ?>
-<? if ($this->need_action_update()) { ?>
-     <li><a href="<? echo $this->get_updateform_url(); ?>"><? echo $this->translate("action_update"); ?></a></li>
-<? } ?>
-<? if ($this->need_action_imagenew()) { ?>
-     <li><a href="<? echo $this->get_imagenew_url(); ?>"><? echo $this->translate("action_imagenew"); ?></a></li>
-<? } ?>
-<? if ($this->need_action_delete()) { ?>
-     <li><a href="<? echo $this->get_deleteform_url(); ?>"><? echo $this->translate("action_delete"); ?></a></li>
-<? } ?>
-<? if ($this->need_action_translate()) { ?>
-       <li><?echo $this->translate("translate");?>
-       <? $first=true; ?>
-     <? foreach ($this->get_untranslated() as $lang) { ?>
-       <? if (!$first) { echo " | "; } $first=false; ?>
-<a href="<? echo $this->get_translate_url($lang); ?>"><? echo $lang; ?></a>
-<? } ?>
+<?php if ($this->need_action_view()) { ?>
+     <li><a href="<?php echo $this->get_view_url(); ?>"><?php echo $this->translate("action_view"); ?></a></li>
+<?php } ?>
+<?php if ($this->need_action_tree()) { ?>
+     <li><a href="<?php echo $this->get_tree_url(); ?>"><?php echo $this->translate("action_tree"); ?></a></li>
+<?php } ?>
+<?php if ($this->need_action_css_yes()) { ?>
+     <li><a href="<?php echo $this->get_css_yes_url(); ?>"><?php echo $this->translate("action_css_yes"); ?></a></li>
+<?php } ?>
+<?php if ($this->need_action_css_no()) { ?>
+     <li><a href="<?php echo $this->get_css_no_url(); ?>"><?php echo $this->translate("action_css_no"); ?></a></li>
+<?php } ?>
+<?php if ($this->need_action_gallery()) { ?>
+     <li><a href="<?php echo $this->get_gallery_url(); ?>"><?php echo $this->translate("action_gallery"); ?></a></li>
+<?php } ?>
+<?php if ($this->need_action_allinone()) { ?>
+     <li><a href="<?php echo $this->get_allinoneform_url(); ?>"><?php echo $this->translate("action_allinone"); ?></a></li>
+<?php } ?>
+<?php if ($this->need_action_update()) { ?>
+     <li><a href="<?php echo $this->get_updateform_url(); ?>"><?php echo $this->translate("action_update"); ?></a></li>
+<?php } ?>
+<?php if ($this->need_action_imagenew()) { ?>
+     <li><a href="<?php echo $this->get_imagenew_url(); ?>"><?php echo $this->translate("action_imagenew"); ?></a></li>
+<?php } ?>
+<?php if ($this->need_action_delete()) { ?>
+     <li><a href="<?php echo $this->get_deleteform_url(); ?>"><?php echo $this->translate("action_delete"); ?></a></li>
+<?php } ?>
+<?php if ($this->need_action_translate()) { ?>
+       <li><?php echo $this->translate("translate");?>
+       <?php $first=true; ?>
+     <?php foreach ($this->get_untranslated() as $lang) { ?>
+       <?php if (!$first) { echo " | "; } $first=false; ?>
+<a href="<?php echo $this->get_translate_url($lang); ?>"><?php echo $lang; ?></a>
+<?php } ?>
        </li>
-<? } ?>
-<? if ($this->need_action_clearcache()) { ?>
-     <li><a href="<? echo $this->get_clearcacheform_url(); ?>"><? echo $this->translate("action_clearcache"); ?></a></li>
-<? } ?>
+<?php } ?>
+<?php if ($this->need_action_clearcache()) { ?>
+     <li><a href="<?php echo $this->get_clearcacheform_url(); ?>"><?php echo $this->translate("action_clearcache"); ?></a></li>
+<?php } ?>
   </ul>
-<? if ($this->need_action_new()) { ?>
-  <form method="post" action="<? echo $this->get_new_url(); ?>">
-  <input type="hidden" name="path" value="<? echo $this->get_path(); ?>" />
+<?php if ($this->need_action_new()) { ?>
+  <form method="post" action="<?php echo $this->get_new_url(); ?>">
+  <input type="hidden" name="path" value="<?php echo $this->get_path(); ?>" />
   <input type="text" name="page" size="8" maxlength="32" value="" class="edit" />
-  <input type="submit" name="submit" value="<? echo $this->translate("action_new"); ?>" class="button" />
+  <input type="submit" name="submit" value="<?php echo $this->translate("action_new"); ?>" class="button" />
   </form>
-<? } ?>
+<?php } ?>
   </div>
   </div>
 
@@ -104,24 +104,24 @@
 
   <div id="infos" class="box system">
     <div id="credits">
-    <? echo $this->translate2("page_generated_by_uwikicms", $this->conf->version,$this->today()); ?>
+    <?php echo $this->translate2("page_generated_by_uwikicms", $this->conf->version,$this->today()); ?>
     </div>
-    <? if ($this->need_rights()) { ?>
+    <?php if ($this->need_rights()) { ?>
     <div id="rights">
-    <? echo $this->get_rights(); ?>
+    <?php echo $this->get_rights(); ?>
     </div>
-    <? } ?>
-    <? if ($this->need_last_update()) { ?>
+    <?php } ?>
+    <?php if ($this->need_last_update()) { ?>
     <div id="lastupdate">
-    <? echo $this->get_last_update(); ?>
+    <?php echo $this->get_last_update(); ?>
     </div>
-    <? } ?>
-    <? if ($this->need_absolute_url()) { ?>
+    <?php } ?>
+    <?php if ($this->need_absolute_url()) { ?>
     <div id="absoluteurl">
-      <? echo $this->translate("source"); ?>
-      <a href="<? echo $this->get_absolute_url(); ?>"><? echo $this->get_absolute_url_clean(); ?></a>
+      <?php echo $this->translate("source"); ?>
+      <a href="<?php echo $this->get_absolute_url(); ?>"><?php echo $this->get_absolute_url_clean(); ?></a>
     </div>
-    <? } ?>
+    <?php } ?>
   </div>
 
   </div>

@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  UWiKiCMS is a lightweight web content management system.
  Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
@@ -19,16 +19,16 @@
  MA  02110-1301  USA
 */
 ?>
-<form method="post" action="<? echo $this->get_clearcache_url(); ?>">
+<form method="post" action="<?php echo $this->get_clearcache_url(); ?>">
 
 <div id="message" class="default">
 <div>
-<? echo $this->translate("confirm_clear_cache"); ?>
+<?php echo $this->translate("confirm_clear_cache"); ?>
 </div>
 
 <div>
-<input type="hidden" name="path" value="<? echo $this->get_path(); ?>" />
-<input type="submit" name="submit" value="<? echo $this->translate("clear_cache"); ?>" class="button" />
+<input type="hidden" name="path" value="<?php echo $this->get_path(); ?>" />
+<input type="submit" name="submit" value="<?php echo $this->translate("clear_cache"); ?>" class="button" />
 </div>
 </div>
 

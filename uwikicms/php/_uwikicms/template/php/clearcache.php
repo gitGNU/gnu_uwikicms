@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  UWiKiCMS is a lightweight web content management system.
  Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
@@ -21,12 +21,12 @@
 ?>
 <div id="message" class="default">
 <div>
-<? echo $this->translate("cache_cleared"); ?>.
+<?php echo $this->translate("cache_cleared"); ?>.
 </div>
 
-<? if ($this->need_continue_url()) { ?>
+<?php if ($this->need_continue_url()) { ?>
 <div>
-     <a href="<? echo $this->make_url($this->get_continue_url()); ?>"><? echo $this->translate("continue"); ?></a>
+     <a href="<?php echo $this->make_url($this->get_continue_url()); ?>"><?php echo $this->translate("continue"); ?></a>
 </div>
-<? } ?>
+<?php } ?>
 </div>

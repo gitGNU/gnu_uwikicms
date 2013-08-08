@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  UWiKiCMS is a lightweight web content management system.
  Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
@@ -19,21 +19,21 @@
  MA  02110-1301  USA
 */
 ?>
-<form method="post" action="<? echo $this->get_login_url(); ?>">
+<form method="post" action="<?php echo $this->get_login_url(); ?>">
 
 <div id="message" class="default">
 <div>
 <dl>
-<dt><? echo $this->translate("login_user"); ?></dt>
+<dt><?php echo $this->translate("login_user"); ?></dt>
 <dd><input type="text" size="15" maxlength="15" name="login" value="" class="edit" /> </dd>
-<dt><? echo $this->translate("login_password"); ?></dt>
+<dt><?php echo $this->translate("login_password"); ?></dt>
 <dd><input type="password" size="15" maxlength="15" name="password" value="" class="edit" /> </dd>
 </dl>
 </div>
 
 <div>
-<input type="hidden" name="path" value="<? echo $this->get_path(); ?>" />
-<input type="submit" name="submit" value="<? echo $this->translate("login_connect"); ?>" class="button" />
+<input type="hidden" name="path" value="<?php echo $this->get_path(); ?>" />
+<input type="submit" name="submit" value="<?php echo $this->translate("login_connect"); ?>" class="button" />
 </div>
 </div>
 

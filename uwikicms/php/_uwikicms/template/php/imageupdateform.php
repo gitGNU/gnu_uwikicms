@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  UWiKiCMS is a lightweight web content management system.
  Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
@@ -19,28 +19,28 @@
  MA  02110-1301  USA
 */
 ?>
-<form method="post" action="<? echo $this->get_imageupdate_url(); ?>" enctype="multipart/form-data">
+<form method="post" action="<?php echo $this->get_imageupdate_url(); ?>" enctype="multipart/form-data">
 
-<div id="edit" class="<? echo $this->get_status_style(); ?>">
-<input type="hidden" name="path" value="<? echo $this->get_path(); ?>" />
+<div id="edit" class="<?php echo $this->get_status_style(); ?>">
+<input type="hidden" name="path" value="<?php echo $this->get_path(); ?>" />
 <dl>
-<dt><? echo $this->translate("alt"); ?></dt>
-<dd><input type="text" size="<? echo $this->get_input_width1(); ?>" maxlength="255" name="alt" value="<? echo $this->get_legend_alt(); ?>" class="edit" /> </dd>
-<dt><? echo $this->translate("longdesc"); ?></dt>
-<dd><textarea cols="<? echo $this->get_input_width1(); ?>" rows="<? echo $this->get_input_height1(); ?>" name="longdesc"><? echo $this->get_legend_longdesc(); ?></textarea></dd>
-<dt><? echo $this->translate("imagefile"); ?></dt>
-<dd><input type="file" size="<? echo $this->get_input_width1(); ?>" name="imagefile" value="" class="button" /> </dd>
-<dt><? echo $this->translate("current_image"); ?></dt>
+<dt><?php echo $this->translate("alt"); ?></dt>
+<dd><input type="text" size="<?php echo $this->get_input_width1(); ?>" maxlength="255" name="alt" value="<?php echo $this->get_legend_alt(); ?>" class="edit" /> </dd>
+<dt><?php echo $this->translate("longdesc"); ?></dt>
+<dd><textarea cols="<?php echo $this->get_input_width1(); ?>" rows="<?php echo $this->get_input_height1(); ?>" name="longdesc"><?php echo $this->get_legend_longdesc(); ?></textarea></dd>
+<dt><?php echo $this->translate("imagefile"); ?></dt>
+<dd><input type="file" size="<?php echo $this->get_input_width1(); ?>" name="imagefile" value="" class="button" /> </dd>
+<dt><?php echo $this->translate("current_image"); ?></dt>
 <dd>
 <div class="image">
-<a href="<? echo $this->get_image_full_url(); ?>"><img src="<? echo $this->get_image_preview_url(); ?>" width="<? echo $this->get_image_preview_w(); ?>" height="<? echo $this->get_image_preview_h(); ?>" alt="<? echo $this->get_legend_alt(); ?>" title="<? echo $this->translate4("filename_width_height_size",$this->get_image_filename(),$this->get_image_full_w(),$this->get_image_full_h(),$this->get_image_size()); ?>" class="msiehackimage" /></a>
+<a href="<?php echo $this->get_image_full_url(); ?>"><img src="<?php echo $this->get_image_preview_url(); ?>" width="<?php echo $this->get_image_preview_w(); ?>" height="<?php echo $this->get_image_preview_h(); ?>" alt="<?php echo $this->get_legend_alt(); ?>" title="<?php echo $this->translate4("filename_width_height_size",$this->get_image_filename(),$this->get_image_full_w(),$this->get_image_full_h(),$this->get_image_size()); ?>" class="msiehackimage" /></a>
 </div>
 </dd>
 </dl>
 </div>
 
 <div id="message" class="default">
-<input type="submit" name="submit" value="<? echo $this->translate("update"); ?>" class="button" />
+<input type="submit" name="submit" value="<?php echo $this->translate("update"); ?>" class="button" />
 </div>
 
 </form>

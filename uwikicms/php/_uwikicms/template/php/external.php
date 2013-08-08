@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  UWiKiCMS is a lightweight web content management system.
  Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
@@ -19,7 +19,7 @@
  MA  02110-1301  USA
 */
 ?>
-<div id="content" class="<? echo $this->get_status_style(); ?>">
-<? echo $this->get_text(); ?>
-<? $this->include_external(); ?>
+<div id="content" class="<?php echo $this->get_status_style(); ?>">
+<?php echo $this->get_text(); ?>
+<?php $this->include_external(); ?>
 </div>

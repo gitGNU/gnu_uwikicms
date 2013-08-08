@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  UWiKiCMS is a lightweight web content management system.
  Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
@@ -23,11 +23,11 @@
 
 <div class="default">
 <p>
-<? echo $this->get_allinone_intro(); ?>
+<?php echo $this->get_allinone_intro(); ?>
 </p>
 </div>
 
-<?
+<?php
 function display_all_in_one($tree,&$page) {
   $content=new UWC_Content($page->data,$tree->get_path(),$page->context->get_lang(),$page->auth);
 

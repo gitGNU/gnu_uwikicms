@@ -1,3 +1,5 @@
+2013-08-08 : Christian Mauduit <ufoot@ufoot.org>
+	* Using long explicit <?php tags to mark PHP code.
 
 2013-01-10 : Christian Mauduit <ufoot@ufoot.org>
 	* Added whitetweed theme for ultra.

@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  UWiKiCMS is a lightweight web content management system.
  Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
@@ -19,23 +19,23 @@
  MA  02110-1301  USA
 */
 ?>
-<form method="post" action="<? echo $this->get_delete_url(); ?>">
+<form method="post" action="<?php echo $this->get_delete_url(); ?>">
 
-<input type="hidden" name="path" value="<? echo $this->get_path(); ?>" />
-<input type="hidden" name="title" value="<? echo $this->get_title(); ?>" /> 
+<input type="hidden" name="path" value="<?php echo $this->get_path(); ?>" />
+<input type="hidden" name="title" value="<?php echo $this->get_title(); ?>" /> 
 
 <div id="message" class="default">
 <div>
-<? echo $this->translate("confirm_delete"); ?>
+<?php echo $this->translate("confirm_delete"); ?>
 </div>
 
 <div>
-<input type="submit" name="submit" value="<? echo $this->translate("delete"); ?>" class="button" />
+<input type="submit" name="submit" value="<?php echo $this->translate("delete"); ?>" class="button" />
 </div>
 </div>
 
 </form>
 
-<div id="content" class="<? echo $this->get_status_style(); ?>">
-<? echo $this->get_text(); ?>
+<div id="content" class="<?php echo $this->get_status_style(); ?>">
+<?php echo $this->get_text(); ?>
 </div>

@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  UWiKiCMS is a lightweight web content management system.
  Copyright (C) 2005, 2006, 2007 Christian Mauduit <ufoot@ufoot.org>
@@ -19,38 +19,38 @@
  MA  02110-1301  USA
 */
 ?>
-<form method="post" action="<? echo $this->get_allinone_url(); ?>">
+<form method="post" action="<?php echo $this->get_allinone_url(); ?>">
 
-<input type="hidden" name="path" value="<? echo $this->get_path(); ?>" />
+<input type="hidden" name="path" value="<?php echo $this->get_path(); ?>" />
 
 <div id="message" class="default">
 <div>
-<? echo $this->translate("confirm_all_in_one"); ?>
+<?php echo $this->translate("confirm_all_in_one"); ?>
 </div>
 
 <div>
 <dl>
-<dt><? echo $this->translate("allinone_status"); ?></dt>
+<dt><?php echo $this->translate("allinone_status"); ?></dt>
 <dd>
 <select name="status">
-<? for ($i=0;$i<=$this->get_user_status();++$i) {
+<?php for ($i=0;$i<=$this->get_user_status();++$i) {
    if ($this->get_status()==$i) {
-     ?><option value="<? echo $i; ?>" selected="selected"><? echo $this->translate("status_".$i); ?></option>
-     <? } else {
-     ?><option value="<? echo $i; ?>"><? echo $this->translate("status_".$i); ?></option>
-     <? } 
+     ?><option value="<?php echo $i; ?>" selected="selected"><?php echo $this->translate("status_".$i); ?></option>
+     <?php } else {
+     ?><option value="<?php echo $i; ?>"><?php echo $this->translate("status_".$i); ?></option>
+     <?php } 
    } ?>
 </select>
 </dd>
-<dt><? echo $this->translate("allinone_intro"); ?></dt>
-<dd><textarea cols="<? echo $this->get_input_width1(); ?>" rows="<? echo $this->get_input_height1(); ?>" name="intro"><? echo $this->get_allinone_default_intro(); ?></textarea></dd>
-<dt><? echo $this->translate("allinone_max_size"); ?></dt>
-<dd><input type="edit" name="max_size" size="5" maxlength="5" value="<? echo UWC_CONTEXT_ALLINONE_MAX_SIZE; ?>" class="edit" /></dd>
+<dt><?php echo $this->translate("allinone_intro"); ?></dt>
+<dd><textarea cols="<?php echo $this->get_input_width1(); ?>" rows="<?php echo $this->get_input_height1(); ?>" name="intro"><?php echo $this->get_allinone_default_intro(); ?></textarea></dd>
+<dt><?php echo $this->translate("allinone_max_size"); ?></dt>
+<dd><input type="edit" name="max_size" size="5" maxlength="5" value="<?php echo UWC_CONTEXT_ALLINONE_MAX_SIZE; ?>" class="edit" /></dd>
 </dl>
 </div>
 
 <div>
-<input type="submit" name="submit" value="<? echo $this->translate("all_in_one"); ?>" class="button" />
+<input type="submit" name="submit" value="<?php echo $this->translate("all_in_one"); ?>" class="button" />
 </div>
 </div>
 
