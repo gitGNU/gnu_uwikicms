@@ -1,0 +1,6 @@
+php/.htaccess
+php/_uwikicms/include/.htaccess
+php/_uwikicms/include/config.php
+php/_uwikicms/include/phpwiki/config.php
+php/_uwikicms/secret/.htaccess
+php/_uwikicms/tmp/.htaccess
