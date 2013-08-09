@@ -75,6 +75,7 @@ $this->messages=array
    "action_login"=>"Login",
    "action_logout"=>"Logout (%s)",
    "action_view"=>"View page",
+   "action_rss"=>"RSS feed",
    "action_tree"=>"Site map",
    "action_css_yes"=>"With CSS",
    "action_css_no"=>"Without CSS",
@@ -124,6 +125,7 @@ $this->messages=array
    "gallery_next"=>"Next image",
    "gallery_empty"=>"No images in this gallery",
    "google_search"=>"Google search",
+   "rss_about"=>"RSS feed for %s",
 
    "" => ""
 

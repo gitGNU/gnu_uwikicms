@@ -51,6 +51,9 @@
 <?php if ($this->need_action_view()) { ?>
      <li><a href="<?php echo $this->get_view_url(); ?>"><?php echo $this->translate("action_view"); ?></a></li>
 <?php } ?>
+<?php if ($this->need_action_rss()) { ?>
+     <li><a href="<?php echo $this->get_rss_url(); ?>"><?php echo $this->translate("action_rss"); ?></a></li>
+<?php } ?>
 <?php if ($this->need_action_tree()) { ?>
      <li><a href="<?php echo $this->get_tree_url(); ?>"><?php echo $this->translate("action_tree"); ?></a></li>
 <?php } ?>

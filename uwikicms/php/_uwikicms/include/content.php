@@ -24,6 +24,7 @@ class UWC_Content {
   var $updated=false;
   var $data_exists=false;
   var $children_updated=false;
+  var $news_updated=false;
   var $tree_updated=false;
   var $parents_updated=false;
   var $next_updated=false;
@@ -115,9 +116,9 @@ class UWC_Content {
   }
 
   function update_children_data() {
-    $this->children=array();
     if (!$this->children_updated) {
-      $this->updated_children=true;
+      $this->children_updated=true;
+      $this->children=array();
       if ($this->get_user_status()==2) {
 	$this->data->select_content_children_by_path_lang_status_and_domain_regex($this->path,$this->lang,$this->get_user_status(),$this->get_user_domain_regex());
       } else {
@@ -132,9 +133,30 @@ class UWC_Content {
     }
   }
 
+  function update_news_data($news_max_nb, $news_max_age) {
+    $this->update_children_data();
+    if (!$this->news_updated) {
+      $this->news_updated=true;
+      $this->news=array();
+      if ($this->get_user_status()==2) {
+	$this->data->select_content_news_by_path_lang_status_and_domain_regex($this->path,$this->lang,$this->get_user_status(),$this->get_user_domain_regex(),$news_max_nb,$news_max_age);
+      } else {
+	$this->data->select_content_news_by_path_lang_and_status($this->path,$this->lang,$this->get_user_status(),$news_max_nb,$news_max_age);
+      }
+      while ($row=$this->data->query_select_fetch_row()) {
+	$item = array("path"=>$row["content_path"],
+		      "title"=>$row["content_title"]);
+	if (!in_array($item, $this->children)) {
+	  array_push($this->news, $item);
+	}
+      }
+      $this->data->query_select_free();
+    }
+  }
+
   function update_tree_data($status) {
     if (!$this->tree_updated) {
-      $this->updated_tree=true;
+      $this->tree_updated=true;
       $this->tree=array();
       if ($status>$this->get_user_status()) {
 	$status=$this->get_user_status();
@@ -343,6 +365,11 @@ class UWC_Content {
   function get_children() {
     $this->update_children_data();
     return $this->children;    
+  }
+
+  function get_news($news_max_nb, $news_max_age) {
+    $this->update_news_data($news_max_nb, $news_max_age);
+    return $this->news;    
   }
 
   function get_tree($status) {

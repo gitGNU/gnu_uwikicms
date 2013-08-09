@@ -75,6 +75,10 @@
     <span class="textmode"> | </span><a href="<?php echo $this->make_url($this->get_next_path()); ?>"><img src="<?php echo $this->get_images_dir(); ?>/arrow_right.png" width="<?php echo $this->get_arrow_width(); ?>" height="<?php echo $this->get_arrow_height(); ?>" alt="<?php echo sprintf($this->translate("next"),$this->get_next_title()); ?>" title="<?php echo $this->get_next_title(); ?>" class="msiehackbox" /></a>
     <?php } ?>
 
+    <?php if ($this->need_news()) { ?>
+    <span class="textmode"> | </span><a href="<?php echo $this->get_rss_url(); ?>"><img src="<?php echo $this->get_images_dir(); ?>/rss.png" width="<?php echo $this->get_rss_width(); ?>" height="<?php echo $this->get_rss_height(); ?>" alt="<?php echo sprintf($this->translate("rss"),$this->get_title()); ?>" title="<?php echo sprintf($this->translate("rss_about"),$this->get_title()); ?>" class="msiehackbox" /></a>
+    <?php } ?>
+
     <span class="textmode"> ] </span>
     </div>
     <?php } ?>
@@ -120,6 +124,24 @@ if (count($langs)>0) {
 <?php 
    if ($child["title"]) {
      echo uwc_format_text_to_html($child["title"]);
+   } else {
+     echo $this->translate("no_title");
+   }
+?>
+       </a></li>
+    <?php } ?>
+    </ul>
+    </div>
+    <?php } ?>
+
+    <?php if ($this->need_news()) {?>
+    <div id="news">
+    <ul>
+    <?php foreach ($this->get_news() as $news) { ?>
+      <li> <a href="<?php echo $this->make_url($news["path"]);?>">
+<?php 
+   if ($news["title"]) {
+     echo uwc_format_text_to_html($news["title"]);
    } else {
      echo $this->translate("no_title");
    }

@@ -263,6 +263,7 @@ class UWC_Context {
 	$this->request->has_key("action")) {
       switch ($this->request->get_value("action")) {
       case "tree":
+      case "rss":
 	$this->action=$this->request->get_value("action");
 	break;
       }

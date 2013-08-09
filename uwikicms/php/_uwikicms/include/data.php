@@ -164,6 +164,31 @@ class UWC_Data {
     return $this->query_select($query);    
   }
 
+  function select_content_news_by_path_lang_and_status($path,$lang,$status,$news_max_nb,$news_max_age) {
+    $path=$this->prefix.$path;
+    $query=sprintf($this->sql->query["select_content_news_by_path_lang_and_status"],
+		   (int) strlen($this->prefix)+1,
+		   uwc_format_escape_sql($path),
+		   uwc_format_escape_sql($lang),
+		   (int) uwc_format_escape_sql($status),
+		   $news_max_age,
+		   $news_max_nb);
+    return $this->query_select($query);    
+  }
+
+  function select_content_news_by_path_lang_status_and_domain_regex($path,$lang,$status,$domain_regex,$news_max_nb,$news_max_age) {
+    $path=$this->prefix.$path;
+    $query=sprintf($this->sql->query["select_content_news_by_path_lang_status_and_domain_regex"],
+		   (int) strlen($this->prefix)+1,
+		   uwc_format_escape_sql($path),
+		   uwc_format_escape_sql($lang),
+		   (int) uwc_format_escape_sql($status),
+		   uwc_format_escape_sql($domain_regex),
+		   $news_max_age,
+		   $news_max_nb);
+    return $this->query_select($query);    
+  }
+
   function select_content_tree_by_path_lang_and_status($path,$lang,$status) {
     $path=$this->prefix.$path;
     $query=sprintf($this->sql->query["select_content_tree_by_path_lang_and_status"],

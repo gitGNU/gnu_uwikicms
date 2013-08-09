@@ -75,6 +75,7 @@ $this->messages=array
    "action_login"=>"Se connecter",
    "action_logout"=>"Se d&eacute;connecter (%s)",
    "action_view"=>"Voir la page",
+   "action_rss"=>"Flux RSS",
    "action_tree"=>"Plan du site",
    "action_css_yes"=>"Avec CSS",
    "action_css_no"=>"Sans CSS",
@@ -124,6 +125,7 @@ $this->messages=array
    "gallery_next"=>"Image suivante",
    "gallery_empty"=>"Aucune image dans ce diaporama",
    "google_search"=>"Recherche Google",
+   "rss_about"=>"Flux RSS concernant %s",
 
    ""=>""
    );

@@ -58,6 +58,11 @@ class UWC_Config {
   var $arrow_height=16; // icon size
   var $lang_width=24; // icon size
   var $lang_height=16; // icon size
+  var $rss_width=16; // icon size
+  var $rss_height=16; // icon size
+
+  var $news_max_nb = 3; // max number of news (RSS)
+  var $news_max_age = 92; // max age of news (RSS) in days
 
   var $control_focus=""; // free HTML on top of "control" box
   var $actions_focus=""; // free HTML on top of "actions" box

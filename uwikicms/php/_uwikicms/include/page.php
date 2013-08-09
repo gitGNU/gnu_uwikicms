@@ -40,6 +40,7 @@ require("external.php");
 require("phpwiki.php");
 require("horde.php");
 require("gallery.php");
+require("rss.php");
 
 define("UWC_PAGE_DESCRIPTION_SIZE",80);
 
@@ -146,6 +147,7 @@ class UWC_Page {
       case "updateform":
       case "deleteform":
       case "view":
+      case "rss":
       case "external":
       case "imageupdateform":
       case "imagedeleteform":
@@ -267,6 +269,22 @@ class UWC_Page {
   function get_lang_height() {
     return $this->conf->lang_height;
   }
+ 
+  function get_rss_width() {
+    return $this->conf->rss_width;
+  }
+
+  function get_rss_height() {
+    return $this->conf->rss_height;
+  }
+
+  function get_news_max_nb() {
+    return $this->conf->news_max_nb;
+  }
+
+  function get_news_max_age() {
+    return $this->conf->news_max_age;
+  }
 
   function get_status() {
     return $this->content->get_status();
@@ -349,6 +367,10 @@ class UWC_Page {
 
   function get_children() {
     return $this->content->get_children();
+  }
+
+  function get_news() {
+    return $this->content->get_news($this->get_news_max_nb(), $this->get_news_max_age());
   }
 
   function get_allinone_status() {
@@ -498,6 +520,10 @@ class UWC_Page {
 
   function get_tree_url() {
     return $this->make_url($this->get_path(),array("action"=>"tree"));
+  }
+
+  function get_rss_url() {
+    return $this->make_url($this->get_path(),array("action"=>"rss"));
   }
 
   function get_css_yes_url() {
@@ -891,6 +917,10 @@ class UWC_Page {
     return $this->context->action!="view" && $this->context->action!="external" && $this->context->action!="imageview" && $this->viewable();
   }
 
+  function need_action_rss() {
+    return $this->viewable() && $this->need_news();
+  }
+
   function need_action_tree() {
     return $this->context->action!="tree" && $this->viewable() && $this->need_children();
   }
@@ -952,8 +982,12 @@ class UWC_Page {
     return count($this->get_children()) ? true : false;
   }
 
+  function need_news() {
+    return count($this->get_news()) ? true : false;
+  }
+
   function need_nav() {
-    return $this->need_home() || $this->need_up() || $this->need_next() || $this->need_prev();
+    return $this->need_home() || $this->need_up() || $this->need_next() || $this->need_prev() || $this->need_news();
   }
 
   function need_home() {
@@ -1130,6 +1164,10 @@ class UWC_Page {
       break;
     case "gallery":
       uwc_gallery_xul_header();
+      include $this->get_prefix()."/_uwikicms/template/php/".$this->context->action.".php";
+      break;
+    case "rss":
+      uwc_rss_xml_header();
       include $this->get_prefix()."/_uwikicms/template/php/".$this->context->action.".php";
       break;
     default:
