@@ -50,7 +50,7 @@ class UWC_Config {
   var $cache_time = 21600; // 6*3600, 6 hours by default
   var $cache_minsize = 1000; // 1k by default	
   var $cache_maxsize = 100000; // 100k by default	
-  var $nocache_regex = "/(metaserver|start)\$/"; // pages matching this won't be cached
+  var $nocache_regex = "/(metaserver|start)\$/"; // pages matching this will not be cached
 
   var $debug = true; // setup by ./configure
 
@@ -61,8 +61,10 @@ class UWC_Config {
   var $rss_width=16; // icon size
   var $rss_height=16; // icon size
 
-  var $news_max_nb = 3; // max number of news (RSS)
-  var $news_max_age = 92; // max age of news (RSS) in days
+  var $news_max_nb = 3; // max number of news (RSS within HTML)
+  var $news_max_age = 92; // max age of news (RSS within HTML) in days
+  var $rss_max_nb = 10; // max number of RSS itesm
+  var $rss_max_age = 365; // max age of RSS items in days
 
   var $control_focus=""; // free HTML on top of "control" box
   var $actions_focus=""; // free HTML on top of "actions" box

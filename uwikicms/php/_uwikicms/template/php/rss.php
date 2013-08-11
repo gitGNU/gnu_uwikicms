@@ -27,14 +27,14 @@ echo "<rss version=\"2.0\">\n";
   <title><?php echo $this->get_title(); ?></title>
   <description><?php echo sprintf($this->translate("rss_about"),$this->get_title()); ?></description>
   <lastBuildDate><?php echo date_format(date_create(), DateTime::RSS); ?></lastBuildDate>
-  <link><?php echo $this->get_path(); ?></link>
-<?php if ($this->need_news()) { 
-   foreach ($this->get_news() as $news) { ?>
+  <link><?php echo $this->get_absolute_url_clean(); ?></link>
+<?php if ($this->need_rss()) { 
+   foreach ($this->get_rss() as $rss_item) { ?>
   <item>
-       <title><?php echo uwc_format_text_to_html($news["title"]); ?></title>
-     <description>...</description>
+       <title><?php echo uwc_format_text_to_html($rss_item["title"]); ?></title>
+     <description><?php echo uwc_format_text_to_html($rss_item["text"]); ?></description>
      <pubDate>...</pubDate>
-     <link>...</link>
+     <link><?php echo $this->make_absolute_url_clean($rss_item["path"]); ?></link>
   </item>
 <?php } } ?>
 </channel>

@@ -171,8 +171,8 @@ class UWC_Data {
 		   uwc_format_escape_sql($path),
 		   uwc_format_escape_sql($lang),
 		   (int) uwc_format_escape_sql($status),
-		   $news_max_age,
-		   $news_max_nb);
+		   (int) $news_max_age,
+		   (int) $news_max_nb);
     return $this->query_select($query);    
   }
 
@@ -184,8 +184,19 @@ class UWC_Data {
 		   uwc_format_escape_sql($lang),
 		   (int) uwc_format_escape_sql($status),
 		   uwc_format_escape_sql($domain_regex),
-		   $news_max_age,
-		   $news_max_nb);
+		   (int) $news_max_age,
+		   (int) $news_max_nb);
+    return $this->query_select($query);    
+  }
+
+  function select_content_rss_by_path_and_lang($path,$lang,$rss_max_nb,$rss_max_age) {
+    $path=$this->prefix.$path;
+    $query=sprintf($this->sql->query["select_content_rss_by_path_and_lang"],
+		   (int) strlen($this->prefix)+1,
+		   uwc_format_escape_sql($path),
+		   uwc_format_escape_sql($lang),
+		   (int) $rss_max_age,
+		   (int) $rss_max_nb);
     return $this->query_select($query);    
   }
 

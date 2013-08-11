@@ -286,6 +286,14 @@ class UWC_Page {
     return $this->conf->news_max_age;
   }
 
+  function get_rss_max_nb() {
+    return $this->conf->rss_max_nb;
+  }
+
+  function get_rss_max_age() {
+    return $this->conf->rss_max_age;
+  }
+
   function get_status() {
     return $this->content->get_status();
   }
@@ -371,6 +379,10 @@ class UWC_Page {
 
   function get_news() {
     return $this->content->get_news($this->get_news_max_nb(), $this->get_news_max_age());
+  }
+
+  function get_rss() {
+    return $this->content->get_rss($this->get_rss_max_nb(), $this->get_rss_max_age());
   }
 
   function get_allinone_status() {
@@ -507,7 +519,11 @@ class UWC_Page {
   }
 
   function get_absolute_url_clean() {
-    return $this->conf->siteurl.$this->make_url($this->get_path(),array("login"=>"","password"=>"","session"=>""));
+    return $this->conf->siteurl.$this->make_url($this->get_path(),array("login"=>"","password"=>"","session"=>"","action"=>""));
+  }
+
+  function make_absolute_url_clean($path) {
+    return $this->conf->siteurl.$this->make_url($path,array("login"=>"","password"=>"","session"=>"","action"=>""));
   }
 
   function need_absolute_url() {
@@ -918,7 +934,7 @@ class UWC_Page {
   }
 
   function need_action_rss() {
-    return $this->viewable() && $this->need_news();
+    return $this->need_rss();
   }
 
   function need_action_tree() {
@@ -984,6 +1000,10 @@ class UWC_Page {
 
   function need_news() {
     return count($this->get_news()) ? true : false;
+  }
+
+  function need_rss() {
+    return count($this->get_rss()) ? true : false;
   }
 
   function need_nav() {

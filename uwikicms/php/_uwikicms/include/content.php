@@ -154,6 +154,22 @@ class UWC_Content {
     }
   }
 
+  function update_rss_data($rss_max_nb,$rss_max_age) {
+    if (!$this->rss_updated) {
+      $this->rss_updated=true;
+      $this->rss=array();
+      $this->data->select_content_rss_by_path_and_lang($this->path,$this->lang,$rss_max_nb,$rss_max_age);
+      while ($row=$this->data->query_select_fetch_row()) {
+	array_push($this->rss, 
+		   array("path"=>$row["content_path"],
+			 "title"=>$row["content_title"],
+			 "text"=>$row["content_text"],
+			 "date_update"=>$row["content_date_update"]));
+      }
+      $this->data->query_select_free();
+    }
+  }
+
   function update_tree_data($status) {
     if (!$this->tree_updated) {
       $this->tree_updated=true;
@@ -370,6 +386,11 @@ class UWC_Content {
   function get_news($news_max_nb, $news_max_age) {
     $this->update_news_data($news_max_nb, $news_max_age);
     return $this->news;    
+  }
+
+  function get_rss($rss_max_nb, $rss_max_age) {
+    $this->update_rss_data($rss_max_nb, $rss_max_age);
+    return $this->rss;    
   }
 
   function get_tree($status) {
