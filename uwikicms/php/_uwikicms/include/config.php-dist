@@ -65,6 +65,7 @@ class UWC_Config {
   var $news_max_age = 92; // max age of news (RSS within HTML) in days
   var $rss_max_nb = 10; // max number of RSS itesm
   var $rss_max_age = 365; // max age of RSS items in days
+  var $rss_max_len = 160; // max number of chars in RSS description
 
   var $control_focus=""; // free HTML on top of "control" box
   var $actions_focus=""; // free HTML on top of "actions" box

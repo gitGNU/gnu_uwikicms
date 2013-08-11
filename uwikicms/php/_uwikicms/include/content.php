@@ -154,11 +154,11 @@ class UWC_Content {
     }
   }
 
-  function update_rss_data($rss_max_nb,$rss_max_age) {
+  function update_rss_data($rss_max_nb,$rss_max_age,$rss_max_len) {
     if (!$this->rss_updated) {
       $this->rss_updated=true;
       $this->rss=array();
-      $this->data->select_content_rss_by_path_and_lang($this->path,$this->lang,$rss_max_nb,$rss_max_age);
+      $this->data->select_content_rss_by_path_and_lang($this->path,$this->lang,$rss_max_nb,$rss_max_age,$rss_max_len);
       while ($row=$this->data->query_select_fetch_row()) {
 	array_push($this->rss, 
 		   array("path"=>$row["content_path"],
@@ -388,8 +388,8 @@ class UWC_Content {
     return $this->news;    
   }
 
-  function get_rss($rss_max_nb, $rss_max_age) {
-    $this->update_rss_data($rss_max_nb, $rss_max_age);
+  function get_rss($rss_max_nb, $rss_max_age, $rss_max_len) {
+    $this->update_rss_data($rss_max_nb, $rss_max_age, $rss_max_len);
     return $this->rss;    
   }
 

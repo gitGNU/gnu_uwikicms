@@ -19,8 +19,18 @@
  MA  02110-1301  USA
 */
 
+function uwc_rss_date_from_unix_timestamp($timestamp) {
+  $date=strftime ("%a, %d %b %Y %H:%M:%S %z",$timestamp);
+
+  return $date;
+}
+
 function uwc_rss_xml_header() {
   header('Content-Type: application/rss+xml');
+}
+
+function uwc_rss_setlocale() {
+  setlocale (LC_ALL, 'en_US.ISO-8859-1');
 }
 
 ?>

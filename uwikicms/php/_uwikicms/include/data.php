@@ -189,10 +189,11 @@ class UWC_Data {
     return $this->query_select($query);    
   }
 
-  function select_content_rss_by_path_and_lang($path,$lang,$rss_max_nb,$rss_max_age) {
+  function select_content_rss_by_path_and_lang($path,$lang,$rss_max_nb,$rss_max_age,$rss_max_len) {
     $path=$this->prefix.$path;
     $query=sprintf($this->sql->query["select_content_rss_by_path_and_lang"],
 		   (int) strlen($this->prefix)+1,
+		   (int) $rss_max_len,
 		   uwc_format_escape_sql($path),
 		   uwc_format_escape_sql($lang),
 		   (int) $rss_max_age,

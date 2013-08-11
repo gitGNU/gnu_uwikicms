@@ -22,6 +22,7 @@
 <?php
 echo "<?xml version=\"1.0\" encoding=\"iso-8859-15\"?>\n";
 echo "<rss version=\"2.0\">\n";
+uwc_rss_setlocale();
 ?>
 <channel>
   <title><?php echo $this->get_title(); ?></title>
@@ -31,9 +32,9 @@ echo "<rss version=\"2.0\">\n";
 <?php if ($this->need_rss()) { 
    foreach ($this->get_rss() as $rss_item) { ?>
   <item>
-       <title><?php echo uwc_format_text_to_html($rss_item["title"]); ?></title>
+     <title><?php echo uwc_format_text_to_html($rss_item["title"]); ?></title>
      <description><?php echo uwc_format_text_to_html($rss_item["text"]); ?></description>
-     <pubDate>...</pubDate>
+     <pubDate><?php echo uwc_rss_date_from_unix_timestamp($rss_item["date_update"]); ?></pubDate>
      <link><?php echo $this->make_absolute_url_clean($rss_item["path"]); ?></link>
   </item>
 <?php } } ?>

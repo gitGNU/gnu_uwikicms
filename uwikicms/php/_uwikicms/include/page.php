@@ -294,6 +294,10 @@ class UWC_Page {
     return $this->conf->rss_max_age;
   }
 
+  function get_rss_max_len() {
+    return $this->conf->rss_max_len;
+  }
+
   function get_status() {
     return $this->content->get_status();
   }
@@ -382,7 +386,7 @@ class UWC_Page {
   }
 
   function get_rss() {
-    return $this->content->get_rss($this->get_rss_max_nb(), $this->get_rss_max_age());
+    return $this->content->get_rss($this->get_rss_max_nb(), $this->get_rss_max_age(), $this->get_rss_max_len());
   }
 
   function get_allinone_status() {
