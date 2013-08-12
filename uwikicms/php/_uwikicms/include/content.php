@@ -25,6 +25,7 @@ class UWC_Content {
   var $data_exists=false;
   var $children_updated=false;
   var $news_updated=false;
+  var $rss_updated=false;
   var $tree_updated=false;
   var $parents_updated=false;
   var $next_updated=false;
