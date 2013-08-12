@@ -32,8 +32,8 @@ uwc_rss_setlocale();
 <?php if ($this->need_rss()) { 
    foreach ($this->get_rss() as $rss_item) { ?>
   <item>
-     <title><?php echo uwc_format_text_to_html($rss_item["title"]); ?></title>
-     <description><?php echo uwc_format_text_to_html($rss_item["text"]); ?></description>
+     <title><?php echo uwc_format_escape_rss($rss_item["title"]); ?></title>
+     <description><?php echo uwc_format_escape_rss($rss_item["text"]); ?></description>
      <pubDate><?php echo uwc_rss_date_from_unix_timestamp($rss_item["date_update"]); ?></pubDate>
      <link><?php echo $this->make_absolute_url_clean($rss_item["path"]); ?></link>
   </item>

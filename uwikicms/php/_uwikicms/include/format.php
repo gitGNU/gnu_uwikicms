@@ -206,4 +206,16 @@ function uwc_format_htmlfriendly($var){
 
    return $var;
 }
+
+function uwc_format_escape_rss($var) {
+  $var = strtr($var, 
+	       array("&" => "&amp;",
+		     ">" => "&gt;",
+		     "<" => "&lt;",
+		     '"' => "&quot;",
+		     "'" => "&apos;"));
+
+  return $var;
+}
+
 ?>
