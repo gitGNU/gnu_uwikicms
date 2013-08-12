@@ -1,4 +1,5 @@
 2013-08-12 : Christian Mauduit <ufoot@ufoot.org>
+	* Added the possibility to keep previous last modification date.
 	* Released 1.1.0
 	* Finalized RSS support.
 
