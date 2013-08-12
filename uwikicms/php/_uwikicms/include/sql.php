@@ -25,6 +25,7 @@ class UWC_Sql {
 		   "select_user_by_id_and_passwd"=>"SELECT user_id, user_label, user_copyright_holder, user_email, user_status, user_domain_regex FROM uwikicms_user WHERE user_id='%s' AND user_passwd=MD5('%s')",
 		   "insert_content"=>"INSERT INTO uwikicms_content SET content_path='%s', content_lang='%s', content_title='%s', content_author='%s', content_date_create=NOW(), content_date_update=NOW(), content_text='%s', content_status=%d, content_order=%d",
 		   "update_content"=>"UPDATE uwikicms_content SET content_title='%s', content_author='%s', content_date_update=NOW(), content_text='%s', content_status=%d, content_order=%d WHERE content_path='%s' AND content_lang='%s'",
+		   "update_content_without_date_update"=>"UPDATE uwikicms_content SET content_title='%s', content_author='%s', content_text='%s', content_status=%d, content_order=%d WHERE content_path='%s' AND content_lang='%s'",
 		   "delete_content_by_path_and_lang"=>"DELETE FROM uwikicms_content WHERE content_path='%s' AND content_lang='%s'",
 		   "select_content_by_path_and_lang"=>"SELECT content_title, UNIX_TIMESTAMP(content_date_create) AS content_date_create, UNIX_TIMESTAMP(content_date_update) AS content_date_update, content_text, content_status, content_order, user_label, user_copyright_holder, user_email FROM uwikicms_content, uwikicms_user WHERE content_path='%s' AND content_lang='%s' AND content_author=user_id",
 		   "select_content_lang_by_path"=>"SELECT content_lang FROM uwikicms_content WHERE content_path='%s'",

@@ -126,6 +126,7 @@ $this->messages=array
    "gallery_empty"=>"Aucune image dans ce diaporama",
    "google_search"=>"Recherche Google",
    "rss_about"=>"Flux RSS concernant %s",
+   "do_date_update"=>"Mettre &agrave; jour la date de modification",
 
    ""=>""
    );

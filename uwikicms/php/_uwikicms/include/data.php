@@ -110,6 +110,19 @@ class UWC_Data {
     $this->query($query);    
   }
 
+  function update_content_without_date_update($path,$lang,$title,$author,$text,$status,$order) {
+    $path=$this->prefix.$path;
+    $query=sprintf($this->sql->query["update_content_without_date_update"],
+		   uwc_format_escape_sql($title),
+		   uwc_format_escape_sql($author),
+		   uwc_format_escape_sql(uwc_format_fix_content_text($text)),
+		   (int) uwc_format_escape_sql($status),
+		   (int) uwc_format_escape_sql($order),
+		   uwc_format_escape_sql($path),
+		   uwc_format_escape_sql($lang));
+    $this->query($query);    
+  }
+
   function delete_content_by_path_and_lang($path,$lang) {
     $path=$this->prefix.$path;
     $query=sprintf($this->sql->query["delete_content_by_path_and_lang"],

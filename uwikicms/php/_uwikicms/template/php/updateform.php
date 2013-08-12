@@ -43,6 +43,8 @@
 <dd><input type="text" size="<?php echo $this->get_input_width1(); ?>" maxlength="255" name="path" value="<?php echo $this->get_path(); ?>" class="edit" /></dd>
 <dt><?php echo $this->translate("order"); ?></dt>
 <dd><input type="text" size="5" maxlength="10" name="order" value="<?php echo $this->get_order(); ?>" class="edit" /></dd>
+<dt><?php echo $this->translate("do_date_update"); ?></dt>
+<dd><input type="checkbox" name="do_date_update" value="1" checked="checked" class="edit" /></dd>
 <?php foreach($this->get_images_list() as $id => $image_data) { ?>
     <dt>
       [&nbsp;img:<?php echo $id; ?>&nbsp;] 

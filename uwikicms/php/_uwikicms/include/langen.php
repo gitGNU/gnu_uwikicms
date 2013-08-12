@@ -126,6 +126,7 @@ $this->messages=array
    "gallery_empty"=>"No images in this gallery",
    "google_search"=>"Google search",
    "rss_about"=>"RSS feed for %s",
+   "do_date_update"=>"Update last modification date",
 
    "" => ""
 

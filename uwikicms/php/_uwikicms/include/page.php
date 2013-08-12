@@ -1126,13 +1126,23 @@ class UWC_Page {
 	$this->data->move_content($oldpath,$this->get_path());
 	$this->data->move_image($oldpath,$this->get_path());
       }
-      $this->data->update_content($this->get_path(),
-				  $this->get_lang(),
-				  $this->request->get_value("title"),
-				  $this->get_user_id(),
-				  $this->request->get_value("text"),
-				  $this->request->get_value("status"),
-				  $this->request->get_value("order"));
+      if ($this->request->get_value("do_date_update")) {
+	$this->data->update_content($this->get_path(),
+				    $this->get_lang(),
+				    $this->request->get_value("title"),
+				    $this->get_user_id(),
+				    $this->request->get_value("text"),
+				    $this->request->get_value("status"),
+				    $this->request->get_value("order"));
+      } else {
+	$this->data->update_content_without_date_update($this->get_path(),
+							$this->get_lang(),
+							$this->request->get_value("title"),
+							$this->get_user_id(),
+							$this->request->get_value("text"),
+							$this->request->get_value("status"),
+							$this->request->get_value("order"));
+      }
       $this->content->force_update_data();
       break;
     case "delete":
