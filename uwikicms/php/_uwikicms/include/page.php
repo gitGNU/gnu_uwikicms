@@ -438,9 +438,10 @@ class UWC_Page {
        * so we just get our current value. Fixes #20032.
        */
       $home=$this->get_title();
-      else {
-	$home=$this->translate("no_title");
-      }
+    }
+
+    if (! $home) {
+      $home=$this->translate("no_title");
     }
 
     return $home;
