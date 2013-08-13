@@ -19,7 +19,6 @@
  MA  02110-1301  USA
 */
 
-include dirname( __FILE__ ) . "/include/renum.php";
 include dirname( __FILE__ ) . "/include/page.php";
 
 new UWC_Page("renum");
