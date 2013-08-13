@@ -1,5 +1,6 @@
 2013-08-13 : Christian Mauduit <ufoot@ufoot.org>
 
+	* Tried to fix 'home page reset' bug.
 	* Fixed link encoding bug.
 
 2013-08-12 : Christian Mauduit <ufoot@ufoot.org>
