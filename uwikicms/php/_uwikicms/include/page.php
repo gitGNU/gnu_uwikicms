@@ -140,6 +140,8 @@ class UWC_Page {
       case "imagecreateform":
       case "clearcache":
       case "clearcacheform":
+      case "renum":
+      case "renumform":
       case "allinoneform":
       case "about":
 	$title=$this->translate("title_".$this->context->action);
@@ -614,6 +616,14 @@ class UWC_Page {
     return $this->make_url("/_uwikicms/clearcache.php",array("continue"=>$this->get_path()));
   }
 
+  function get_renumform_url() {
+    return $this->make_url($this->get_path(),array("action"=>"renumform"));
+  }
+
+  function get_renum_url() {
+    return $this->make_url("/_uwikicms/renum.php",array("continue"=>$this->get_path()));
+  }
+
   function get_help_url() {
     return "http://www.ufoot.org/uwikicms/doc/manual";
   }
@@ -973,6 +983,10 @@ class UWC_Page {
     return $this->context->action!="clearcacheform" && $this->context->action!="clearcache" && $this->auth->can_admin();
   }
 
+  function need_action_renum() {
+    return $this->context->action!="renumform" && $this->context->action!="renum" && $this->auth->can_admin() && (!$this->conf->dbprefix) && (!$this->get_path());
+  }
+
   function need_action_help() {
     return $this->get_user_status()>=2;
   }
@@ -1195,6 +1209,9 @@ class UWC_Page {
     case "clearcache":
       uwc_cache_purge($this->conf,0);
       break;
+    case "renum":
+      $this->content->renum();
+      break;
     }
 
     switch ($this->context->action) {
@@ -1248,6 +1265,8 @@ class UWC_Page {
       case "imagedelete":
       case "clearcacheform":
       case "clearcache":
+      case "renumform":
+      case "renum":
       case "allinoneform":
       case "allinone":
       case "about":

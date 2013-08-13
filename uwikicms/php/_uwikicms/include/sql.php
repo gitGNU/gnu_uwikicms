@@ -63,6 +63,8 @@ class UWC_Sql {
 		   "delete_legend_by_image_id"=>"DELETE FROM uwikicms_legend WHERE legend_image_id=%d",
 		   "move_content"=>"UPDATE uwikicms_content SET content_path=CONCAT('%s',SUBSTRING(content_path,%d)) WHERE content_path LIKE '%s%%'",
 		   "move_image"=>"UPDATE uwikicms_image SET image_container_path=CONCAT('%s',SUBSTRING(image_container_path,%d)) WHERE image_container_path LIKE '%s%%'",
+		   "select_content_for_renum"=>"SELECT content_path, content_lang, content_order FROM uwikicms_content ORDER BY content_order, content_path, content_lang",
+		   "update_content_for_renum"=>"UPDATE uwikicms_content SET content_order=%d WHERE content_path='%s' AND content_lang='%s'",
 
 		   ""=>""
 		   );

@@ -19,6 +19,8 @@
  MA  02110-1301  USA
 */
 
+define("UWC_CONTENT_RENUM_STEP", "10");
+
 class UWC_Content {
   var $data=null;
   var $updated=false;
@@ -432,6 +434,23 @@ class UWC_Content {
       return Array();
     }
   }
+
+  function renum() {
+    $this->data->select_content_for_renum();
+    $renum_data=Array();
+    $i=UWC_CONTENT_RENUM_STEP;
+    while ($row=$this->data->query_select_fetch_row()) {
+      array_push($renum_data,Array("path"=>$row["content_path"],
+				   "lang"=>$row["content_lang"],
+				   "order"=>$row["content_order"]));
+    }
+    $this->data->query_select_free();
+    
+    foreach ($renum_data as $key=>$value) {
+      $this->data->update_content_for_renum($value["path"],$value["lang"],$i);
+      $i+=UWC_CONTENT_RENUM_STEP;
+    }
+  }
 }
 
 function uwc_content_get_parent_path($path) {
@@ -443,6 +462,5 @@ function uwc_content_get_parent_path($path) {
   
   return $parent;
 }
-
 
 ?>

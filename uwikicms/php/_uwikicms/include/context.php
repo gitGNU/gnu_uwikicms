@@ -203,6 +203,7 @@ class UWC_Context {
       }
       break;
     case "clearcache":
+    case "renum":
     case "allinone":
       if ($this->auth->can_admin()) {
 	$this->action=$this->mode;
@@ -286,6 +287,7 @@ class UWC_Context {
     if ($this->auth->can_admin() && $this->request->has_key("action")) {
       switch ($this->request->get_value("action")) {
       case "clearcacheform":
+      case "renumform":
       case "allinoneform":
 	  $this->action=$this->request->get_value("action");
 	  break;

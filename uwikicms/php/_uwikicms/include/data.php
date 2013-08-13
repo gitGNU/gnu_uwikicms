@@ -487,6 +487,19 @@ class UWC_Data {
 		   uwc_format_escape_sql($oldpath));
     $this->query($query);
   }
+
+  function select_content_for_renum() {
+    $query=sprintf($this->sql->query["select_content_for_renum"]);
+    $this->query_select($query);
+  }
+
+  function update_content_for_renum($path,$lang,$order) {
+    $query=sprintf($this->sql->query["update_content_for_renum"],
+		   (int) $order,
+		   uwc_format_escape_sql($path),
+		   uwc_format_escape_sql($lang));
+    $this->query($query);
+  }
 }
 
 ?>

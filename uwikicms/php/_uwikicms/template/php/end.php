@@ -90,6 +90,9 @@
 <?php if ($this->need_action_clearcache()) { ?>
      <li><a href="<?php echo $this->get_clearcacheform_url(); ?>"><?php echo $this->translate("action_clearcache"); ?></a></li>
 <?php } ?>
+<?php if ($this->need_action_renum()) { ?>
+     <li><a href="<?php echo $this->get_renumform_url(); ?>"><?php echo $this->translate("action_renum"); ?></a></li>
+<?php } ?>
   </ul>
 <?php if ($this->need_action_new()) { ?>
   <form method="post" action="<?php echo $this->get_new_url(); ?>">
