@@ -433,7 +433,14 @@ class UWC_Page {
     if ($home["title"]) {
       $home=uwc_format_text_to_html($home["title"]);
     } else {
-      $home=$this->translate("no_title");
+      /*
+       * When being on home page, parent data is unset,
+       * so we just get our current value. Fixes #20032.
+       */
+      $home=$this->get_title();
+      else {
+	$home=$this->translate("no_title");
+      }
     }
 
     return $home;

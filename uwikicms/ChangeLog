@@ -1,5 +1,6 @@
 2013-08-13 : Christian Mauduit <ufoot@ufoot.org>
 
+	* Fixed #20032, description now correct on home page.
 	* Tried to fix 'home page reset' bug.
 	* Fixed link encoding bug.
 

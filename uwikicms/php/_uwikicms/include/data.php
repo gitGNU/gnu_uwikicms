@@ -99,11 +99,11 @@ class UWC_Data {
 
   function update_content($path,$lang,$title,$author,$text,$status,$order) {
     /* 
-     * Do not perform updae if title & text are NULL/empty, this should
+     * Do not perform update if title is NULL/empty, this should
      * prevent weird bugs (root page being resetted...) and anyway, if one
      * wants to get rid of content -> delete is safer...
      */
-    if ($title || $text) {
+    if ($title) {
       $path=$this->prefix.$path;
       $query=sprintf($this->sql->query["update_content"],
 		     uwc_format_escape_sql($title),
@@ -119,11 +119,11 @@ class UWC_Data {
 
   function update_content_without_date_update($path,$lang,$title,$author,$text,$status,$order) {
     /* 
-     * Do not perform updae if title & text are NULL/empty, this should
+     * Do not perform update if title is  NULL/empty, this should
      * prevent weird bugs (root page being resetted...) and anyway, if one
      * wants to get rid of content -> delete is safer...
      */
-    if ($title || $text) {
+    if ($title) {
       $path=$this->prefix.$path;
       $query=sprintf($this->sql->query["update_content_without_date_update"],
 		     uwc_format_escape_sql($title),
