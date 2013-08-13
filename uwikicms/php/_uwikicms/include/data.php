@@ -441,12 +441,19 @@ class UWC_Data {
   }
 
   function update_legend($id,$lang,$alt,$longdesc) {
-    $query=sprintf($this->sql->query["update_legend"],
-		   uwc_format_escape_sql($alt),
-		   uwc_format_escape_sql($longdesc),
-		   (int) uwc_format_escape_sql($id),
-		   uwc_format_escape_sql($lang));
-    $this->query($query);        
+    /* 
+     * Do not perform update if alt (title) is NULL/empty, this should
+     * prevent weird bugs (root page being resetted...) and anyway, if one
+     * wants to get rid of content -> delete is safer...
+     */
+    if ($alt) {
+      $query=sprintf($this->sql->query["update_legend"],
+		     uwc_format_escape_sql($alt),
+		     uwc_format_escape_sql($longdesc),
+		     (int) uwc_format_escape_sql($id),
+		     uwc_format_escape_sql($lang));
+      $this->query($query);
+    }
   }
 
   function delete_image_by_id($id) {

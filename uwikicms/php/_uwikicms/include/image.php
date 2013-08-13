@@ -170,6 +170,14 @@ class UWC_Image {
     return null;
   }
 
+  function get_news() {
+    return null;
+  }
+
+  function get_rss() {
+    return null;
+  }
+
   function exists() {
     return $this->image_exists();
   }
