@@ -62,7 +62,7 @@ function uwc_format_text_to_html($str) {
 }
 
 function uwc_format_html_to_xul($str) {
-  return htmlspecialchars(html_entity_decode($str));
+  return htmlspecialchars(html_entity_decode($str),ENT_COMPAT|ENT_XHTML,"ISO-8859-15");
 }
 
 function uwc_format_text_to_xul($str) {

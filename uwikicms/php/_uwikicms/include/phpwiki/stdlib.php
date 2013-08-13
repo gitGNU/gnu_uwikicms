@@ -106,7 +106,7 @@
       global $ScriptUrl;
       $enc_word = rawurlencode($wikiword);
       if(empty($linktext))
-         $linktext = htmlspecialchars($wikiword);
+         $linktext = htmlspecialchars($wikiword,ENT_COMPAT|ENT_XHTML,"ISO-8859-15");
       if (defined("AUTOSPLIT_WIKIWORDS"))
          $linktext = split_pagename($linktext);
 
@@ -117,7 +117,7 @@
       global $ScriptUrl;
       $enc_word = rawurlencode($wikiword);
       if(empty($linktext))
-         $linktext = htmlspecialchars($wikiword);
+         $linktext = htmlspecialchars($wikiword,ENT_COMPAT|ENT_XHTML,"ISO-8859-15");
       if (defined("AUTOSPLIT_WIKIWORDS"))
          $linktext = split_pagename($linktext);
 
@@ -129,7 +129,7 @@
          return "<b><u>BAD URL -- remove all of &lt;, &gt;, &quot;</u></b>";
       }
       if(empty($linktext))
-         $linktext = htmlspecialchars($url);
+         $linktext = htmlspecialchars($url,ENT_COMPAT|ENT_XHTML,"ISO-8859-15");
       if (!defined('USE_LINK_ICONS')) {
           return "<a href=\"$url\">$linktext</a>";
       } else {
@@ -390,7 +390,7 @@
       if (isset($matches[3])) {
          // named link of the form  "[some link name | http://blippy.com/]"
          $URL = trim($matches[3]);
-         $linkname = htmlspecialchars(trim($matches[1]));
+         $linkname = htmlspecialchars(trim($matches[1]),ENT_COMPAT|ENT_XHTML,"ISO-8859-15");
 	 $linktype = 'named';
       } else {
          // unnamed link of the form "[http://blippy.com/] or [wiki page]"
@@ -416,7 +416,7 @@
       } elseif (preg_match("#^phpwiki:(.*)#", $URL, $match)) {
 	 $link['type'] = "url-wiki-$linktype";
 	 if(empty($linkname))
-	    $linkname = htmlspecialchars($URL);
+	    $linkname = htmlspecialchars($URL,ENT_COMPAT|ENT_XHTML,"ISO-8859-15");
 	 $link['link'] = "<a href=\"$ScriptUrl$match[1]\">$linkname</a>";
       } elseif (preg_match("#^\d+$#", $URL)) {
          $link['type'] = "reference-$linktype";
@@ -442,7 +442,7 @@
       } else {
 	// Here we could check URL syntax...
 	if(empty($linkname))
-	  $linkname = htmlspecialchars($URL);
+	  $linkname = htmlspecialchars($URL,ENT_COMPAT|ENT_XHTML,"ISO-8859-15");
 	$link['type'] = "reference-$linktype";
 	if (preg_match("#^($AllowedProtocols):#",$URL)) {
 	  $link['link'] = "<a href=\"$URL\">$linkname</a>";
@@ -605,8 +605,8 @@
       _iftoken('ADMIN', defined('WIKI_ADMIN'), $page);
 
       _dotoken('SCRIPTURL', $ScriptUrl, $page);
-      _dotoken('PAGE', htmlspecialchars($name), $page);
-      _dotoken('SPLIT_PAGE', htmlspecialchars(split_pagename($name)), $page);
+      _dotoken('PAGE', htmlspecialchars($name,ENT_COMPAT|ENT_XHTML,"ISO-8859-15"), $page);
+      _dotoken('SPLIT_PAGE', htmlspecialchars(split_pagename($name),ENT_COMPAT|ENT_XHTML,"ISO-8859-15"), $page);
       _dotoken('ALLOWEDPROTOCOLS', $AllowedProtocols, $page);
       _dotoken('LOGO', $logo, $page);
       _dotoken('DATA_PATH', dirname($SCRIPT_NAME), $page);

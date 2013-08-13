@@ -273,8 +273,9 @@ your web server it is highly advised that you do not allow this.
       ///////////////////////////////////////////////////////
       // Replace tokens
 
-      for ($i = 0; $i < $ntokens; $i++)
+      for ($i = 0; $i < $ntokens; $i++) {
 	  $tmpline = str_replace($FieldSeparator.$FieldSeparator.$i.$FieldSeparator, $replacements[$i], $tmpline);
+      }
 
       if ($ordinary_output) {	
 	if ($img_only) {
