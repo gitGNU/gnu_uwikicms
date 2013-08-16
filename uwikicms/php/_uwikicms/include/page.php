@@ -553,7 +553,7 @@ class UWC_Page {
   }
 
   function get_rss_url() {
-    return $this->make_url($this->get_path(),array("action"=>"rss"));
+    return $this->make_url($this->get_path(),array("login"=>"","password"=>"","session"=>"","action"=>"rss"));
   }
 
   function get_css_yes_url() {
