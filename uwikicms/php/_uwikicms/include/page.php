@@ -533,11 +533,11 @@ class UWC_Page {
   }
 
   function get_absolute_url_clean() {
-    return $this->conf->siteurl.$this->make_url($this->get_path(),array("login"=>"","password"=>"","session"=>"","action"=>""));
+    return $this->conf->siteurl.$this->make_url($this->get_path(),array("login"=>"","password"=>"","session"=>"","css"=>"","action"=>""));
   }
 
   function make_absolute_url_clean($path) {
-    return $this->conf->siteurl.$this->make_url($path,array("login"=>"","password"=>"","session"=>"","action"=>""));
+    return $this->conf->siteurl.$this->make_url($path,array("login"=>"","password"=>"","session"=>"","css"=>"","action"=>""));
   }
 
   function need_absolute_url() {
@@ -553,7 +553,7 @@ class UWC_Page {
   }
 
   function get_rss_url() {
-    return $this->make_url($this->get_path(),array("login"=>"","password"=>"","session"=>"","action"=>"rss"));
+    return $this->make_url($this->get_path(),array("login"=>"","password"=>"","session"=>"","css"=>"","action"=>"rss"));
   }
 
   function get_css_yes_url() {
