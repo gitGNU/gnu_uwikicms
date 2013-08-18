@@ -25,8 +25,8 @@ echo "<rss version=\"2.0\">\n";
 uwc_rss_setlocale();
 ?>
 <channel>
-  <title><?php echo $this->get_title(); ?></title>
-  <description><?php echo sprintf($this->translate("rss_about"),$this->get_title()); ?></description>
+  <title><?php echo uwc_format_html_to_rss($this->get_title()); ?></title>
+  <description><?php echo uwc_format_html_to_rss(sprintf($this->translate("rss_about"),$this->get_title())); ?></description>
   <lastBuildDate><?php echo date_format(date_create(), DateTime::RSS); ?></lastBuildDate>
   <link><?php echo $this->get_absolute_url_clean(); ?></link>
 <?php if ($this->need_rss()) { 

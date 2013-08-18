@@ -218,4 +218,11 @@ function uwc_format_escape_rss($var) {
   return $var;
 }
 
+function uwc_format_html_to_rss($var) {
+  $var = html_entity_decode($var,ENT_COMPAT|ENT_XHTML,"ISO-8859-15");
+  $var = uwc_format_escape_rss($var);
+
+  return $var;
+}
+
 ?>
