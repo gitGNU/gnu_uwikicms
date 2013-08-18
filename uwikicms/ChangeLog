@@ -1,3 +1,7 @@
+2013-08-18 : Christian Mauduit <ufoot@ufoot.org>
+
+	* Fixed lang support bug, weird URLs were showing in lang param.
+
 2013-08-16 : Christian Mauduit <ufoot@ufoot.org>
 
 	* Released 1.1.2.

@@ -55,7 +55,17 @@ class UWC_Request {
 
   function get_value($key) {
     if ($this->has_key($key)) {
-      return $this->request[$key];
+      switch ($key) {
+      case "lang":
+	if (uwc_lang_exists($this->request[$key])) {
+	  return $this->request[$key];
+	} else {
+	  return "";
+	}
+	break;
+      default:
+	return $this->request[$key];
+      }
     } else {
       return "";
     }

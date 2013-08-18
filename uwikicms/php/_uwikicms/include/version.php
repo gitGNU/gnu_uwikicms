@@ -19,5 +19,5 @@
  MA  02110-1301  USA
 */
 
-define("UWC_VERSION", "1.1.2");
+define("UWC_VERSION", "1.1.3");
 

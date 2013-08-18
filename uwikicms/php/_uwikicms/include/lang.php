@@ -19,18 +19,27 @@
  MA  02110-1301  USA
 */
 
-class UWC_Lang {
-  var $langs=array('en'=>'en_US.ISO-8859-1',
-		   'fr'=>'fr_FR.ISO-8859-1',
-		   'de'=>'de_DE.ISO-8859-1',
-		   'es'=>'es_ES.ISO-8859-1',
-		   'da'=>'da_DK.ISO-8859-1');
+function uwc_lang_exists($lang_id) {
+  $langs=array('en'=>'en_US.ISO-8859-1',
+	       'fr'=>'fr_FR.ISO-8859-1',
+	       'de'=>'de_DE.ISO-8859-1',
+	       'es'=>'es_ES.ISO-8859-1',
+	       'da'=>'da_DK.ISO-8859-1');
+  
+  return array_key_exists($lang_id, $langs);
+}
 
+class UWC_Lang {
   var $lang_id="en";
   var $lang="en-US";
   var $charset="iso-8859-1";
   var $locale="en_US.ISO-8859-1";
   var $messages=array();
+  var $langs=array('en'=>'en_US.ISO-8859-1',
+		     'fr'=>'fr_FR.ISO-8859-1',
+		     'de'=>'de_DE.ISO-8859-1',
+		     'es'=>'es_ES.ISO-8859-1',
+		     'da'=>'da_DK.ISO-8859-1');
 
   function get_lang_id() {
     return $this->lang_id;
@@ -53,7 +62,7 @@ class UWC_Lang {
   }
 
   function set_lang_id($lang_id) {
-    if (gettype($lang_id)!="string" or !array_key_exists($lang_id,$this->langs)) {
+    if (gettype($lang_id)!="string" or !uwc_lang_exists($lang_id)) {
       $lang_id="en";
     }
 
@@ -88,7 +97,7 @@ class UWC_Lang {
       $langs=array_keys($this->langs);
     }
     foreach ($langs as $lang) {
-      if (array_key_exists($lang,$this->langs)) {
+      if (uwc_lang_exists($lang)) {
 	array_push($gettextlangs,$this->langs[$lang]);
       }
     }
