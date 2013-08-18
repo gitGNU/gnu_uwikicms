@@ -1,5 +1,6 @@
 2013-08-18 : Christian Mauduit <ufoot@ufoot.org>
 
+	* Released 1.1.3.
 	* Fixed RSS bug, was broken when global title contained an accent.
 	* Fixed lang support bug, weird URLs were showing in lang param.
 
