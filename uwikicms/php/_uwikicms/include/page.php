@@ -1033,7 +1033,7 @@ class UWC_Page {
   }
 
   function need_nav() {
-    return $this->need_home() || $this->need_up() || $this->need_next() || $this->need_prev() || $this->need_news();
+    return $this->need_home() || $this->need_up() || $this->need_next() || $this->need_prev() || $this->need_rss();
   }
 
   function need_home() {
