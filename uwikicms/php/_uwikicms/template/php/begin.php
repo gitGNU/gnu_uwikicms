@@ -76,7 +76,7 @@
     <?php } ?>
 
     <?php if ($this->need_rss()) { ?>
-    <?php if ($this->need_home() || $this->need_prev() || $this->need_up() || $this->need_next()) { ?><span class="textmode"> | </span><? } ?><a href="<?php echo $this->get_rss_url(); ?>"><img src="<?php echo $this->get_images_dir(); ?>/rss.png" width="<?php echo $this->get_rss_width(); ?>" height="<?php echo $this->get_rss_height(); ?>" alt="<?php echo sprintf($this->translate("rss"),$this->get_title()); ?>" title="<?php echo sprintf($this->translate("rss_about"),$this->get_title()); ?>" class="msiehackbox" /></a>
+    <?php if ($this->need_home() || $this->need_prev() || $this->need_up() || $this->need_next()) { ?><span class="textmode"> | </span><?php } ?><a href="<?php echo $this->get_rss_url(); ?>"><img src="<?php echo $this->get_images_dir(); ?>/rss.png" width="<?php echo $this->get_rss_width(); ?>" height="<?php echo $this->get_rss_height(); ?>" alt="<?php echo sprintf($this->translate("rss"),$this->get_title()); ?>" title="<?php echo sprintf($this->translate("rss_about"),$this->get_title()); ?>" class="msiehackbox" /></a>
     <?php } ?>
 
     <span class="textmode"> ] </span>
