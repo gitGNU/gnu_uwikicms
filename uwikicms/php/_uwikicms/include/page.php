@@ -524,6 +524,28 @@ class UWC_Page {
     return $domain_name;
   }
 
+  function has_images() {
+    $list=null;
+    if (isset($this->content->get_images_list) && $this->content->get_images_list) {
+      $list=$this->content->get_images_list();
+    }
+    return $list && count($list)>0;
+  }
+
+  function get_first_image_url() {
+    $id=null;
+    if (isset($this->content->get_images_list) && $this->content->get_images_list) {
+      $list=$this->content->get_images_list();
+      if ($list && count($list)>0) {
+	$keys=array_keys($list);
+	$id=$keys[0];
+      }
+    }
+    if ($id) {
+      return uwc
+    }
+  }
+
   function get_absolute_url() {
     return $this->conf->siteurl.$this->make_url($this->get_path(),array("login"=>"","password"=>""));
   }

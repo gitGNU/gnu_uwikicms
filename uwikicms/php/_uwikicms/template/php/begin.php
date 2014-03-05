@@ -36,6 +36,11 @@
     <link rel="stylesheet" type="text/css" media="print" href="<?php echo $this->get_css_dir(); ?>/print.css" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <?php } ?>
+<?php if ($this->has_images()) { ?>
+    <meta property="og:image" content="<?php echo this->get_first_image_url(); ?>"/>
+    <meta property="og:title" content="<?php echo this->get_title(); ?>"/>
+    <meta property="og:url" content="<?php echo this->get_absolute_url(); ?>"/>
+<?php } ?>
   </head>
   <body>
 
