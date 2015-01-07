@@ -174,6 +174,10 @@ class UWC_Image {
     return null;
   }
 
+  function get_images_list() {
+    return Array();
+  }
+
   function get_rss() {
     return null;
   }

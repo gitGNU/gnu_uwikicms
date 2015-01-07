@@ -525,24 +525,21 @@ class UWC_Page {
   }
 
   function has_images() {
-    $list=null;
-    if (isset($this->content->get_images_list) && $this->content->get_images_list) {
-      $list=$this->content->get_images_list();
-    }
+    $list=$this->content->get_images_list();
     return $list && count($list)>0;
   }
 
   function get_first_image_url() {
     $id=null;
-    if (isset($this->content->get_images_list) && $this->content->get_images_list) {
-      $list=$this->content->get_images_list();
-      if ($list && count($list)>0) {
-	$keys=array_keys($list);
-	$id=$keys[0];
-      }
+    $list=$this->content->get_images_list();
+    if ($list && count($list)>0) {
+      $keys=array_keys($list);
+      $id=$keys[0];
     }
     if ($id) {
-      return uwc
+      return $this->make_url(uwc_image_make_full_url(uwc_content_get_parent_path($this->get_path()),$id));
+    } else {
+      return "";
     }
   }
 
