@@ -221,11 +221,12 @@ function uwc_format_escape_rss($var) {
   return $var;
 }
 
-function uwc_format_no_crlf($var) {
-  $var = strtr($var, 
-	       array("\r" => " ",
-		     "\n" => " ",
-		     "\t" => " "));
+function uwc_format_no_markup($var) {
+  $var = preg_replace("/\[.*\]/","",$var);
+  $var = preg_replace("/^[\#\*\!]+/","",$var);
+  $var = preg_replace("/[[:cntrl:][:space:]]+/"," ",$var);
+  $var = preg_replace("/^ +/","",$var);
+  $var = preg_replace("/ +\$/","",$var);
 
   return $var;
 }

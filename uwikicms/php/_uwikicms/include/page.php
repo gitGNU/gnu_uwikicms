@@ -879,7 +879,7 @@ class UWC_Page {
   }
 
   function get_meta_description() {
-    return uwc_format_text_to_html(uwc_format_no_crlf(uwc_format_cut_text($this->content->get_text(),UWC_PAGE_DESCRIPTION_SIZE)));
+    return uwc_format_text_to_html(uwc_format_cut_text(uwc_format_no_markup($this->content->get_text()),UWC_PAGE_DESCRIPTION_SIZE));
   }
 
   function get_meta_keywords() {

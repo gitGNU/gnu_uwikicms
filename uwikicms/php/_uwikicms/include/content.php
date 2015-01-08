@@ -166,7 +166,7 @@ class UWC_Content {
 	array_push($this->rss, 
 		   array("path"=>$row["content_path"],
 			 "title"=>$row["content_title"],
-			 "text"=>$row["content_text"],
+			 "text"=>uwc_format_no_markup($row["content_text"]),
 			 "date_update"=>$row["content_date_update"]));
       }
       $this->data->query_select_free();

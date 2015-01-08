@@ -1,5 +1,7 @@
 2015-01-08 : Christian Mauduit <ufoot@ufoot.org>
 
+	* Fixed description escaping.
+
 	* Implemented Twitter cards as well.
 
 2015-01-07 : Christian Mauduit <ufoot@ufoot.org>
