@@ -131,7 +131,12 @@ $this->messages=array
    "gallery_next"=>"Next image",
    "gallery_empty"=>"No images in this gallery",
    "google_search"=>"Google search",
+   "rss"=>"%s RSS feed",
    "rss_about"=>"RSS feed for %s",
+   "facebook"=>"Share %s on facebook",
+   "facebook_about"=>"Share %s on facebook",
+   "twitter"=>"Tweet %s",
+   "twitter_about"=>"Share %s on Twitter",
    "do_date_update"=>"Update last modification date",
 
    "" => ""
