@@ -42,7 +42,7 @@ require("horde.php");
 require("gallery.php");
 require("rss.php");
 
-define("UWC_PAGE_DESCRIPTION_SIZE",160);
+define("UWC_PAGE_DESCRIPTION_SIZE",300);
 
 class UWC_Page {
   var $context=false;
@@ -278,6 +278,22 @@ class UWC_Page {
 
   function get_rss_height() {
     return $this->conf->rss_height;
+  }
+
+  function get_facebook_width() {
+    return $this->conf->facebook_width;
+  }
+
+  function get_facebook_height() {
+    return $this->conf->facebook_height;
+  }
+
+  function get_twitter_width() {
+    return $this->conf->twitter_width;
+  }
+
+  function get_twitter_height() {
+    return $this->conf->twitter_height;
   }
 
   function get_news_max_nb() {
@@ -529,7 +545,7 @@ class UWC_Page {
     return $list && count($list)>0;
   }
 
-  function get_first_image_url() {
+  function get_first_image_url_clean() {
     $id=null;
     $list=$this->content->get_images_list();
     if ($list && count($list)>0) {
@@ -537,10 +553,14 @@ class UWC_Page {
       $id=$keys[0];
     }
     if ($id) {
-      return $this->make_url(uwc_image_make_full_url(uwc_content_get_parent_path($this->get_path()),$id));
+      return $this->make_url(uwc_image_make_full_url(uwc_content_get_parent_path($this->get_path()),$id),array("login"=>"","password"=>"","session"=>"","css"=>"","action"=>""));
     } else {
       return "";
     }
+  }
+
+  function get_first_image_absolute_url_clean() {
+    return $this->make_absolute_url_clean($this->get_first_image_url_clean());
   }
 
   function get_absolute_url() {
@@ -573,6 +593,14 @@ class UWC_Page {
 
   function get_rss_url() {
     return $this->make_url($this->get_path(),array("login"=>"","password"=>"","session"=>"","css"=>"","action"=>"rss"));
+  }
+
+  function get_facebook_url() {
+    return sprintf("https://www.facebook.com/sharer.php?u=%s",urlencode($this->get_absolute_url_clean()));
+  }
+
+  function get_twitter_url() {
+      return sprintf("https://twitter.com/intent/tweet?text=%s&url=%s",urlencode(uwc_format_html_to_twitter($this->get_title()." ".$this->get_meta_description())),urlencode($this->get_absolute_url_clean()));
   }
 
   function get_css_yes_url() {

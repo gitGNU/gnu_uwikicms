@@ -20,6 +20,7 @@
 */
 
 define("UWC_FORMAT_LONGDESC_CUT", 80);
+define("UWC_FORMAT_TWITTER_CUT", 100);
 
 function uwc_format_escape_sql($str) {
   $str=uwc_format_unescape_gpc($str);
@@ -61,12 +62,20 @@ function uwc_format_text_to_html($str) {
   return uwc_format_htmlfriendly(htmlentities($str,ENT_COMPAT|ENT_XHTML,"ISO-8859-15"));
 }
 
+function uwc_format_html_to_text($str) {
+  return html_entity_decode($str,ENT_COMPAT|ENT_XHTML,"ISO-8859-15");
+}
+
 function uwc_format_html_to_xul($str) {
-  return htmlspecialchars(html_entity_decode($str),ENT_COMPAT|ENT_XHTML,"ISO-8859-15");
+  return htmlspecialchars(uwc_format_html_to_text($str,ENT_COMPAT|ENT_XHTML,"ISO-8859-15"));
 }
 
 function uwc_format_text_to_xul($str) {
   return uwc_format_html_to_xul(uwc_format_text_to_html($str));
+}
+
+function uwc_format_html_to_twitter($str) {
+  return iconv("ISO-8859-15","UTF-8",uwc_format_cut_text(uwc_format_html_to_text($str),UWC_FORMAT_TWITTER_CUT));
 }
 
 function uwc_format_text_to_html_attribute($str) {

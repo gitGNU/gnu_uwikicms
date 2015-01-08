@@ -1,5 +1,7 @@
 2015-01-08 : Christian Mauduit <ufoot@ufoot.org>
 
+	* Added Facebook and Twitter support.
+
 	* Fixed description escaping.
 
 	* Implemented Twitter cards as well.
