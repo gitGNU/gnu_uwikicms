@@ -1,3 +1,7 @@
+2015-01-08 : Christian Mauduit <ufoot@ufoot.org>
+
+	* Implemented Twitter cards as well.
+
 2015-01-07 : Christian Mauduit <ufoot@ufoot.org>
 
 	* First naive implementation of Facebook og tags.

@@ -36,10 +36,18 @@
     <link rel="stylesheet" type="text/css" media="print" href="<?php echo $this->get_css_dir(); ?>/print.css" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <?php } ?>
+    <meta property="og:title" content="<?php echo $this->get_title(); ?>"/>
+    <meta property="og:description" content="<?php echo $this->get_meta_description(); ?>"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="<?php echo $this->get_absolute_url(); ?>"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="<?php echo $this->get_meta_author(); ?>"/>
+    <meta name="twitter:title" content="<?php echo $this->get_title(); ?>"/>
+    <meta name="twitter:description" content="<?php echo $this->get_meta_description(); ?>"/>
+    <meta name="twitter:url" content="<?php echo $this->get_absolute_url(); ?>"/>
 <?php if ($this->has_images()) { ?>
     <meta property="og:image" content="<?php echo $this->get_first_image_url(); ?>"/>
-    <meta property="og:title" content="<?php echo $this->get_title(); ?>"/>
-    <meta property="og:url" content="<?php echo $this->get_absolute_url(); ?>"/>
+    <meta name="twitter:image" content="<?php echo $this->get_first_image_url(); ?>"/>
 <?php } ?>
   </head>
   <body>

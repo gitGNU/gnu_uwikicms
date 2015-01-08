@@ -213,7 +213,10 @@ function uwc_format_escape_rss($var) {
 		     ">" => "&gt;",
 		     "<" => "&lt;",
 		     '"' => "&quot;",
-		     "'" => "&apos;"));
+		     "'" => "&apos;",
+		     "\r" => " ",
+		     "\n" => " ",
+		     "\t" => " "));
 
   return $var;
 }

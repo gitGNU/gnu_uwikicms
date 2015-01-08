@@ -42,7 +42,7 @@ require("horde.php");
 require("gallery.php");
 require("rss.php");
 
-define("UWC_PAGE_DESCRIPTION_SIZE",80);
+define("UWC_PAGE_DESCRIPTION_SIZE",160);
 
 class UWC_Page {
   var $context=false;
@@ -879,7 +879,7 @@ class UWC_Page {
   }
 
   function get_meta_description() {
-    return $this->get_home_title();
+    return uwc_format_escape_rss(substr($this->content->get_text(),0,UWC_PAGE_DESCRIPTION_SIZE));
   }
 
   function get_meta_keywords() {
