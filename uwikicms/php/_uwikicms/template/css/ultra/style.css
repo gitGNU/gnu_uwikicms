@@ -19,7 +19,7 @@
 */
 
 body {
-       font-size: small;
+       font-size: medium;
        color: #000000;
        background-color: #f0f0f0;
        background-image: url('../../images/ultra/whitetweed-pattern.png');
@@ -128,42 +128,42 @@ a:hover {
            margin-bottom: 1em;
            }
 .box {
-       font-size: x-small; 
+       font-size: small; 
        color: #000000; 
        background-color: #c0c0c0;
        }
 .image { 
-         font-size: x-small;
+         font-size: small;
          color: #000000;
          background-color: #808080;
          }
 .default input { 
-                 font-size: small;
+                 font-size: medium;
                  color: #ffffff; 
                  background-color: #000000;
                  }
 .status0 input { 
-                 font-size: small;
+                 font-size: medium;
                  color: #ffffff; 
                  background-color: #000040;
                  }
 .status1 input { 
-                 font-size: small;
+                 font-size: medium;
                  color: #ffffff; 
                  background-color: #000080;
                  }
 .status2 input { 
-                 font-size: small;
+                 font-size: medium;
                  color: #ffffff; 
                  background-color: #000080;
                  }
 .status3 input { 
-                 font-size: small;
+                 font-size: medium;
                  color: #ffffff; 
                  background-color: #000080;
                  }
 .box input { 
-             font-size: x-small;
+             font-size: small;
              color: #ffffff; 
              background-color: #000040;
              }
@@ -193,37 +193,37 @@ a:hover {
                     background-color: #000080;
                     }
 .box textarea { 
-                font-size: small;
+                font-size: medium;
                 color: #ffffff; 
                 background-color: #000040;
                 }
 .default select { 
-                  font-size: small;
+                  font-size: medium;
                   color: #ffffff; 
                   background-color: #000000;
                   }
 .status0 select { 
-                  font-size: small;
+                  font-size: medium;
                   color: #ffffff; 
                   background-color: #000040;
                   }
 .status1 select { 
-                  font-size: small;
+                  font-size: medium;
                   color: #ffffff; 
                   background-color: #000080;
                   }
 .status2 select { 
-                  font-size: small;
+                  font-size: medium;
                   color: #ffffff; 
                   background-color: #000080;
                   }
 .status3 select { 
-                  font-size: small;
+                  font-size: medium;
                   color: #ffffff; 
                   background-color: #000080;
                   }
 .box select { 
-              font-size: x-small;
+              font-size: small;
               color: #ffffff; 
               background-color: #000040;
               }
