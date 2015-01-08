@@ -68,10 +68,10 @@
     <div id="controlfocus"><?php echo $this->get_control_focus(); ?></div>
     <?php } ?>
 
+    <?php if ($this->need_nav()) { ?>
     <div id="nav">
     <span class="textmode"> [ </span>
 
-    <?php if ($this->need_nav()) { ?>
     <?php if ($this->need_home()) { ?>
     <a href="<?php echo $this->make_url($this->get_home_path()); ?>"><img src="<?php echo $this->get_images_dir(); ?>/home.png" width="<?php echo $this->get_arrow_width(); ?>" height="<?php echo $this->get_arrow_height(); ?>" alt="<?php echo sprintf($this->translate("home"),$this->get_home_title()); ?>" title="<?php echo $this->get_home_title(); ?>" class="msiehackbox" /></a>
     <?php } ?>
@@ -89,15 +89,18 @@
     <?php } ?>
 
     <?php if ($this->need_rss()) { ?>
-    <?php if ($this->need_home() || $this->need_prev() || $this->need_up() || $this->need_next()) { ?><span class="textmode"> | </span><?php } ?><a href="<?php echo $this->get_rss_url(); ?>"><img src="<?php echo $this->get_images_dir(); ?>/rss.png" width="<?php echo $this->get_rss_width(); ?>" height="<?php echo $this->get_rss_height(); ?>" alt="<?php echo sprintf($this->translate("rss"),$this->get_title()); ?>" title="<?php echo sprintf($this->translate("rss_about"),$this->get_title()); ?>" class="msiehackbox" /></a>
+    <?php if ($this->need_home() || $this->need_prev() || $this->need_up() || $this->need_next()) { ?><span class="textmode"> | </span><?php } ?>
+    <a href="<?php echo $this->get_rss_url(); ?>"><img src="<?php echo $this->get_images_dir(); ?>/rss.png" width="<?php echo $this->get_rss_width(); ?>" height="<?php echo $this->get_rss_height(); ?>" alt="<?php echo sprintf($this->translate("rss"),$this->get_title()); ?>" title="<?php echo sprintf($this->translate("rss_about"),$this->get_title()); ?>" class="msiehackbox" /></a>
     <?php } ?>
-    <span class="textmode"> |
-    <?php } ?>
+    <?php if ($this->need_share()) { ?>
+    <?php if ($this->need_home() || $this->need_prev() || $this->need_up() || $this->need_next() || $this->need_rss()) { ?><span class="textmode"> | </span><?php } ?>
     </span><a href="<?php echo $this->get_facebook_url(); ?>"><img src="<?php echo $this->get_images_dir(); ?>/facebook.png" width="<?php echo $this->get_facebook_width(); ?>" height="<?php echo $this->get_facebook_height(); ?>" alt="<?php echo sprintf($this->translate("facebook"),$this->get_title()); ?>" title="<?php echo sprintf($this->translate("facebook_about"),$this->get_title()); ?>" class="msiehackbox" /></a>
     <span class="textmode"> | </span><a href="<?php echo $this->get_twitter_url(); ?>"><img src="<?php echo $this->get_images_dir(); ?>/twitter.png" width="<?php echo $this->get_twitter_width(); ?>" height="<?php echo $this->get_twitter_height(); ?>" alt="<?php echo sprintf($this->translate("twitter"),$this->get_title()); ?>" title="<?php echo sprintf($this->translate("twitter_about"),$this->get_title()); ?>" class="msiehackbox" /></a>
+    <?php } ?>
 
     <span class="textmode"> ] </span>
     </div>
+    <?php } ?>
 
     <?php $langs=$this->get_translated();
 if (count($langs)>0) { 

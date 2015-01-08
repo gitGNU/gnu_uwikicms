@@ -1080,7 +1080,7 @@ class UWC_Page {
   }
 
   function need_nav() {
-    return $this->need_home() || $this->need_up() || $this->need_next() || $this->need_prev() || $this->need_rss();
+    return $this->need_home() || $this->need_up() || $this->need_next() || $this->need_prev() || $this->need_rss() || $this->need_share();
   }
 
   function need_home() {
@@ -1100,6 +1100,10 @@ class UWC_Page {
   }
 
   function need_google() {
+    return $this->content->get_status()==0;
+  }
+
+  function need_share() {
     return $this->content->get_status()==0;
   }
 
