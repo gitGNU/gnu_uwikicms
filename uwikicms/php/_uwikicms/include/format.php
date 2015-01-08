@@ -225,6 +225,7 @@ function uwc_format_no_markup($var) {
   $var = preg_replace("/\[([^\|\]]+)\|([^\|\]]+)\]/","\$1",$var);
   $var = preg_replace("/\[([^\|\]]+)\]/","",$var);
   $var = preg_replace("/^[\#\*\!]+/","",$var);
+  $var = preg_replace("/[\r\n][\#\*\!]+/","",$var);
   $var = preg_replace("/[[:cntrl:][:space:]]+/"," ",$var);
   $var = preg_replace("/^ +/","",$var);
   $var = preg_replace("/ +\$/","",$var);
