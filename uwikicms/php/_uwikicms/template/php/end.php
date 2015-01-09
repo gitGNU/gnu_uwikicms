@@ -83,7 +83,7 @@
        <?php $first=true; ?>
      <?php foreach ($this->get_untranslated() as $lang) { ?>
        <?php if (!$first) { echo " | "; } $first=false; ?>
-<a href="<?php echo $this->get_translate_url($lang); ?>"><?php echo $lang; ?></a>
+<a href="<?php echo $this->get_translate_url($lang); ?>" hreflang="<?php echo $lang; ?>"><?php echo $lang; ?></a>
 <?php } ?>
        </li>
 <?php } ?>

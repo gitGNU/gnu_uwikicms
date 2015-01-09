@@ -112,7 +112,7 @@ if (count($langs)>0) {
       <span class="textmode"> | </span>
     <?php }
       $first=false; ?>
-      <a href="<?php echo $this->get_translate_url($lang); ?>"><img src="<?php echo $this->get_images_dir()."/flag_".$lang.".png"; ?>" width="<?php echo $this->get_lang_width(); ?>" height="<?php echo $this->get_lang_height(); ?>" alt="<?php echo $this->translate("view_lang_".$lang); ?>" title="<?php echo $this->translate("view_lang_".$lang); ?>" class="msiehackbox" /></a>
+      <a href="<?php echo $this->get_translate_url($lang); ?>" hreflang="<?php echo $lang; ?>"><img src="<?php echo $this->get_images_dir()."/flag_".$lang.".png"; ?>" width="<?php echo $this->get_lang_width(); ?>" height="<?php echo $this->get_lang_height(); ?>" alt="<?php echo $this->translate("view_lang_".$lang); ?>" title="<?php echo $this->translate("view_lang_".$lang); ?>" class="msiehackbox" /></a>
     <?php } ?>
     <span class="textmode"> ] </span>
     </div>
