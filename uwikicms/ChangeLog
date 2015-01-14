@@ -1,3 +1,7 @@
+2015-01-14 : Christian Mauduit <ufoot@ufoot.org>
+
+	* Removed link to XUL gallery as XUL-remote is deprecated.
+
 2015-01-10 : Christian Mauduit <ufoot@ufoot.org>
 
 	* Bump version to 1.1.6.

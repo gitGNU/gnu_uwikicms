@@ -63,9 +63,13 @@
 <?php if ($this->need_action_css_no()) { ?>
      <li><a href="<?php echo $this->get_css_no_url(); ?>"><?php echo $this->translate("action_css_no"); ?></a></li>
 <?php } ?>
-<?php if ($this->need_action_gallery()) { ?>
+<!--
+<?php /* Recent versions of Mozilla do not support remote-XUL any more,
+         so Gallery has been just removed, not offered any more */
+      if ($this->need_action_gallery()) { ?>
      <li><a href="<?php echo $this->get_gallery_url(); ?>"><?php echo $this->translate("action_gallery"); ?></a></li>
 <?php } ?>
+-->
 <?php if ($this->need_action_allinone()) { ?>
      <li><a href="<?php echo $this->get_allinoneform_url(); ?>"><?php echo $this->translate("action_allinone"); ?></a></li>
 <?php } ?>
