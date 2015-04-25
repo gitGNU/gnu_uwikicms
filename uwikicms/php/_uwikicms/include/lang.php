@@ -216,7 +216,7 @@ function uwc_lang_al2gt($gettextlangs) {
 		    array(array_key_exists($allang, $alscores) ? $alscores[$allang] : 0, array_key_exists("*", $acscores) ? $acscores["*"] : 0),
 		    array(array_key_exists($noct[0], $alscores) ? $alscores[$noct[0]] : 0, array_key_exists("*", $acscores) ? $acscores["*"] : 0),
 		    array(array_key_exists("*", $alscores) ? $alscores["*"] : 0, $acscores[$gtcs]),
-		    array(array_key_exists("*", $alscores) ? $alscores["*"] : 0, array_key_exists("*", $acscores) ? $acscores["*"] : 0);
+		    array(array_key_exists("*", $alscores) ? $alscores["*"] : 0, array_key_exists("*", $acscores) ? $acscores["*"] : 0));
 
     $found=FALSE;
     foreach($testvals as $tval) {
