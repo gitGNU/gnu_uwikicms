@@ -74,6 +74,8 @@ class UWC_Config {
   var $control_focus=""; // free HTML on top of "control" box
   var $actions_focus=""; // free HTML on top of "actions" box
 
+  var $image_view_width_percent = 66; // relative width when viewing image
+
   function UWC_Config() {
     $this->prefix = dirname(__FILE__) . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "..";
   }
