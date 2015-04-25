@@ -358,11 +358,11 @@ input.edit {
          }
 .odd { 
        float: left;
-       width: 25%;
+       width: 200px;
        } 
 .even { 
         float: right;
-        width: 25%;
+        width: 200px;
         }
 .menu { 
         font-weight: bold;
