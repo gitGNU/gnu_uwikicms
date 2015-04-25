@@ -147,10 +147,12 @@ function uwc_lang_find_match($curlscore,$curcscore,$curgtlang,$langval,$charval,
 
 function uwc_lang_al2gt($gettextlangs) {
   /* default to "everything is acceptable", as RFC2616 specifies */
-  $acceptLang=(($_SERVER["HTTP_ACCEPT_LANGUAGE"] == '') ? '*' :
-	       $_SERVER["HTTP_ACCEPT_LANGUAGE"]);
-  $acceptChar=(($_SERVER["HTTP_ACCEPT_CHARSET"] == '') ? '*' :
-	       $_SERVER["HTTP_ACCEPT_CHARSET"]);
+  $acceptLang=(array_key_exists("HTTP_ACCEPT_LANGUAGE", $_SERVER) &&
+               ($_SERVER["HTTP_ACCEPT_LANGUAGE"] != '')) ?
+               $_SERVER["HTTP_ACCEPT_LANGUAGE"] : '*';
+  $acceptLang=(array_key_exists("HTTP_ACCEPT_CHARSET", $_SERVER) &&
+               ($_SERVER["HTTP_ACCEPT_CHARSET"] != '')) ?
+               $_SERVER["HTTP_ACCEPT_CHARSET"] : '*';
   $alparts=@preg_split("/,/",$acceptLang);
   $acparts=@preg_split("/,/",$acceptChar);
       
