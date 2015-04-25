@@ -27,8 +27,8 @@ define("UWC_IMAGE_TMP_PATH",sprintf("%s/../tmp",dirname(__FILE__)));
 define("UWC_IMAGE_PREVIEW_SURFACE",160*120);
 define("UWC_IMAGE_FULLSCALED_SURFACE",640*480);
 define("UWC_IMAGE_FULLSCALED_LIMIT",801*601);
-define("UWC_IMAGE_VIEW_PERCENT_AVG",60);
-define("UWC_IMAGE_VIEW_PERCENT_MAX",90);
+define("UWC_IMAGE_VIEW_PERCENT_AVG",58);
+define("UWC_IMAGE_VIEW_PERCENT_MAX",85);
 
 class UWC_Image {
   var $data=null;
