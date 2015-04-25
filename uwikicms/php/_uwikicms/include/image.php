@@ -27,6 +27,8 @@ define("UWC_IMAGE_TMP_PATH",sprintf("%s/../tmp",dirname(__FILE__)));
 define("UWC_IMAGE_PREVIEW_SURFACE",160*120);
 define("UWC_IMAGE_FULLSCALED_SURFACE",640*480);
 define("UWC_IMAGE_FULLSCALED_LIMIT",801*601);
+define("UWC_IMAGE_VIEW_PERCENT_AVG",60);
+define("UWC_IMAGE_VIEW_PERCENT_MAX",90);
 
 class UWC_Image {
   var $data=null;
@@ -310,14 +312,14 @@ function uwc_image_calc_fullscaled(& $width, & $height) {
 }
 
 function uwc_image_calc_percent(& $width, & $height) {
-  $coef=sqrt(((float) ($width*$height))/($this->conf->image_view_percent_avg*$this->conf->image_view_percent_avg));
+  $coef=sqrt(((float) ($width*$height))/(UWC_IMAGE_VIEW_PERCENT_AVG*UWC_IMAGE_VIEW_PERCENT_AVG);
   if ($coef<=0) {
     $coef=1;
   }
   $width=ceil($width/$coef);
   $height=ceil($height/$coef);
-  if ($width>$this->conf->image_view_percent_max) {
-    $width=$this->conf->image_view_percent_max;
+  if ($width>UWC_IMAGE_VIEW_PERCENT_MAX) {
+    $width=UWC_IMAGE_VIEW_PERCENT_MAX;
     $height=$height*100/$width;
   }
 }
