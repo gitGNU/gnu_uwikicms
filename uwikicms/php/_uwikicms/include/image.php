@@ -52,6 +52,8 @@ class UWC_Image {
   var $full_h=0;
   var $fullscaled_w=0;
   var $fullscaled_h=0;
+  var $percent_w=0;
+  var $percent_h=0;
   var $size=0;
   var $filename="";
 
@@ -80,6 +82,9 @@ class UWC_Image {
       $this->fullscaled_w=$this->full_w;
       $this->fullscaled_h=$this->full_h;
       uwc_image_calc_fullscaled($this->fullscaled_w,$this->fullscaled_h);
+      $this->percent_w=$this->full_w;
+      $this->percent_h=$this->full_h;
+      uwc_image_calc_percent($this->percent_w,$this->percent_h);
     }
     $this->data->query_select_free();
     $this->data->select_legend_by_id_and_lang($this->image_id,$this->lang);
@@ -260,6 +265,16 @@ class UWC_Image {
     return $this->fullscaled_h;
   }
 
+  function get_percent_w () {
+    $this->update_data();
+    return $this->percent_w;
+  }
+
+  function get_percent_h () {
+    $this->update_data();
+    return $this->percent_h;
+  }
+
   function get_size () {
     $this->update_data();
     return $this->size;
@@ -286,8 +301,24 @@ function uwc_image_make_full_url($path,$id) {
 function uwc_image_calc_fullscaled(& $width, & $height) {
   if ($width*$height>UWC_IMAGE_FULLSCALED_LIMIT) {
     $coef=sqrt(((float) ($width*$height))/(UWC_IMAGE_FULLSCALED_SURFACE));
+    if ($coef<=0) {
+      $coef=1;
+    }
     $width=ceil($width/$coef);
     $height=ceil($height/$coef);
+  }
+}
+
+function uwc_image_calc_percent(& $width, & $height) {
+  $coef=sqrt(((float) ($width*$height))/($this->conf->image_view_percent_avg*$this->conf->image_view_percent_avg));
+  if ($coef<=0) {
+    $coef=1;
+  }
+  $width=ceil($width/$coef);
+  $height=ceil($height/$coef);
+  if ($width>$this->conf->image_view_percent_max) {
+    $width=$this->conf->image_view_percent_max;
+    $height=$height*100/$width;
   }
 }
 

@@ -731,6 +731,28 @@ class UWC_Page {
     return $this->content->get_fullscaled_h();
   }
 
+  function get_image_percent_w() {
+    return ($this->content->get_percent_w();
+  }
+
+  function get_image_percent_h() {
+    return ($this->content->get_percent_h();
+  }
+
+  function get_image_view_w() {
+    if ($this->use_css()) {
+      return $this->content->get_percent_w()."%";
+    }
+    return $this->content->get_fullscaled_w()."px";
+  }
+
+  function get_image_view_h() {
+    if ($this->use_css()) {
+      return $this->content->get_percent_h()."%";
+    }
+    return $this->content->get_fullscaled_h()."px";
+  }
+
   function get_gallery_url() {
     $path=(preg_match("/image/",$this->context->action)) ? $this->get_up_path() : $this->get_path();
     return $this->make_url($path."/gallery.xul");

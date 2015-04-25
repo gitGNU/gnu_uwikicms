@@ -23,7 +23,7 @@
 
 <div class="image">
 <div>
-<a href="<?php echo $this->get_image_full_url(); ?>"><img src="<?php echo $this->get_image_full_url(); ?>" <?php if ($this->use_css()) { ?> width="<?php echo $this->conf->image_view_width_percent; ?>%" <?php } else { ?>width="<?php echo $this->get_image_fullscaled_w(); ?>" height="<?php echo $this->get_image_fullscaled_h(); ?>" <?php } ?> alt="<?php echo $this->get_legend_alt(); ?>" class="msiehackimage" /></a>
+<a href="<?php echo $this->get_image_full_url(); ?>"><img src="<?php echo $this->get_image_full_url(); ?>" width="<?php echo $this->get_image_view_w(); ?>" height="<?php echo $this->get_image_view_h(); ?>" alt="<?php echo $this->get_legend_alt(); ?>" class="msiehackimage" /></a>
 </div>
 <div>
 <?php echo $this->translate4("filename_width_height_size",$this->get_image_filename(),$this->get_image_full_w(),$this->get_image_full_h(),$this->get_image_size()); ?>
