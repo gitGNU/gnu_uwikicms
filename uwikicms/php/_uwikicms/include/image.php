@@ -312,7 +312,7 @@ function uwc_image_calc_fullscaled(& $width, & $height) {
 }
 
 function uwc_image_calc_percent(& $width, & $height) {
-  $coef=sqrt(((float) ($width*$height))/(UWC_IMAGE_VIEW_PERCENT_AVG*UWC_IMAGE_VIEW_PERCENT_AVG);
+  $coef=sqrt(((float) ($width*$height))/(UWC_IMAGE_VIEW_PERCENT_AVG*UWC_IMAGE_VIEW_PERCENT_AVG));
   if ($coef<=0) {
     $coef=1;
   }
