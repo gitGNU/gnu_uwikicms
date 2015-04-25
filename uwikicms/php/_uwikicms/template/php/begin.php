@@ -31,6 +31,7 @@
     <meta name="Copyright" content="<?php echo $this->get_meta_copyright(); ?>" />
     <meta name="Generator" content="UWiKiCMS" />
 <?php if ($this->use_css()) { ?>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" />
     <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $this->get_css_dir(); ?>/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $this->get_css_dir(); ?>/layout.css" />
     <link rel="stylesheet" type="text/css" media="print" href="<?php echo $this->get_css_dir(); ?>/print.css" />
