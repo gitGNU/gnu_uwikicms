@@ -732,11 +732,11 @@ class UWC_Page {
   }
 
   function get_image_percent_w() {
-    return ($this->content->get_percent_w();
+    return $this->content->get_percent_w();
   }
 
   function get_image_percent_h() {
-    return ($this->content->get_percent_h();
+    return $this->content->get_percent_h();
   }
 
   function get_image_view_w() {
