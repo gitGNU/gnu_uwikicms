@@ -352,11 +352,11 @@ input.edit {
          }
 .odd { 
        float: left;
-       width: 200px;
+       width: 240px;
        } 
 .even { 
         float: right;
-        width: 200px;
+        width: 240px;
         }
 .menu { 
         font-weight: bold;

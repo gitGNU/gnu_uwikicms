@@ -1,5 +1,7 @@
 2015-04-25 : Christian Mauduit <ufoot@ufoot.org>
 
+	* Using fixed size for image boxes.
+
 	* Added viewport meta tag for better mobile behavior.
 
 2015-01-14 : Christian Mauduit <ufoot@ufoot.org>

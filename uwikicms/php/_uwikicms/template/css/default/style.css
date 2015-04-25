@@ -249,11 +249,11 @@ h6 {
          }
 .odd { 
        float: left;
-       width: 200px;
+       width: 240px;
        } 
 .even { 
         float: right;
-        width: 200px;
+        width: 240px;
         }
 .menu { 
         font-variant: small-caps;
