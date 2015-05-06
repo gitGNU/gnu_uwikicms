@@ -19,326 +19,308 @@
 */
 
 body {
-       font-size: medium;
-       color: #000000;
-       background-color: #f0f0f0;
-       background-image: url('../../images/ultra/whitetweed-pattern.png');
-       background-repeat: repeat;
-       /*background-attachment: fixed;*/
-       /*font-family: monospace;*/
-       }
+    font-size: medium;
+    color: #000000;
+    background-color: #f0f0f0;
+    background-image: url('../../images/ultra/whitetweed-pattern.png');
+    background-repeat: repeat;
+}
 /* see .default for default text color */
 a { 
     text-decoration: underline; 
     color: #000080; 
-    /*background-color: #e0e0e0;*/
-    }
+}
 a:active { 
-           text-decoration: underline; 
-           color: #000080; 
-           /*background-color: #e0e0e0;*/
-           }
+    text-decoration: underline; 
+    color: #000080; 
+}
 a:visited { 
-            text-decoration: underline; 
-            color: #000040; 
-            /*background-color: #e0e0e0;*/
-            }
+    text-decoration: underline; 
+    color: #000040; 
+}
 a:hover { 
-          text-decoration: underline; 
-          color: #000080;
-          /*background-color: #e0e0e0;*/
-          font-weight: bold;
-          }
+    text-decoration: underline; 
+    color: #000080;
+    font-weight: bold;
+}
 .box a { 
-         text-decoration: underline; 
-         color: #000080; 
-         /*background-color: #3f3f3f;*/
-         }
+    text-decoration: underline; 
+    color: #000080; 
+}
 .box a:active { 
-                text-decoration: underline; 
-                color: #000080;
-                /*background-color: #3f3f3f;*/
-                }
+    text-decoration: underline; 
+    color: #000080;
+}
 .box a:visited { 
-                 text-decoration: underline; 
-                 color: #000040; 
-                 /*background-color: #3f3f3f;*/
-                 }
+    text-decoration: underline; 
+    color: #000040; 
+}
 .box a:hover { 
-               text-decoration: underline; 
-               color: #000080; 
-               /*background-color: #3f3f3f;*/
-               font-weight: bold;
-               }
+    text-decoration: underline; 
+    color: #000080; 
+    font-weight: bold;
+}
 .image a { 
-           text-decoration: underline; 
-           color: #000080; 
-           /*background-color: #7f7f7f;*/
-           }
+    text-decoration: underline; 
+    color: #000080; 
+}
 .image a:active { 
-                  text-decoration: underline; 
-                  color: #000080; 
-                  /*background-color: #7f7f7f;*/
-                  }
+    text-decoration: underline; 
+    color: #000080; 
+}
 .image a:visited { 
-                   text-decoration: underline; 
-                   color: #000040; 
-                   /*background-color: #7f7f7f;*/
-                   }
+    text-decoration: underline; 
+    color: #000040; 
+}
 .image a:hover { 
-                 text-decoration: underline; 
-                 color: #000080; 
-                 /*background-color: #7f7f7f;*/
-                 font-weight: bold;
-                 }
+    text-decoration: underline; 
+    color: #000080; 
+    font-weight: bold;
+}
 .default {  
-           color: #202020;
-           margin-bottom: 1em;
-           }
+    color: #202020;
+    margin-bottom: 1em;
+}
 .status0 { 
-           color: #202020;
-           background-color: #e0e0e0;
-           border-width: 2px;		
-           border-style: solid;
-           border-color: #a0a0a0;
-           margin-bottom: 1em;
-           }
+    color: #202020;
+    background-color: #e0e0e0;
+    border-width: 2px;		
+    border-style: solid;
+    border-color: #a0a0a0;
+    margin-bottom: 1em;
+}
 .status1 { 
-           color: #202020;
-           background-color: #e0e0e0;
-           border-width: 2px;		
-           border-style: dashed;
-           border-color: #404040;
-           margin-bottom: 1em;
-           }
+    color: #202020;
+    background-color: #e0e0e0;
+    border-width: 2px;		
+    border-style: dashed;
+    border-color: #404040;
+    margin-bottom: 1em;
+}
 .status2 { 
-           color: #202020;
-           background-color: #e0e0e0;
-           border-width: 4px;		
-           border-style: dashed;
-           border-color: #000040;
-           margin-bottom: 1em;
-           }
+    color: #202020;
+    background-color: #e0e0e0;
+    border-width: 4px;		
+    border-style: dashed;
+    border-color: #000040;
+    margin-bottom: 1em;
+}
 .status3 { 
-           color: #202020;
-           background-color: #e0e0e0;
-           border-width: 8px;		
-           border-style: dashed;
-           border-color: #000080;
-           margin-bottom: 1em;
-           }
+    color: #202020;
+    background-color: #e0e0e0;
+    border-width: 8px;		
+    border-style: dashed;
+    border-color: #000080;
+    margin-bottom: 1em;
+}
 .box {
-       font-size: small; 
-       color: #000000; 
-       background-color: #c0c0c0;
-       }
+    font-size: small; 
+    color: #000000; 
+    background-color: #c0c0c0;
+}
 .image { 
-         font-size: small;
-         color: #000000;
-         background-color: #808080;
-         }
+    font-size: small;
+    color: #000000;
+    background-color: #808080;
+}
 .default input { 
-                 font-size: medium;
-                 color: #ffffff; 
-                 background-color: #000000;
-                 }
+    font-size: medium;
+    color: #ffffff; 
+    background-color: #000000;
+}
 .status0 input { 
-                 font-size: medium;
-                 color: #ffffff; 
-                 background-color: #000040;
-                 }
+    font-size: medium;
+    color: #ffffff; 
+    background-color: #000040;
+}
 .status1 input { 
-                 font-size: medium;
-                 color: #ffffff; 
-                 background-color: #000080;
-                 }
+    font-size: medium;
+    color: #ffffff; 
+    background-color: #000080;
+}
 .status2 input { 
-                 font-size: medium;
-                 color: #ffffff; 
-                 background-color: #000080;
-                 }
+    font-size: medium;
+    color: #ffffff; 
+    background-color: #000080;
+}
 .status3 input { 
-                 font-size: medium;
-                 color: #ffffff; 
-                 background-color: #000080;
-                 }
+    font-size: medium;
+    color: #ffffff; 
+    background-color: #000080;
+}
 .box input { 
-             font-size: small;
-             color: #ffffff; 
-             background-color: #000040;
-             }
+    font-size: small;
+    color: #ffffff; 
+    background-color: #000040;
+}
 .default textarea { 
-                    font-size: medium;
-                    color: #ffffff; 
-                    background-color: #000000;
-                    }
+    font-size: medium;
+    color: #ffffff; 
+    background-color: #000000;
+}
 .status0 textarea { 
-                    font-size: medium;
-                    color: #ffffff; 
-                    background-color: #000040;
-                    }
+    font-size: medium;
+    color: #ffffff; 
+    background-color: #000040;
+}
 .status1 textarea { 
-                    font-size: medium;
-                    color: #ffffff; 
-                    background-color: #000080;
-                    }
+    font-size: medium;
+    color: #ffffff; 
+    background-color: #000080;
+}
 .status2 textarea { 
-                    font-size: medium;
-                    color: #ffffff; 
-                    background-color: #000080;
-                    }
+    font-size: medium;
+    color: #ffffff; 
+    background-color: #000080;
+}
 .status3 textarea { 
-                    font-size: medium;
-                    color: #ffffff; 
-                    background-color: #000080;
-                    }
+    font-size: medium;
+    color: #ffffff; 
+    background-color: #000080;
+}
 .box textarea { 
-                font-size: medium;
-                color: #ffffff; 
-                background-color: #000040;
-                }
+    font-size: medium;
+    color: #ffffff; 
+    background-color: #000040;
+}
 .default select { 
-                  font-size: medium;
-                  color: #ffffff; 
-                  background-color: #000000;
-                  }
+    font-size: medium;
+    color: #ffffff; 
+    background-color: #000000;
+}
 .status0 select { 
-                  font-size: medium;
-                  color: #ffffff; 
-                  background-color: #000040;
-                  }
+    font-size: medium;
+    color: #ffffff; 
+    background-color: #000040;
+}
 .status1 select { 
-                  font-size: medium;
-                  color: #ffffff; 
-                  background-color: #000080;
-                  }
+    font-size: medium;
+    color: #ffffff; 
+    background-color: #000080;
+}
 .status2 select { 
-                  font-size: medium;
-                  color: #ffffff; 
-                  background-color: #000080;
-                  }
+    font-size: medium;
+    color: #ffffff; 
+    background-color: #000080;
+}
 .status3 select { 
-                  font-size: medium;
-                  color: #ffffff; 
-                  background-color: #000080;
-                  }
+    font-size: medium;
+    color: #ffffff; 
+    background-color: #000080;
+}
 .box select { 
-              font-size: small;
-              color: #ffffff; 
-              background-color: #000040;
-              }
+    font-size: small;
+    color: #ffffff; 
+    background-color: #000040;
+}
 /* Buggy MSIE (Internet Explorer) can't inherit colors in IMG tag */
 .msiehackbox { 
-               border-color: #000080; 
-               }
+    border-color: #000080; 
+}
 a:visited .msiehackbox { 
-                         border-color: #000040; 
-                         }
+    border-color: #000040; 
+}
 a:hover .msiehackbox { 
-                       border-color: #000080; 
-                       }
+    border-color: #000080; 
+}
 .msiehackimage { 
-                 border-color: #000080; 
-                 }
+    border-color: #000080; 
+}
 a:visited .msiehackimage { 
-                           border-color: #000040; 
-                           }
+    border-color: #000040; 
+}
 a:hover .msiehackimage { 
-                         border-color: #000080; 
-                         }
+    border-color: #000080; 
+}
 img { 
-      border-style: solid;
-      border-width: 2px;
-      margin: 1px;
-      vertical-align: middle;
-      } 
+    border-style: solid;
+    border-width: 2px;
+    margin: 1px;
+    vertical-align: middle;
+} 
 img:hover { 
-            border-width: 3px;
-            margin: 1px;
-            }
+    border-width: 3px;
+    margin: 1px;
+}
 input {  
-        border-width: 2px;
-        margin: 1px;
-        }
+    border-width: 2px;
+    margin: 1px;
+}
 input:hover {
-              border-width: 3px;
-              margin: 1px;
-              }
+    border-width: 3px;
+    margin: 1px;
+}
 input.button { 
-               border-style: outset; 
-               } 
+    border-style: outset; 
+} 
 input.edit { 
-             border-style: inset; 
-             } 
+    border-style: inset; 
+} 
 textarea {  
-           border-width: 2px;
-           margin: 1px;
-           }
+    border-width: 2px;
+    margin: 1px;
+}
 textarea:hover {
-                 border-width: 3px;
-                 margin: 1px;
-                 }
+    border-width: 3px;
+    margin: 1px;
+}
 select {  
-         border-width: 3px;
-         margin: 1px;
-         }
+    border-width: 3px;
+    margin: 1px;
+}
 select:hover {
-               /* Dynamic border-width doesn't work on Mozilla for select... */
-               border-width: 3px;
-               margin: 1px;
-               }
+    /* Dynamic border-width doesn't work on Mozilla for select... */
+    border-width: 3px;
+    margin: 1px;
+}
 h1 { 
-     font-variant: small-caps;
-     }
+    font-variant: small-caps;
+}
 h2 { 
-     font-variant: small-caps;
-     }
+    font-variant: small-caps;
+}
 h3 { 
-     font-variant: small-caps;
-     }
+    font-variant: small-caps;
+}
 h4 { 
-     font-variant: small-caps;
-     }
+    font-variant: small-caps;
+}
 h5 { 
-     font-variant: small-caps;
-     }
+    font-variant: small-caps;
+}
 h6 { 
-     font-variant: small-caps;
-     }
+    font-variant: small-caps;
+}
 .box {
-       border-width: 2px;		
-       border-style: solid;
-       border-color: #bfbfbf;
-       padding: 2px;
-       /*
-          border-radius: 8px;
-          moz-border-radius: 8px;
-          */
-       }
+    border-width: 2px;		
+    border-style: solid;
+    border-color: #bfbfbf;
+    padding: 2px;
+}
 .image {
-         border-width: 2px;		
-         border-style: solid;
-         border-color: #bfbfbf;
-         padding: 2px;
-         margin: 2px;
-         text-align: center;
-         }
+    border-width: 2px;		
+    border-style: solid;
+    border-color: #bfbfbf;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+}
 .odd { 
-       float: left;
-       width: 240px;
-       } 
+    float: left;
+    width: 240px;
+} 
 .even { 
-        float: right;
-        width: 240px;
-        }
+    float: right;
+    width: 240px;
+}
 .menu { 
-        font-variant: small-caps;
-        }
+    font-variant: small-caps;
+}
 .admin { 
-         }
+}
 .system { 
-          font-style: italic;
-          }
+    font-style: italic;
+}
 .textmode { 
-            display: none;
-            }
+    display: none;
+}

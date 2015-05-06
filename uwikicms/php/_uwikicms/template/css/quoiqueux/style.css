@@ -19,255 +19,255 @@
 */
 
 body {
-       font-size: large;
-       color: #000000;
-       background-color: #ffdfbf;
-       }
+    font-size: large;
+    color: #000000;
+    background-color: #ffdfbf;
+}
 iframe {
-         border-style: none;
-         border-width: 0px;
-         }
+    border-style: none;
+    border-width: 0px;
+}
 /* see .default for default text color */
 a { 
     text-decoration: underline; 
     color: #a52196; 
     background-color: transparent;
-    }
+}
 a:active { 
-           text-decoration: underline; 
-           color: #a52196;
-           background-color: transparent;
-           }
+    text-decoration: underline; 
+    color: #a52196;
+    background-color: transparent;
+}
 a:visited { 
-            text-decoration: underline; 
-            color: #000000;
-            background-color: transparent;
-            }
+    text-decoration: underline; 
+    color: #000000;
+    background-color: transparent;
+}
 a:hover { 
-          text-decoration: underline; 
-          color: #ff0000;
-          background-color: transparent;
-          }
+    text-decoration: underline; 
+    color: #ff0000;
+    background-color: transparent;
+}
 .box a { 
-         text-decoration: underline; 
-         color: #ffbf7f; 
-         background-color: transparent;
-         }
+    text-decoration: underline; 
+    color: #ffbf7f; 
+    background-color: transparent;
+}
 .box a:active { 
-                text-decoration: underline; 
-                color: #ffbf7f; 
-                background-color: transparent;
-                }
+    text-decoration: underline; 
+    color: #ffbf7f; 
+    background-color: transparent;
+}
 .box a:visited { 
-                 text-decoration: underline; 
-                 color: #ffffff; 
-                 background-color: transparent;
-                 }
+    text-decoration: underline; 
+    color: #ffffff; 
+    background-color: transparent;
+}
 .box a:hover { 
-               text-decoration: underline; 
-               color: #ff0000; 
-               background-color: transparent;
-               }
+    text-decoration: underline; 
+    color: #ff0000; 
+    background-color: transparent;
+}
 .image a { 
-         text-decoration: underline; 
-         color: #ffbf7f; 
-         background-color: transparent;
-         }
+    text-decoration: underline; 
+    color: #ffbf7f; 
+    background-color: transparent;
+}
 .image a:active { 
-                text-decoration: underline; 
-                color: #ffbf7f; 
-                background-color: transparent;
-                }
+    text-decoration: underline; 
+    color: #ffbf7f; 
+    background-color: transparent;
+}
 .image a:visited { 
-                 text-decoration: underline; 
-                 color: #ffffff; 
-                 background-color: transparent;
-                 }
+    text-decoration: underline; 
+    color: #ffffff; 
+    background-color: transparent;
+}
 .image a:hover { 
-               text-decoration: underline; 
-               color: #ff0000; 
-               background-color: transparent;
-               }
+    text-decoration: underline; 
+    color: #ff0000; 
+    background-color: transparent;
+}
 .default {  
-           color: #000000;
-           background-color: transparent;
-           }
+    color: #000000;
+    background-color: transparent;
+}
 .status0 { 
-           color: #000000;
-           background-color: #ffbf7f;
-           border-width: 2px;		
-           border-style: solid;
-           border-color: #000000;
-           margin-bottom: 1em;
-           }
+    color: #000000;
+    background-color: #ffbf7f;
+    border-width: 2px;		
+    border-style: solid;
+    border-color: #000000;
+    margin-bottom: 1em;
+}
 .status1 { 
-           color: #000000;
-           background-color: #ffbf7f;
-           border-width: 2px;		
-           border-style: dashed;
-           border-color: #ff0000;
-           margin-bottom: 1em;
-           }
+    color: #000000;
+    background-color: #ffbf7f;
+    border-width: 2px;		
+    border-style: dashed;
+    border-color: #ff0000;
+    margin-bottom: 1em;
+}
 .status2 { 
-           color: #000000;
-           background-color: #ffbf7f;
-           border-width: 2px;		
-           border-style: dashed;
-           border-color: #ff0000;
-           margin-bottom: 1em;
-           }
+    color: #000000;
+    background-color: #ffbf7f;
+    border-width: 2px;		
+    border-style: dashed;
+    border-color: #ff0000;
+    margin-bottom: 1em;
+}
 .status3 { 
-           color: #000000;
-           background-color: #ffbf7f;
-           border-width: 2px;		
-           border-style: dashed;
-           border-color: #ff0000;
-           margin-bottom: 1em;
-           }
+    color: #000000;
+    background-color: #ffbf7f;
+    border-width: 2px;		
+    border-style: dashed;
+    border-color: #ff0000;
+    margin-bottom: 1em;
+}
 .box {
-       font-size: small; 
-       color: #ffffff; 
-       background-color: #a52196;
-       }
+    font-size: small; 
+    color: #ffffff; 
+    background-color: #a52196;
+}
 .image { 
-         font-size: small;
-         color: #ffffff;
-         background-color: #a52196;
-         }
+    font-size: small;
+    color: #ffffff;
+    background-color: #a52196;
+}
 .default input { 
-                 color: #000000; 
-                 background-color: #cacaca;
-                 }
+    color: #000000; 
+    background-color: #cacaca;
+}
 .status0 input { 
-                 color: #000000; 
-                 background-color: #cacaca;
-                 }
+    color: #000000; 
+    background-color: #cacaca;
+}
 .status1 input { 
-                 color: #000000; 
-                 background-color: #cacaca;
-                 }
+    color: #000000; 
+    background-color: #cacaca;
+}
 .status2 input { 
-                 color: #000000; 
-                 background-color: #cacaca;
-                 }
+    color: #000000; 
+    background-color: #cacaca;
+}
 .status3 input { 
-                 color: #000000; 
-                 background-color: #cacaca;
-                 }
+    color: #000000; 
+    background-color: #cacaca;
+}
 .box input { 
-             color: #000000; 
-             background-color: #cacaca;
-             }
+    color: #000000; 
+    background-color: #cacaca;
+}
 .default textarea { 
-                    color: #000000; 
-                    background-color: #cacaca;
-                    }
+    color: #000000; 
+    background-color: #cacaca;
+}
 .status0 textarea { 
-                 color: #000000; 
-                 background-color: #cacaca;
-                 }
+    color: #000000; 
+    background-color: #cacaca;
+}
 .status1 textarea { 
-                 color: #000000; 
-                 background-color: #cacaca;
-                 }
+    color: #000000; 
+    background-color: #cacaca;
+}
 .status2 textarea { 
-                 color: #000000; 
-                 background-color: #cacaca;
-                 }
+    color: #000000; 
+    background-color: #cacaca;
+}
 .status3 textarea { 
-                 color: #000000; 
-                 background-color: #cacaca;
-                 }
+    color: #000000; 
+    background-color: #cacaca;
+}
 .box textarea { 
-             color: #000000; 
-             background-color: #cacaca;
-             }
+    color: #000000; 
+    background-color: #cacaca;
+}
 .default select { 
-                  color: #000000; 
-                  background-color: #cacaca;
-                  }
+    color: #000000; 
+    background-color: #cacaca;
+}
 .status0 select { 
-                 color: #000000; 
-                 background-color: #cacaca;
-                 }
+    color: #000000; 
+    background-color: #cacaca;
+}
 .status1 select { 
-                 color: #000000; 
-                 background-color: #cacaca;
-                 }
+    color: #000000; 
+    background-color: #cacaca;
+}
 .status2 select { 
-                 color: #000000; 
-                 background-color: #cacaca;
-                 }
+    color: #000000; 
+    background-color: #cacaca;
+}
 .status3 select { 
-                 color: #000000; 
-                 background-color: #cacaca;
-                 }
+    color: #000000; 
+    background-color: #cacaca;
+}
 .box select { 
-             color: #000000; 
-             background-color: #cacaca;
-             }
+    color: #000000; 
+    background-color: #cacaca;
+}
 /* Buggy MSIE (Internet Explorer) can't inherit colors in IMG tag */
 .msiehackbox { 
-               border-color: #ffbf7f; 
-               }
+    border-color: #ffbf7f; 
+}
 a:hover .msiehackbox { 
-                       border-color: #ff0000; 
-                       }
+    border-color: #ff0000; 
+}
 .msiehackimage { 
-                 border-color: #ffbf7f; 
-                 }
+    border-color: #ffbf7f; 
+}
 a:hover .msiehackimage { 
-                         border-color: #ff0000; 
-                         }
+    border-color: #ff0000; 
+}
 img { 
-      border-style: solid;
-      border-width: 2px;
-      margin: 1px;
-      } 
+    border-style: solid;
+    border-width: 2px;
+    margin: 1px;
+} 
 .image img { 
-             border: none;
-             margin: 5px;             
-             }
+    border: none;
+    margin: 5px;             
+}
 input { 
-        margin: 1px;
-        }
+    margin: 1px;
+}
 input.button { 
-               border-style: outset; 
-               } 
+    border-style: outset; 
+} 
 input.edit { 
-             border-style: inset; 
-             } 
+    border-style: inset; 
+} 
 .box {
-       border-width: 2px;		
-       border-style: solid;
-       border-color: #cacaca;
-       padding: 2px;
-       }
+    border-width: 2px;		
+    border-style: solid;
+    border-color: #cacaca;
+    padding: 2px;
+}
 .image {
-         border-width: 2px;		
-         border-style: solid;
-         border-color: #cacaca;
-         padding: 5px;
-         margin: 10px;
-         text-align: center;
-       }
+    border-width: 2px;		
+    border-style: solid;
+    border-color: #cacaca;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
 .odd { 
-        float: left;
-        width: 240px;
-        } 
+    float: left;
+    width: 240px;
+} 
 .even { 
-         float: right;
-         width: 240px;
-         }
+    float: right;
+    width: 240px;
+}
 .menu { 
-        font-weight: bold;
+    font-weight: bold;
 }
 .admin { 
 
-       }
+}
 .system { 
-          font-style: italic;
+    font-style: italic;
 }
 .textmode { 
-            display: none;
-            }
+    display: none;
+}

@@ -19,250 +19,246 @@
 */
 
 body {
-       font-size: small;
-       color: #000000;
-       background-color: #ffffff;
-       }
+    font-size: small;
+    color: #000000;
+    background-color: #ffffff;
+}
 a { 
     text-decoration: underline; 
     color: #1f1fff; 
-    }
+}
 a:active { 
-           text-decoration: underline; 
-           color: #1f1fff; 
-           }
+    text-decoration: underline; 
+    color: #1f1fff; 
+}
 a:visited { 
-            text-decoration: underline; 
-            color: #1f1fbf; 
-            }
+    text-decoration: underline; 
+    color: #1f1fbf; 
+}
 a:hover { 
-          text-decoration: underline; 
-          color: #ff7f00;
-          }
+    text-decoration: underline; 
+    color: #ff7f00;
+}
 .box a { 
-         text-decoration: underline; 
-         color: #1f1fff; 
-         }
+    text-decoration: underline; 
+    color: #1f1fff; 
+}
 .box a:active { 
-                text-decoration: underline; 
-                color: #1f1fff;
-                }
+    text-decoration: underline; 
+    color: #1f1fff;
+}
 .box a:visited { 
-                 text-decoration: underline; 
-                 color: #1f1fbf; 
-                 }
+    text-decoration: underline; 
+    color: #1f1fbf; 
+}
 .box a:hover { 
-               text-decoration: underline; 
-               color: #ff7f00; 
-               }
+    text-decoration: underline; 
+    color: #ff7f00; 
+}
 .image a { 
-           text-decoration: underline; 
-           color: #1f1fff; 
-           }
+    text-decoration: underline; 
+    color: #1f1fff; 
+}
 .image a:active { 
-                  text-decoration: underline; 
-                  color: #1f1fff; 
-                  }
+    text-decoration: underline; 
+    color: #1f1fff; 
+}
 .image a:visited { 
-                   text-decoration: underline; 
-                   color: #bf3f00; 
-                   }
+    text-decoration: underline; 
+    color: #bf3f00; 
+}
 .image a:hover { 
-                 text-decoration: underline; 
-                 color: #ff7f00; 
-                 }
+    text-decoration: underline; 
+    color: #ff7f00; 
+}
 .default {  
-           color: #000000;
-           margin-bottom: 1em;
-           }
+    color: #000000;
+    margin-bottom: 1em;
+}
 .status0 { 
-           color: #000000;
-           background-color: #efefef;
-           border-width: 2px;		
-           border-style: solid;
-           border-color: #7f7f7f;
-           margin-bottom: 1em;
-           }
+    color: #000000;
+    background-color: #efefef;
+    border-width: 2px;		
+    border-style: solid;
+    border-color: #7f7f7f;
+    margin-bottom: 1em;
+}
 .status1 { 
-           color: #dfdfdf;
-           background-color: #efefef;
-           border-width: 2px;		
-           border-style: dashed;
-           border-color: #7f7f7f;
-           margin-bottom: 1em;
-           }
+    color: #dfdfdf;
+    background-color: #efefef;
+    border-width: 2px;		
+    border-style: dashed;
+    border-color: #7f7f7f;
+    margin-bottom: 1em;
+}
 .status2 { 
-           color: #dfdfdf;
-           background-color: #efefef;
-           border-width: 4px;		
-           border-style: dashed;
-           border-color: #ffffbf;
-           margin-bottom: 1em;
-           }
+    color: #dfdfdf;
+    background-color: #efefef;
+    border-width: 4px;		
+    border-style: dashed;
+    border-color: #ffffbf;
+    margin-bottom: 1em;
+}
 .status3 { 
-           color: #dfdfdf;
-           background-color: #efefef;
-           border-width: 8px;		
-           border-style: dashed;
-           border-color: #ffff7f;
-           margin-bottom: 1em;
-           }
+    color: #dfdfdf;
+    background-color: #efefef;
+    border-width: 8px;		
+    border-style: dashed;
+    border-color: #ffff7f;
+    margin-bottom: 1em;
+}
 .box {
-       font-size: x-small; 
-       color: #000000; 
-       background-color: #dfdfdf;
-       }
+    font-size: x-small; 
+    color: #000000; 
+    background-color: #dfdfdf;
+}
 .image { 
-         font-size: x-small;
-         color: #000000;
-         background-color: #cfcfcf;
-         }
+    font-size: x-small;
+    color: #000000;
+    background-color: #cfcfcf;
+}
 .default input { 
-                 font-size: small;
-                 }
+    font-size: small;
+}
 .status0 input { 
-                 font-size: small;
-                 }
+    font-size: small;
+}
 .status1 input { 
-                 font-size: small;
-                 }
+    font-size: small;
+}
 .status2 input { 
-                 font-size: small;
-                 }
+    font-size: small;
+}
 .status3 input { 
-                 font-size: small;
-                 }
+    font-size: small;
+}
 .box input { 
-             font-size: x-small;
-             }
+    font-size: x-small;
+}
 .default textarea { 
-                    font-size: medium;
-                    }
+    font-size: medium;
+}
 .status0 textarea { 
-                    font-size: medium;
-                    }
+    font-size: medium;
+}
 .status1 textarea { 
-                    font-size: medium;
-                    }
+    font-size: medium;
+}
 .status2 textarea { 
-                    font-size: medium;
-                    }
+    font-size: medium;
+}
 .status3 textarea { 
-                    font-size: medium;
-                    }
+    font-size: medium;
+}
 .box textarea { 
-                font-size: small;
-                }
+    font-size: small;
+}
 .default select { 
-                  font-size: small;
-                  }
+    font-size: small;
+}
 .status0 select { 
-                  font-size: small;
-                  }
+    font-size: small;
+}
 .status1 select { 
-                  font-size: small;
-                  }
+    font-size: small;
+}
 .status2 select { 
-                  font-size: small;
-                  }
+    font-size: small;
+}
 .status3 select { 
-                  font-size: small;
-                  }
+    font-size: small;
+}
 .box select { 
-              font-size: x-small;
-              }
+    font-size: x-small;
+}
 /* Buggy MSIE (Internet Explorer) can't inherit colors in IMG tag */
 .msiehackbox { 
-               border-color: #1f1fff; 
-               }
+    border-color: #1f1fff; 
+}
 a:visited .msiehackbox { 
-                         border-color: #1f1fbf; 
-                         }
+    border-color: #1f1fbf; 
+}
 a:hover .msiehackbox { 
-                       border-color: #ff7f00; 
-                       }
+    border-color: #ff7f00; 
+}
 .msiehackimage { 
-                 border-color: #1f1fff; 
-                 }
+    border-color: #1f1fff; 
+}
 a:visited .msiehackimage { 
-                           border-color: #1f1fbf; 
-                           }
+    border-color: #1f1fbf; 
+}
 a:hover .msiehackimage { 
-                         border-color: #ff7f00; 
-                         }
+    border-color: #ff7f00; 
+}
 img { 
-      border-style: solid;
-      border-width: 1px;
-      margin: 1px;
-      vertical-align: middle;
-      } 
+    border-style: solid;
+    border-width: 1px;
+    margin: 1px;
+    vertical-align: middle;
+} 
 input {  
-        margin: 1px;
-        }
+    margin: 1px;
+}
 input.button { 
-               border-style: outset; 
-               } 
+    border-style: outset; 
+} 
 input.edit { 
-             border-style: inset; 
-             } 
+    border-style: inset; 
+} 
 textarea {  
-           margin: 1px;
-           }
+    margin: 1px;
+}
 select:hover {
-               margin: 1px;
-               }
+    margin: 1px;
+}
 h1 { 
-     font-variant: small-caps;
-     }
+    font-variant: small-caps;
+}
 h2 { 
-     font-variant: small-caps;
-     }
+    font-variant: small-caps;
+}
 h3 { 
-     font-variant: small-caps;
-     }
+    font-variant: small-caps;
+}
 h4 { 
-     font-variant: small-caps;
-     }
+    font-variant: small-caps;
+}
 h5 { 
-     font-variant: small-caps;
-     }
+    font-variant: small-caps;
+}
 h6 { 
-     font-variant: small-caps;
-     }
+    font-variant: small-caps;
+}
 .box {
-       border-width: 2px;		
-       border-style: solid;
-       border-color: #7f7f7f;
-       padding: 2px;
-       /*
-          border-radius: 8px;
-          moz-border-radius: 8px;
-          */
-       }
+    border-width: 2px;		
+    border-style: solid;
+    border-color: #7f7f7f;
+    padding: 2px;
+}
 .image {
-         border-width: 2px;		
-         border-style: solid;
-         border-color: #7f7f7f;
-         padding: 2px;
-         margin: 2px;
-         text-align: center;
-         }
+    border-width: 2px;		
+    border-style: solid;
+    border-color: #7f7f7f;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+}
 .odd { 
-       float: left;
-       width: 240px;
-       } 
+    float: left;
+    width: 240px;
+} 
 .even { 
-        float: right;
-        width: 240px;
-        }
+    float: right;
+    width: 240px;
+}
 .menu { 
-        font-variant: small-caps;
-        }
+    font-variant: small-caps;
+}
 .admin { 
-         }
+}
 .system { 
-          font-style: italic;
-          }
+    font-style: italic;
+}
 .textmode { 
-            display: none;
-            }
+    display: none;
+}

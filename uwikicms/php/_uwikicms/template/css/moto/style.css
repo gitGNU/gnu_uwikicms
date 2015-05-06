@@ -19,355 +19,351 @@
 */
 
 body {
-       font-size: medium;
-       color: #ff0000;
-       background-color: #0f0f0f;
-       background-image: url('../../images/moto/dawn_on_the_great_alpine_road.jpg');
-       background-repeat: no-repeat;
-       background-attachment: fixed;
-       background-position: center center;
-       }
+    font-size: medium;
+    color: #ff0000;
+    background-color: #0f0f0f;
+    background-image: url('../../images/moto/dawn_on_the_great_alpine_road.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
 /* see .default for default text color */
 a { 
     text-decoration: underline; 
     color: #0000bf;
     background-color: transparent;
-    }
+}
 a:active { 
-           text-decoration: underline; 
-           color: #0000ff; 
-           background-color: transparent;
-           }
+    text-decoration: underline; 
+    color: #0000ff; 
+    background-color: transparent;
+}
 a:visited { 
-            text-decoration: underline; 
-            color: #00007f; 
-            background-color: transparent;
-            }
+    text-decoration: underline; 
+    color: #00007f; 
+    background-color: transparent;
+}
 a:hover { 
-          text-decoration: underline; 
-          color: #ff0000; 
-          background-color: transparent;
-          }
+    text-decoration: underline; 
+    color: #ff0000; 
+    background-color: transparent;
+}
 .status0 a { 
-             text-decoration: underline; 
-             color: #0000bf; 
-             background-color: transparent;
-             }
+    text-decoration: underline; 
+    color: #0000bf; 
+    background-color: transparent;
+}
 .status0 a:active { 
-                    text-decoration: underline; 
-                    color: #0000ff;
-                    background-color: transparent;
-                    }
+    text-decoration: underline; 
+    color: #0000ff;
+    background-color: transparent;
+}
 .status0 a:visited { 
-                     text-decoration: underline; 
-                     color: #00007f;
-                     background-color: transparent;
-                     }
+    text-decoration: underline; 
+    color: #00007f;
+    background-color: transparent;
+}
 .status0 a:hover { 
-                   text-decoration: underline; 
-                   color: #ff0000; 
-                   background-color: transparent;
-                   }
+    text-decoration: underline; 
+    color: #ff0000; 
+    background-color: transparent;
+}
 .status1 a { 
-             text-decoration: underline; 
-             color: #0000bf; 
-             background-color: transparent;
-             }
+    text-decoration: underline; 
+    color: #0000bf; 
+    background-color: transparent;
+}
 .status1 a:active { 
-                    text-decoration: underline; 
-                    color: #0000ff; 
-                    background-color: transparent;
-                    }
+    text-decoration: underline; 
+    color: #0000ff; 
+    background-color: transparent;
+}
 .status1 a:visited { 
-                     text-decoration: underline; 
-                     color: #00007f; 
-                     background-color: transparent;
-                     }
+    text-decoration: underline; 
+    color: #00007f; 
+    background-color: transparent;
+}
 .status1 a:hover { 
-                   text-decoration: underline; 
-                   color: #ff0000; 
-                   background-color: transparent;
-                   }
+    text-decoration: underline; 
+    color: #ff0000; 
+    background-color: transparent;
+}
 .status2 a { 
-             text-decoration: underline; 
-             color: #0000bf; 
-             background-color: transparent;
-             }
+    text-decoration: underline; 
+    color: #0000bf; 
+    background-color: transparent;
+}
 .status2 a:active { 
-                    text-decoration: underline; 
-                    color: #0000ff; 
-                    background-color: transparent;
-                    }
+    text-decoration: underline; 
+    color: #0000ff; 
+    background-color: transparent;
+}
 .status2 a:visited { 
-                     text-decoration: underline; 
-                     color: #00007f; 
-                     background-color: transparent;
-                     }
+    text-decoration: underline; 
+    color: #00007f; 
+    background-color: transparent;
+}
 .status2 a:hover { 
-                   text-decoration: underline; 
-                   color: #ff0000; 
-                   background-color: transparent;
-                   }
+    text-decoration: underline; 
+    color: #ff0000; 
+    background-color: transparent;
+}
 .status3 a { 
-             text-decoration: underline; 
-             color: #0000bf; 
-             background-color: transparent;
-             }
+    text-decoration: underline; 
+    color: #0000bf; 
+    background-color: transparent;
+}
 .status3 a:active { 
-                    text-decoration: underline; 
-                    color: #0000ff; 
-                    background-color: transparent;
-                    }
+    text-decoration: underline; 
+    color: #0000ff; 
+    background-color: transparent;
+}
 .status3 a:visited { 
-                     text-decoration: underline; 
-                     color: #00007f; 
-                     background-color: transparent;
-                     }
+    text-decoration: underline; 
+    color: #00007f; 
+    background-color: transparent;
+}
 .status3 a:hover { 
-                   text-decoration: underline; 
-                   color: #ff0000; 
-                   background-color: transparent;
-                   }
+    text-decoration: underline; 
+    color: #ff0000; 
+    background-color: transparent;
+}
 .box a { 
-         text-decoration: underline; 
-         color: #7f7fff; 
-         background-color: transparent;
-         }
+    text-decoration: underline; 
+    color: #7f7fff; 
+    background-color: transparent;
+}
 .box a:active { 
-                text-decoration: underline; 
-                color: #0000ff; 
-                background-color: transparent;
-                }
+    text-decoration: underline; 
+    color: #0000ff; 
+    background-color: transparent;
+}
 .box a:visited { 
-                 text-decoration: underline; 
-                 color: #3f3fff; 
-                 background-color: transparent;
-                 }
+    text-decoration: underline; 
+    color: #3f3fff; 
+    background-color: transparent;
+}
 .box a:hover { 
-               text-decoration: underline; 
-               color: #ff0000; 
-               background-color: transparent;
-               }
+    text-decoration: underline; 
+    color: #ff0000; 
+    background-color: transparent;
+}
 .image a { 
-           text-decoration: underline; 
-           color: #7f7fff; 
-           background-color: transparent;
-           }
+    text-decoration: underline; 
+    color: #7f7fff; 
+    background-color: transparent;
+}
 .image a:active { 
-                  text-decoration: underline; 
-                  color: #0000ff; 
-                  background-color: transparent;
-                  }
+    text-decoration: underline; 
+    color: #0000ff; 
+    background-color: transparent;
+}
 .image a:visited { 
-                   text-decoration: underline; 
-                   color: #3f3fff; 
-                   background-color: transparent;
-                   }
+    text-decoration: underline; 
+    color: #3f3fff; 
+    background-color: transparent;
+}
 .image a:hover { 
-                 text-decoration: underline; 
-                 color: #ff0000; 
-                 background-color: transparent;
-                 }
+    text-decoration: underline; 
+    color: #ff0000; 
+    background-color: transparent;
+}
 .default {  
-           color: #ff0000;
-           background-color: transparent;
-           margin-bottom: 1em;
-           }
+    color: #ff0000;
+    background-color: transparent;
+    margin-bottom: 1em;
+}
 .status0 { 
-           color: #1f1f1f;
-           background-color: #ffffff;
-           border-width: 1px;		
-           border-style: solid;
-           border-color: #000000;
-           margin-bottom: 1em;
-           }
+    color: #1f1f1f;
+    background-color: #ffffff;
+    border-width: 1px;		
+    border-style: solid;
+    border-color: #000000;
+    margin-bottom: 1em;
+}
 .status1 { 
-           color: #3f3f3f;
-           background-color: #ffffff;
-           border-width: 4px;		
-           border-style: solid;
-           border-color: #db982f;
-           margin-bottom: 1em;
-           }
+    color: #3f3f3f;
+    background-color: #ffffff;
+    border-width: 4px;		
+    border-style: solid;
+    border-color: #db982f;
+    margin-bottom: 1em;
+}
 .status2 { 
-           color: #5f5f5f);
-           background-color: #ffffff;
-           border-width: 4px;		
-           border-style: dotted;
-           border-color: #db982f;
-           margin-bottom: 1em;
-           }
-.status3 { 
-           color: #7f7f7f;
-           background-color: #ffffff;
-           border-width: 4px;		
-           border-style: dashed;
-           border-color: #db982f;
-           margin-bottom: 1em;
-           }
-.box {
-       font-size: small; 
-       color: #dfdfdf; 
-       background-color: #0f0f0f;
-       }
-.image { 
-         font-size: small;
-         color: #dfdfdf;
-         background-color: #0f0f0f;
-         }
-.default input { 
-                 font-size: medium;
-                 color: #000000; 
-                 background-color: #ffffff;
-                 }
-.status0 input { 
-                 font-size: medium;
-                 color: #000000; 
-                 background-color: #ffffff;
-                 }
-.status1 input { 
-                 font-size: medium;
-                 color: #000000; 
-                 background-color: #ffffff;
-                 }
-.status2 input { 
-                 font-size: medium;
-                 color: #000000; 
-                 background-color: #ffffff;
-                 }
-.status3 input { 
-                 font-size: medium;
-                 color: #000000; 
-                 background-color: #ffffff;
-                 }
-.box input { 
-             font-size: small;
-             color: #000000; 
-             background-color: #ffffff;
-             }
-.default textarea { 
-                    font-size: large;
-                    color: #000000; 
-                    background-color: #ffffff;
-                    }
-.status0 textarea { 
-                    font-size: large;
-                    color: #000000; 
-                    background-color: #ffffff;
-                    }
-.status1 textarea { 
-                    font-size: large;
-                    color: #000000; 
-                    background-color: #ffffff;
-                    }
-.status2 textarea { 
-                    font-size: large;
-                    color: #000000; 
-                    background-color: #ffffff;
-                    }
-.status3 textarea { 
-                    font-size: large;
-                    color: #000000; 
-                    background-color: #ffffff;
-                    }
-.box textarea { 
-                font-size: medium;
-                color: #000000; 
-                background-color: #ffffff;
-                }
-.default select { 
-                  font-size: medium;
-                  color: #000000; 
-                  background-color: #ffffff;
-                  }
-.status0 select { 
-                  font-size: medium;
-                  color: #000000; 
-                  background-color: #ffffff;
-                  }
-.status1 select { 
-                  font-size: medium;
-                  color: #000000; 
-                  background-color: #ffffff;
-                  }
-.status2 select { 
-                  font-size: medium;
-                  color: #000000; 
-                  background-color: #ffffff;
-                  }
-.status3 select { 
-                  font-size: medium;
-                  color: #000000; 
-                  background-color: #ffffff;
-                  }
-.box select { 
-              font-size: small;
-              color: #000000; 
-              background-color: #ffffff;
-              }
-/* Buggy MSIE (Internet Explorer) can't inherit colors in IMG tag */
-.msiehackbox { 
-               border-color: #7f7fff;
-               }
-a:hover .msiehackbox { 
-                       border-color: #ff0000; 
-                       }
-.msiehackimage { 
-                 border-color: #7f7fff; 
-                 }
-a:hover .msiehackimage { 
-                         border-color: #ff0000; 
-                         }
-img { 
-      border-style: solid;
-      border-width: 1px;
-      margin: 2px;
-      } 
-input { 
-        margin: 1px;
-        }
-input.button { 
-               border-style: outset; 
-               } 
-input.edit { 
-             border-style: inset; 
-             } 
-.box {
-       border-width: 1px;		
-       border-style: solid;
-       border-color: #000000;
-       padding: 2px;
-       /*
-          border-radius: 8px;
-          moz-border-radius: 8px;
-          */
-       }
-.image {
-         border-width: 1px;		
-         border-style: solid;
-         border-color: #000000;
-         padding: 2px;
-         margin: 8px;
-         text-align: center;
-         }
-.odd { 
-       float: left;
-       width: 240px;
-       } 
-.even { 
-        float: right;
-        width: 240px;
-        }
-.menu { 
-        font-weight: bold;
-        }
-.admin { 
+    color: #5f5f5f);
+background-color: #ffffff;
+border-width: 4px;		
+border-style: dotted;
+border-color: #db982f;
+margin-bottom: 1em;
+}
+ .status3 { 
+     color: #7f7f7f;
+     background-color: #ffffff;
+     border-width: 4px;		
+     border-style: dashed;
+     border-color: #db982f;
+     margin-bottom: 1em;
+ }
+ .box {
+     font-size: small; 
+     color: #dfdfdf; 
+     background-color: #0f0f0f;
+ }
+ .image { 
+     font-size: small;
+     color: #dfdfdf;
+     background-color: #0f0f0f;
+ }
+ .default input { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ .status0 input { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ .status1 input { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ .status2 input { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ .status3 input { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ .box input { 
+     font-size: small;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ .default textarea { 
+     font-size: large;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ .status0 textarea { 
+     font-size: large;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ .status1 textarea { 
+     font-size: large;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ .status2 textarea { 
+     font-size: large;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ .status3 textarea { 
+     font-size: large;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ .box textarea { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ .default select { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ .status0 select { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ .status1 select { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ .status2 select { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ .status3 select { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ .box select { 
+     font-size: small;
+     color: #000000; 
+     background-color: #ffffff;
+ }
+ /* Buggy MSIE (Internet Explorer) can't inherit colors in IMG tag */
+ .msiehackbox { 
+     border-color: #7f7fff;
+ }
+ a:hover .msiehackbox { 
+     border-color: #ff0000; 
+ }
+ .msiehackimage { 
+     border-color: #7f7fff; 
+ }
+ a:hover .msiehackimage { 
+     border-color: #ff0000; 
+ }
+ img { 
+     border-style: solid;
+     border-width: 1px;
+     margin: 2px;
+ } 
+ input { 
+     margin: 1px;
+ }
+ input.button { 
+     border-style: outset; 
+ } 
+ input.edit { 
+     border-style: inset; 
+ } 
+ .box {
+     border-width: 1px;		
+     border-style: solid;
+     border-color: #000000;
+     padding: 2px;
+ }
+ .image {
+     border-width: 1px;		
+     border-style: solid;
+     border-color: #000000;
+     padding: 2px;
+     margin: 8px;
+     text-align: center;
+ }
+ .odd { 
+     float: left;
+     width: 240px;
+ } 
+ .even { 
+     float: right;
+     width: 240px;
+ }
+ .menu { 
+     font-weight: bold;
+ }
+ .admin { 
 
-         }
-.system { 
-          font-style: italic;
-          }
-.textmode { 
-            display: none;
-            }
+ }
+ .system { 
+     font-style: italic;
+ }
+ .textmode { 
+     display: none;
+ }
 

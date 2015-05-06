@@ -19,160 +19,160 @@
 */
 
 body {
-       font-size: large;
-       color: #4f544c;
-       background-color: #eeffe6;
-       }
+    font-size: large;
+    color: #4f544c;
+    background-color: #eeffe6;
+}
 /* see .default for default text color */
 a { 
     text-decoration: underline; 
     color: #4f54ff; 
     background-color: #eeffe6;
-    }
+}
 a:active { 
-           text-decoration: underline; 
-           color: #4f54ff;
-           background-color: #eeffe6;
-           }
+    text-decoration: underline; 
+    color: #4f54ff;
+    background-color: #eeffe6;
+}
 a:visited { 
-            text-decoration: underline; 
-            color: #4f54ff;
-            background-color: #eeffe6;
-            }
+    text-decoration: underline; 
+    color: #4f54ff;
+    background-color: #eeffe6;
+}
 a:hover { 
-          text-decoration: underline; 
-          color: #a74fff;
-          background-color: #eeffe6;
-          }
+    text-decoration: underline; 
+    color: #a74fff;
+    background-color: #eeffe6;
+}
 .box a { 
-         text-decoration: underline; 
-         color: #4f54ff; 
-         background-color: #c6e6b8;
-         }
+    text-decoration: underline; 
+    color: #4f54ff; 
+    background-color: #c6e6b8;
+}
 .box a:active { 
-                text-decoration: underline; 
-                color: #4f54ff; 
-                background-color: #c6e6b8;
-                }
+    text-decoration: underline; 
+    color: #4f54ff; 
+    background-color: #c6e6b8;
+}
 .box a:visited { 
-                 text-decoration: underline; 
-                 color: #4f54ff; 
-                 background-color: #c6e6b8;
-                 }
+    text-decoration: underline; 
+    color: #4f54ff; 
+    background-color: #c6e6b8;
+}
 .box a:hover { 
-               text-decoration: underline; 
-               color: #a74fff; 
-               background-color: #c6e6b8;
-               }
+    text-decoration: underline; 
+    color: #a74fff; 
+    background-color: #c6e6b8;
+}
 .image a { 
-         text-decoration: underline; 
-         color: #4f54ff; 
-         background-color: #f5fff1;
-         }
+    text-decoration: underline; 
+    color: #4f54ff; 
+    background-color: #f5fff1;
+}
 .image a:active { 
-                text-decoration: underline; 
-                color: #4f54ff; 
-                background-color: #f5fff1;
-                }
+    text-decoration: underline; 
+    color: #4f54ff; 
+    background-color: #f5fff1;
+}
 .image a:visited { 
-                 text-decoration: underline; 
-                 color: #4f54ff; 
-                 background-color: #f5fff1;
-                 }
+    text-decoration: underline; 
+    color: #4f54ff; 
+    background-color: #f5fff1;
+}
 .image a:hover { 
-               text-decoration: underline; 
-               color: #a74fff; 
-               background-color: #f5fff1;
-               }
+    text-decoration: underline; 
+    color: #a74fff; 
+    background-color: #f5fff1;
+}
 .default {  
-           color: #4f544c;
-           background-color: #eeffe6;
-           }
+    color: #4f544c;
+    background-color: #eeffe6;
+}
 .box {
-       font-size: small; 
-       color: #4f544c; 
-       background-color: #c6e6b8;
-       }
+    font-size: small; 
+    color: #4f544c; 
+    background-color: #c6e6b8;
+}
 .image { 
-         font-size: small;
-         color: #4f544c;
-         background-color: #f5fff1;
-         }
+    font-size: small;
+    color: #4f544c;
+    background-color: #f5fff1;
+}
 .default input { 
-                 color: #4f544c; 
-                 background-color: #ffffff;
-                 }
+    color: #4f544c; 
+    background-color: #ffffff;
+}
 .default textarea { 
-                    color: #4f544c; 
-                    background-color: #ffffff;
-                    }
+    color: #4f544c; 
+    background-color: #ffffff;
+}
 .default select { 
-                  color: #4f544c; 
-                  background-color: #ffffff;
-                  }
+    color: #4f544c; 
+    background-color: #ffffff;
+}
 /* Buggy MSIE (Internet Explorer) can't inherit colors in IMG tag */
 .msiehackbox { 
-               border-color: #4f54ff; 
-               }
+    border-color: #4f54ff; 
+}
 a:hover .msiehackbox { 
-                       border-color: #a74fff; 
-                       }
+    border-color: #a74fff; 
+}
 .msiehackimage { 
-                 border-color: #4f54ff; 
-                 }
+    border-color: #4f54ff; 
+}
 a:hover .msiehackimage { 
-                         border-color: #a74fff; 
-                         }
+    border-color: #a74fff; 
+}
 img { 
-      border-style: solid;
-      border-width: 2px;
-      margin: 1px;
-      } 
+    border-style: solid;
+    border-width: 2px;
+    margin: 1px;
+} 
 .image img { 
-             border: none;
-             margin: 5px;             
-             }
+    border: none;
+    margin: 5px;             
+}
 input { 
-        margin: 1px;
-        }
+    margin: 1px;
+}
 input.button { 
-               border-style: outset; 
-               } 
+    border-style: outset; 
+} 
 input.edit { 
-             border-style: inset; 
-             } 
+    border-style: inset; 
+} 
 .box {
-       border-width: 2px;		
-       border-style: solid;
-       border-color: #84997a;
-       padding: 2px;
-       }
+    border-width: 2px;		
+    border-style: solid;
+    border-color: #84997a;
+    padding: 2px;
+}
 .image {
-         border-width: 2px;		
-         border-style: solid;
-         border-color: #84997a;
-         padding: 5px;
-         margin: 10px;
-         text-align: center;
-       }
+    border-width: 2px;		
+    border-style: solid;
+    border-color: #84997a;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
 .odd { 
-        float: left;
-        width: 240px;
-        } 
+    float: left;
+    width: 240px;
+} 
 .even { 
-         float: right;
-         width: 240px;
-         }
+    float: right;
+    width: 240px;
+}
 .menu { 
-        font-weight: bold;
+    font-weight: bold;
 }
 .admin { 
 
-       }
+}
 .system { 
-          font-style: italic;
+    font-style: italic;
 }
 .textmode { 
-            display: none;
-            }
+    display: none;
+}
 

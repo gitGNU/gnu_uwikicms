@@ -19,98 +19,95 @@
 */
 
 #title { 
-         text-align: center;
-         } 
+    text-align: center;
+} 
 
 #control { 
-           margin: 16px;
-           padding: 4px;
-           float: left;
-           }
+    margin: 16px;
+    padding: 4px;
+    float: left;
+}
 
 #parents {  
-           } 
+} 
 
 #nav { 
-       text-align: center;
-       }  
+    text-align: center;
+}  
 
 #langs { 
-         text-align: center;
-         } 
+    text-align: center;
+} 
 
 #children { 
-            } 
+} 
 
 #google { 
-         text-align: center;
-         } 
+    text-align: center;
+} 
 
 #message { 
-           clear: both;
-           text-align: center;
-           margin: 8px;
-           padding: 4px;
-           }
+    clear: both;
+    text-align: center;
+    margin: 8px;
+    padding: 4px;
+}
 
 #continue { 
-            text-align: center;
-            margin: 8px;
-            padding: 4px;
-            } 
+    text-align: center;
+    margin: 8px;
+    padding: 4px;
+} 
 
 #content { 
-           margin: 8px;
-           padding: 4px;
-           }
+    margin: 8px;
+    padding: 4px;
+}
 
 #edit { 
-        margin: 8px;
-        padding: 4px;
-        }
+    margin: 8px;
+    padding: 4px;
+}
 
 #tree { 
-        clear: both;
-        margin: 8px;
-        padding: 4px;
-        }
+    clear: both;
+    margin: 8px;
+    padding: 4px;
+}
 
 #actions { 
-           float: right;
-           position: fixed;
-           right: 4px;
-           bottom: 4px;
-           text-align: right;
-           /* Opacity is in the layout file for it's linked
-              to the fact that the position is fixed */
-           /* opacity: 0.66; */
-           }
+    float: right;
+    position: fixed;
+    right: 4px;
+    bottom: 4px;
+    text-align: right;
+}
 
 #infos {  
-         clear: both;
-         text-align: right;
-         margin-top: 10em;
-         margin-bottom: 16px;
-         margin-left: 16px;
-         margin-right: 16px;
-         width: 66%;
-         }
+    clear: both;
+    text-align: right;
+    margin-top: 10em;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 66%;
+}
 
 #absoluteurl { 
-               display: inline;
-               }
+    display: inline;
+}
 
 #rights { 
-          display: inline;
-          }
+    display: inline;
+}
 
 #lastupdate { 
-              display: inline;
-              }
+    display: inline;
+}
 
 #credits { 
-           display: inline;
-           }
+    display: inline;
+}
 
 #block1 {
     max-width: 1000px;    

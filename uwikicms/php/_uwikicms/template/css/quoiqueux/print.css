@@ -19,60 +19,60 @@
 */
 
 body {
-       font-size: small;
-       }
+    font-size: small;
+}
 #controlfocus { 
-       display:none;
-       }  
+    display:none;
+}  
 #nav { 
-       display:none;
-       }
+    display:none;
+}
 #langs { 
-         display: none;
-         } 
+    display: none;
+} 
 #children { 
-            display: none;
-            }
+    display: none;
+}
 #google { 
-            display: none;
-            }
+    display: none;
+}
 #actions { 
-           display: none;
-           }
+    display: none;
+}
 #content { 
-           text-align: justify;
-           }
+    text-align: justify;
+}
 img {
-      border-style: none;
-      }
+    border-style: none;
+}
 .image {
-         border-width: 1px;		
-         border-style: solid;
-         padding: 1em;
-         margin: 1em;
-         text-align: center;
-         }
+    border-width: 1px;		
+    border-style: solid;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+}
 .status0 { 
-           border-bottom-width: 1px;		
-           border-bottom-style: solid;
-           padding: 1em;
-           margin-bottom: 1em;
-           }
+    border-bottom-width: 1px;		
+    border-bottom-style: solid;
+    padding: 1em;
+    margin-bottom: 1em;
+}
 .status1 { 
-           border-bottom-width: 1px;		
-           border-bottom-style: solid;
-           padding: 1em;
-           margin-bottom: 1em;
-           }
+    border-bottom-width: 1px;		
+    border-bottom-style: solid;
+    padding: 1em;
+    margin-bottom: 1em;
+}
 .status2 { 
-           border-bottom-width: 1px;		
-           border-bottom-style: solid;
-           padding: 1em;
-           margin-bottom: 1em;
-           }
+    border-bottom-width: 1px;		
+    border-bottom-style: solid;
+    padding: 1em;
+    margin-bottom: 1em;
+}
 .status3 { 
-           border-bottom-width: 1px;		
-           border-bottom-style: solid;
-           padding: 1em;
-           margin-bottom: 1em;
-           }
+    border-bottom-width: 1px;		
+    border-bottom-style: solid;
+    padding: 1em;
+    margin-bottom: 1em;
+}

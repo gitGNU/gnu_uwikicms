@@ -19,383 +19,379 @@
 */
 
 body {
-       font-size: medium;
-       color: #ffffff;
-       background-color: #000000;
-       background-image: url('../../images/deca/diapo0-parcours.jpg');
-       background-repeat: no-repeat;
-       background-attachment: fixed;
-       background-position: center center;
-       }
+    font-size: medium;
+    color: #ffffff;
+    background-color: #000000;
+    background-image: url('../../images/deca/diapo0-parcours.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
 /* see .default for default text color */
 a { 
     text-decoration: underline; 
     color: #d42300;
     background-color: transparent;
-	  font-weight: bold;
-    }
+    font-weight: bold;
+}
 a:active { 
-           text-decoration: underline; 
-           color: #d42300; 
-           background-color: transparent;
-	  font-weight: bold;
-           }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: bold;
+}
 a:visited { 
-            text-decoration: underline; 
-            color: #d42300; 
-            background-color: transparent;
-	  font-weight: normal;
-            }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: normal;
+}
 a:hover { 
-          text-decoration: underline; 
-          color: #d42300; 
-          background-color: transparent;
-	  font-weight: bold;
-          }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: bold;
+}
 .status0 a { 
-             text-decoration: none; 
-             color: #d42300; 
-             background-color: transparent;
-	  font-weight: normal;
-             }
+    text-decoration: none; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: normal;
+}
 .status0 a:active { 
-                    text-decoration: underline; 
-                    color: #d42300;
-                    background-color: transparent;
-	  font-weight: normal;
-                    }
+    text-decoration: underline; 
+    color: #d42300;
+    background-color: transparent;
+    font-weight: normal;
+}
 .status0 a:visited { 
-                     text-decoration: none; 
-                     color: #d42300;
-                     background-color: transparent;
-	  font-weight: normal;
-                     }
+    text-decoration: none; 
+    color: #d42300;
+    background-color: transparent;
+    font-weight: normal;
+}
 .status0 a:hover { 
-                   text-decoration: underline; 
-                   color: #d42300; 
-                   background-color: transparent;
-	  font-weight: normal;
-                   }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: normal;
+}
 .status1 a { 
-             text-decoration: none; 
-             color: #d42300; 
-             background-color: transparent;
-	  font-weight: normal;
-             }
+    text-decoration: none; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: normal;
+}
 .status1 a:active { 
-                    text-decoration: underline; 
-                    color: #d42300; 
-                    background-color: transparent;
-	  font-weight: normal;
-                    }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: normal;
+}
 .status1 a:visited { 
-                     text-decoration: none; 
-                     color: #d42300; 
-                     background-color: transparent;
-	  font-weight: normal;
-                     }
+    text-decoration: none; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: normal;
+}
 .status1 a:hover { 
-                   text-decoration: underline; 
-                   color: #d42300; 
-                   background-color: transparent;
-	  font-weight: normal;
-                   }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: normal;
+}
 .status2 a { 
-             text-decoration: none; 
-             color: #d42300; 
-             background-color: transparent;
-	  font-weight: normal;
-             }
+    text-decoration: none; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: normal;
+}
 .status2 a:active { 
-                    text-decoration: underline; 
-                    color: #d42300; 
-                    background-color: transparent;
-	  font-weight: normal;
-                    }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: normal;
+}
 .status2 a:visited { 
-                     text-decoration: none; 
-                     color: #d42300; 
-                     background-color: transparent;
-	  font-weight: normal;
-                     }
+    text-decoration: none; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: normal;
+}
 .status2 a:hover { 
-                   text-decoration: underline; 
-                   color: #d42300; 
-                   background-color: transparent;
-	  font-weight: normal;
-                   }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: normal;
+}
 .status3 a { 
-             text-decoration: none; 
-             color: #d42300; 
-             background-color: transparent;
-	  font-weight: normal;
-             }
+    text-decoration: none; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: normal;
+}
 .status3 a:active { 
-                    text-decoration: underline; 
-                    color: #d42300; 
-                    background-color: transparent;
-	  font-weight: normal;
-                    }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: normal;
+}
 .status3 a:visited { 
-                     text-decoration: none; 
-                     color: #d42300; 
-                     background-color: transparent;
-	  font-weight: normal;
-                     }
+    text-decoration: none; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: normal;
+}
 .status3 a:hover { 
-                   text-decoration: underline; 
-                   color: #d42300; 
-                   background-color: transparent;
-	  font-weight: normal;
-                   }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: normal;
+}
 .box a { 
-         text-decoration: underline; 
-         color: #d42300; 
-         background-color: transparent;
-	  font-weight: bold;
-         }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: bold;
+}
 .box a:active { 
-                text-decoration: underline; 
-                color: #d42300; 
-                background-color: transparent;
-	  font-weight: bold;
-                }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: bold;
+}
 .box a:visited { 
-                 text-decoration: underline; 
-                 color: #d42300; 
-                 background-color: transparent;
-	  font-weight: bold;
-                 }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: bold;
+}
 .box a:hover { 
-               text-decoration: underline; 
-               color: #d42300; 
-               background-color: transparent;
-	  font-weight: bold;
-               }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: bold;
+}
 .image a { 
-           text-decoration: underline; 
-           color: #d42300; 
-           background-color: transparent;
-	  font-weight: bold;
-           }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: bold;
+}
 .image a:active { 
-                  text-decoration: underline; 
-                  color: #d42300; 
-                  background-color: transparent;
-	  font-weight: bold;
-                  }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: bold;
+}
 .image a:visited { 
-                   text-decoration: underline; 
-                   color: #d42300; 
-                   background-color: transparent;
-	  font-weight: bold;
-                   }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: bold;
+}
 .image a:hover { 
-                 text-decoration: underline; 
-                 color: #d42300; 
-                 background-color: transparent;
-	  font-weight: bold;
-                 }
+    text-decoration: underline; 
+    color: #d42300; 
+    background-color: transparent;
+    font-weight: bold;
+}
 .default {  
-           color: #ffffff;
-           background-color: transparent;
-           margin-bottom: 1em;
-           }
+    color: #ffffff;
+    background-color: transparent;
+    margin-bottom: 1em;
+}
 .status0 { 
-           color: #000000;
-           background-color: #ffffff;
-           border-width: 2px;		
-           border-style: solid;
-           border-color: #000000;
-           margin-bottom: 1em;
-           }
+    color: #000000;
+    background-color: #ffffff;
+    border-width: 2px;		
+    border-style: solid;
+    border-color: #000000;
+    margin-bottom: 1em;
+}
 .status1 { 
-           color: #000000;
-           background-color: #ffffff;
-           border-width: 8px;		
-           border-style: solid;
-           border-color: #777b7e;
-           margin-bottom: 1em;
-           }
+    color: #000000;
+    background-color: #ffffff;
+    border-width: 8px;		
+    border-style: solid;
+    border-color: #777b7e;
+    margin-bottom: 1em;
+}
 .status2 { 
-           color: #000000);
-           background-color: #ffffff;
-           border-width: 8px;		
-           border-style: dotted;
-           border-color: #777b7e;
-           margin-bottom: 1em;
-           }
-.status3 { 
-           color: #000000;
-           background-color: #ffffff;
-           border-width: 8px;		
-           border-style: dashed;
-           border-color: #777b7e;
-           margin-bottom: 1em;
-           }
-.box {
-       font-size: small; 
-       color: #000000; 
-       background-color: #9dc703;
-       }
-.image { 
-         font-size: small;
-         color: #000000;
-         background-color: #9dc703;
-         }
-.default input { 
-                 font-size: medium;
-                 color: #000000; 
-                 background-color: #777b7e;
-                 }
-.status0 input { 
-                 font-size: medium;
-                 color: #000000; 
-                 background-color: #777b7e;
-                 }
-.status1 input { 
-                 font-size: medium;
-                 color: #000000; 
-                 background-color: #777b7e;
-                 }
-.status2 input { 
-                 font-size: medium;
-                 color: #000000; 
-                 background-color: #777b7e;
-                 }
-.status3 input { 
-                 font-size: medium;
-                 color: #000000; 
-                 background-color: #777b7e;
-                 }
-.box input { 
-             font-size: small;
-             color: #000000; 
-             background-color: #777b7e;
-             }
-.default textarea { 
-                    font-size: large;
-                    color: #000000; 
-                    background-color: #777b7e;
-                    }
-.status0 textarea { 
-                    font-size: large;
-                    color: #000000; 
-                    background-color: #777b7e;
-                    }
-.status1 textarea { 
-                    font-size: large;
-                    color: #000000; 
-                    background-color: #777b7e;
-                    }
-.status2 textarea { 
-                    font-size: large;
-                    color: #000000; 
-                    background-color: #777b7e;
-                    }
-.status3 textarea { 
-                    font-size: large;
-                    color: #000000; 
-                    background-color: #777b7e;
-                    }
-.box textarea { 
-                font-size: medium;
-                color: #000000; 
-                background-color: #777b7e;
-                }
-.default select { 
-                  font-size: medium;
-                  color: #000000; 
-                  background-color: #777b7e;
-                  }
-.status0 select { 
-                  font-size: medium;
-                  color: #000000; 
-                  background-color: #777b7e;
-                  }
-.status1 select { 
-                  font-size: medium;
-                  color: #000000; 
-                  background-color: #777b7e;
-                  }
-.status2 select { 
-                  font-size: medium;
-                  color: #000000; 
-                  background-color: #777b7e;
-                  }
-.status3 select { 
-                  font-size: medium;
-                  color: #000000; 
-                  background-color: #777b7e;
-                  }
-.box select { 
-              font-size: small;
-              color: #000000; 
-              background-color: #777b7e;
-              }
-/* Buggy MSIE (Internet Explorer) can't inherit colors in IMG tag */
-.msiehackbox { 
-               border-color: #d42300;
-               }
-a:hover .msiehackbox { 
-                       border-color: #d42300; 
-                       }
-.msiehackimage { 
-                 border-color: #d42300; 
-                 }
-a:hover .msiehackimage { 
-                         border-color: #d42300; 
-                         }
-img { 
-      border-style: solid;
-      border-width: 2px;
-      margin: 2px;
-      } 
-input { 
-        margin: 2px;
-        }
-input.button { 
-               border-style: outset; 
-               } 
-input.edit { 
-             border-style: inset; 
-             } 
-.box {
-       border-width: 2px;		
-       border-style: solid;
-       border-color: #777b7e;
-       padding: 4px;
-       /*
-          border-radius: 8px;
-          moz-border-radius: 8px;
-	  */
-       }
-.image {
-         border-width: 2px;		
-         border-style: solid;
-         border-color: #777b7e;
-         padding: 4px;
-         margin: 8px;
-         text-align: center;
-         }
-.odd { 
-       float: left;
-       width: 240px;
-       } 
-.even { 
-        float: right;
-        width: 240px;
-        }
-.menu { 
-        font-weight: bold;
-        }
-.admin { 
+    color: #000000);
+background-color: #ffffff;
+border-width: 8px;		
+border-style: dotted;
+border-color: #777b7e;
+margin-bottom: 1em;
+}
+ .status3 { 
+     color: #000000;
+     background-color: #ffffff;
+     border-width: 8px;		
+     border-style: dashed;
+     border-color: #777b7e;
+     margin-bottom: 1em;
+ }
+ .box {
+     font-size: small; 
+     color: #000000; 
+     background-color: #9dc703;
+ }
+ .image { 
+     font-size: small;
+     color: #000000;
+     background-color: #9dc703;
+ }
+ .default input { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ .status0 input { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ .status1 input { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ .status2 input { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ .status3 input { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ .box input { 
+     font-size: small;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ .default textarea { 
+     font-size: large;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ .status0 textarea { 
+     font-size: large;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ .status1 textarea { 
+     font-size: large;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ .status2 textarea { 
+     font-size: large;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ .status3 textarea { 
+     font-size: large;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ .box textarea { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ .default select { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ .status0 select { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ .status1 select { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ .status2 select { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ .status3 select { 
+     font-size: medium;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ .box select { 
+     font-size: small;
+     color: #000000; 
+     background-color: #777b7e;
+ }
+ /* Buggy MSIE (Internet Explorer) can't inherit colors in IMG tag */
+ .msiehackbox { 
+     border-color: #d42300;
+ }
+ a:hover .msiehackbox { 
+     border-color: #d42300; 
+ }
+ .msiehackimage { 
+     border-color: #d42300; 
+ }
+ a:hover .msiehackimage { 
+     border-color: #d42300; 
+ }
+ img { 
+     border-style: solid;
+     border-width: 2px;
+     margin: 2px;
+ } 
+ input { 
+     margin: 2px;
+ }
+ input.button { 
+     border-style: outset; 
+ } 
+ input.edit { 
+     border-style: inset; 
+ } 
+ .box {
+     border-width: 2px;		
+     border-style: solid;
+     border-color: #777b7e;
+     padding: 4px;
+ }
+ .image {
+     border-width: 2px;		
+     border-style: solid;
+     border-color: #777b7e;
+     padding: 4px;
+     margin: 8px;
+     text-align: center;
+ }
+ .odd { 
+     float: left;
+     width: 240px;
+ } 
+ .even { 
+     float: right;
+     width: 240px;
+ }
+ .menu { 
+     font-weight: bold;
+ }
+ .admin { 
 
-         }
-.system { 
-          font-style: italic;
-          }
-.textmode { 
-            display: none;
-            }
+ }
+ .system { 
+     font-style: italic;
+ }
+ .textmode { 
+     display: none;
+ }
 

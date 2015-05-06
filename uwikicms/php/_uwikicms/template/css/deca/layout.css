@@ -19,89 +19,89 @@
 */
 
 #title { 
-         text-align: right;
-         } 
+    text-align: right;
+} 
 
 #control { 
-           margin: 24px;
-           float: left;
-           }
+    margin: 24px;
+    float: left;
+}
 
 #parents {  
-           } 
+} 
 
 #nav { 
-       text-align: center;
-       }  
+    text-align: center;
+}  
 
 #langs { 
-         text-align: center;
-         } 
+    text-align: center;
+} 
 
 #children { 
-            } 
+} 
 
 #google { 
-         text-align: center;
-         } 
+    text-align: center;
+} 
 
 #message { 
-           clear: both;
-           text-align: center;
-           margin: 12px;
-           padding: 6px;
-           }
+    clear: both;
+    text-align: center;
+    margin: 12px;
+    padding: 6px;
+}
 
 #content { 
-           text-align: justify;
-           margin: 12px;
-           padding: 6px;
-           }
+    text-align: justify;
+    margin: 12px;
+    padding: 6px;
+}
 
 #edit { 
-        margin: 12px;
-        padding: 6px;
-        }
+    margin: 12px;
+    padding: 6px;
+}
 
 #tree { 
-        clear: both;
-        margin: 12px;
-        padding: 6px;
-        }
+    clear: both;
+    margin: 12px;
+    padding: 6px;
+}
 
 #actions { 
-           float: right;
-           position: fixed;
-           right: 6px;
-           bottom: 6px;
-           text-align: right;
-           }
+    float: right;
+    position: fixed;
+    right: 6px;
+    bottom: 6px;
+    text-align: right;
+}
 
 #infos {  
-         clear: both;
-         text-align: center;
-         margin-top: 10em;
-         margin-bottom: 24px;
-         margin-left: 24px;
-         margin-right: 24px;
-         width: 66%;
-         }
+    clear: both;
+    text-align: center;
+    margin-top: 10em;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 66%;
+}
 
 #absoluteurl { 
-               display: inline;
-               }
+    display: inline;
+}
 
 #rights { 
-          display: inline;
-          }
+    display: inline;
+}
 
 #lastupdate { 
-              display: inline;
-              }
+    display: inline;
+}
 
 #credits { 
-           display: inline;
-           }
+    display: inline;
+}
 
 #block1 {
     max-width: 1000px;    

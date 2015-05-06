@@ -19,160 +19,160 @@
 */
 
 body {
-       font-size: large;
-       color: #0f0f3f;
-       background-color: #f2ddb3;
-       }
+    font-size: large;
+    color: #0f0f3f;
+    background-color: #f2ddb3;
+}
 /* see .default for default text color */
 a { 
     text-decoration: underline; 
     color: #1f1f7f; 
     background-color: #f2ddb3;
-    }
+}
 a:active { 
-           text-decoration: underline; 
-           color: #1f1f7f;
-           background-color: #f2ddb3;
-           }
+    text-decoration: underline; 
+    color: #1f1f7f;
+    background-color: #f2ddb3;
+}
 a:visited { 
-            text-decoration: underline; 
-            color: #1f1f7f;
-            background-color: #f2ddb3;
-            }
+    text-decoration: underline; 
+    color: #1f1f7f;
+    background-color: #f2ddb3;
+}
 a:hover { 
-          text-decoration: underline; 
-          color: #1f1fbf;
-          background-color: #f2ddb3;
-          }
+    text-decoration: underline; 
+    color: #1f1fbf;
+    background-color: #f2ddb3;
+}
 .box a { 
-         text-decoration: underline; 
-         color: #1f1f7f; 
-         background-color: #ffd3a7;
-         }
+    text-decoration: underline; 
+    color: #1f1f7f; 
+    background-color: #ffd3a7;
+}
 .box a:active { 
-                text-decoration: underline; 
-                color: #1f1f7f; 
-                background-color: #ffd3a7;
-                }
+    text-decoration: underline; 
+    color: #1f1f7f; 
+    background-color: #ffd3a7;
+}
 .box a:visited { 
-                 text-decoration: underline; 
-                 color: #1f1f7f; 
-                 background-color: #ffd3a7;
-                 }
+    text-decoration: underline; 
+    color: #1f1f7f; 
+    background-color: #ffd3a7;
+}
 .box a:hover { 
-               text-decoration: underline; 
-               color: #1f1fbf; 
-               background-color: #ffd3a7;
-               }
+    text-decoration: underline; 
+    color: #1f1fbf; 
+    background-color: #ffd3a7;
+}
 .image a { 
-           text-decoration: underline; 
-           color: #1f1f7f; 
-           background-color: #fff2e5;
-           }
+    text-decoration: underline; 
+    color: #1f1f7f; 
+    background-color: #fff2e5;
+}
 .image a:active { 
-                  text-decoration: underline; 
-                  color: #1f1f7f; 
-                  background-color: #fff2e5;
-                  }
+    text-decoration: underline; 
+    color: #1f1f7f; 
+    background-color: #fff2e5;
+}
 .image a:visited { 
-                   text-decoration: underline; 
-                   color: #1f1f7f; 
-                   background-color: #fff2e5;
-                   }
+    text-decoration: underline; 
+    color: #1f1f7f; 
+    background-color: #fff2e5;
+}
 .image a:hover { 
-                 text-decoration: underline; 
-                 color: #1f1fbf; 
-                 background-color: #fff2e5;
-                 }
+    text-decoration: underline; 
+    color: #1f1fbf; 
+    background-color: #fff2e5;
+}
 .default {  
-           color: #0f0f3f;
-           background-color: #f2ddb3;
-           }
+    color: #0f0f3f;
+    background-color: #f2ddb3;
+}
 .box {
-       font-size: small; 
-       color: #0f0f3f; 
-       background-color: #ffd3a7;
-       }
+    font-size: small; 
+    color: #0f0f3f; 
+    background-color: #ffd3a7;
+}
 .image { 
-         font-size: small;
-         color: #0f0f3f;
-         background-color: #fff2e5;
-         }
+    font-size: small;
+    color: #0f0f3f;
+    background-color: #fff2e5;
+}
 .default input { 
-                 color: #0f0f3f; 
-                 background-color: #ffffff;
-                 }
+    color: #0f0f3f; 
+    background-color: #ffffff;
+}
 .default textarea { 
-                    color: #0f0f3f; 
-                    background-color: #ffffff;
-                    }
+    color: #0f0f3f; 
+    background-color: #ffffff;
+}
 .default select { 
-                  color: #0f0f3f; 
-                  background-color: #ffffff;
-                  }
+    color: #0f0f3f; 
+    background-color: #ffffff;
+}
 /* Buggy MSIE (Internet Explorer) can't inherit colors in IMG tag */
 .msiehackbox { 
-               border-color: #1f1f7f; 
-               }
+    border-color: #1f1f7f; 
+}
 a:hover .msiehackbox { 
-                       border-color: #1f1fbf; 
-                       }
+    border-color: #1f1fbf; 
+}
 .msiehackimage { 
-                 border-color: #1f1f7f; 
-                 }
+    border-color: #1f1f7f; 
+}
 a:hover .msiehackimage { 
-                         border-color: #1f1fbf; 
-                         }
+    border-color: #1f1fbf; 
+}
 img { 
-      border-style: solid;
-      border-width: 2px;
-      margin: 1px;
-      } 
+    border-style: solid;
+    border-width: 2px;
+    margin: 1px;
+} 
 .image img { 
-             border: none;
-             margin: 5px;             
-             }
+    border: none;
+    margin: 5px;             
+}
 input { 
-        margin: 1px;
-        }
+    margin: 1px;
+}
 input.button { 
-               border-style: outset; 
-               } 
+    border-style: outset; 
+} 
 input.edit { 
-             border-style: inset; 
-             } 
+    border-style: inset; 
+} 
 .box {
-       border-width: 2px;		
-       border-style: solid;
-       border-color: #84997a;
-       padding: 2px;
-       }
+    border-width: 2px;		
+    border-style: solid;
+    border-color: #84997a;
+    padding: 2px;
+}
 .image {
-         border-width: 2px;		
-         border-style: solid;
-         border-color: #84997a;
-         padding: 5px;
-         margin: 10px;
-         text-align: center;
-         }
+    border-width: 2px;		
+    border-style: solid;
+    border-color: #84997a;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
 .odd { 
-       float: left;
-       width: 240px;
-       } 
+    float: left;
+    width: 240px;
+} 
 .even { 
-        float: right;
-        width: 240px;
-        }
+    float: right;
+    width: 240px;
+}
 .menu { 
-        font-weight: bold;
-        }
+    font-weight: bold;
+}
 .admin { 
 
-         }
+}
 .system { 
-          font-style: italic;
-          }
+    font-style: italic;
+}
 .textmode { 
-            display: none;
-            }
+    display: none;
+}
 

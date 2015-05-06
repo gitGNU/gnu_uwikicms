@@ -19,160 +19,160 @@
 */
 
 body {
-       font-size: large;
-       color: #f6f7cf;
-       background-color: #593a5a;
-       }
+    font-size: large;
+    color: #f6f7cf;
+    background-color: #593a5a;
+}
 /* see .default for default text color */
 a { 
     text-decoration: underline; 
     color: #dc9553; 
     background-color: transparent;
-    }
+}
 a:active { 
-           text-decoration: underline; 
-           color: #dc9553;
-           background-color: transparent;
-           }
+    text-decoration: underline; 
+    color: #dc9553;
+    background-color: transparent;
+}
 a:visited { 
-            text-decoration: underline; 
-            color: #dc9553;
-            background-color: transparent;
-            }
+    text-decoration: underline; 
+    color: #dc9553;
+    background-color: transparent;
+}
 a:hover { 
-          text-decoration: underline; 
-          color: #ffffff;
-          background-color: transparent;
-          }
+    text-decoration: underline; 
+    color: #ffffff;
+    background-color: transparent;
+}
 .box a { 
-         text-decoration: underline; 
-         color: #5c408b; 
-         background-color: transparent;
-         }
+    text-decoration: underline; 
+    color: #5c408b; 
+    background-color: transparent;
+}
 .box a:active { 
-                text-decoration: underline; 
-                color: #5c408b; 
-                background-color: transparent;
-                }
+    text-decoration: underline; 
+    color: #5c408b; 
+    background-color: transparent;
+}
 .box a:visited { 
-                 text-decoration: underline; 
-                 color: #5c408b; 
-                 background-color: transparent;
-                 }
+    text-decoration: underline; 
+    color: #5c408b; 
+    background-color: transparent;
+}
 .box a:hover { 
-               text-decoration: underline; 
-               color: #000000; 
-               background-color: transparent;
-               }
+    text-decoration: underline; 
+    color: #000000; 
+    background-color: transparent;
+}
 .image a { 
-         text-decoration: underline; 
-         color: #dc9553; 
-         background-color: transparent;
-         }
+    text-decoration: underline; 
+    color: #dc9553; 
+    background-color: transparent;
+}
 .image a:active { 
-                text-decoration: underline; 
-                color: #dc9553; 
-                background-color: transparent;
-                }
+    text-decoration: underline; 
+    color: #dc9553; 
+    background-color: transparent;
+}
 .image a:visited { 
-                 text-decoration: underline; 
-                 color: #dc9553; 
-                 background-color: transparent;
-                 }
+    text-decoration: underline; 
+    color: #dc9553; 
+    background-color: transparent;
+}
 .image a:hover { 
-               text-decoration: underline; 
-               color: #ffffff; 
-               background-color: transparent;
-               }
+    text-decoration: underline; 
+    color: #ffffff; 
+    background-color: transparent;
+}
 .default {  
-           color: #f6f7cf;
-           background-color: transparent;
-           }
+    color: #f6f7cf;
+    background-color: transparent;
+}
 .box {
-       font-size: small; 
-       color: #4a1e2b; 
-       background-color: #b2aacf;
-       }
+    font-size: small; 
+    color: #4a1e2b; 
+    background-color: #b2aacf;
+}
 .image { 
-         font-size: small;
-         color: #f6f7cf;
-         background-color: #786b99;
-         }
+    font-size: small;
+    color: #f6f7cf;
+    background-color: #786b99;
+}
 .default input { 
-                 color: #f6f7cf; 
-                 background-color: #593a5a;
-                 }
+    color: #f6f7cf; 
+    background-color: #593a5a;
+}
 .default textarea { 
-                    color: #f6f7cf; 
-                    background-color: #593a5a;
-                    }
+    color: #f6f7cf; 
+    background-color: #593a5a;
+}
 .default select { 
-                  color: #f6f7cf; 
-                  background-color: #593a5a;
-                  }
+    color: #f6f7cf; 
+    background-color: #593a5a;
+}
 /* Buggy MSIE (Internet Explorer) can't inherit colors in IMG tag */
 .msiehackbox { 
-               border-color: #5c408b; 
-               }
+    border-color: #5c408b; 
+}
 a:hover .msiehackbox { 
-                       border-color: #000000; 
-                       }
+    border-color: #000000; 
+}
 .msiehackimage { 
-                 border-color: #dc9553; 
-                 }
+    border-color: #dc9553; 
+}
 a:hover .msiehackimage { 
-                         border-color: #ffffff; 
-                         }
+    border-color: #ffffff; 
+}
 img { 
-      border-style: solid;
-      border-width: 2px;
-      margin: 1px;
-      } 
+    border-style: solid;
+    border-width: 2px;
+    margin: 1px;
+} 
 .image img { 
-             border: none;
-             margin: 5px;             
-             }
+    border: none;
+    margin: 5px;             
+}
 input { 
-        margin: 1px;
-        }
+    margin: 1px;
+}
 input.button { 
-               border-style: outset; 
-               } 
+    border-style: outset; 
+} 
 input.edit { 
-             border-style: inset; 
-             } 
+    border-style: inset; 
+} 
 .box {
-       border-width: 2px;		
-       border-style: solid;
-       border-color: #ffffff;
-       padding: 2px;
-       }
+    border-width: 2px;		
+    border-style: solid;
+    border-color: #ffffff;
+    padding: 2px;
+}
 .image {
-         border-width: 2px;		
-         border-style: solid;
-         border-color: #ffffff;
-         padding: 5px;
-         margin: 10px;
-         text-align: center;
-       }
+    border-width: 2px;		
+    border-style: solid;
+    border-color: #ffffff;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
 .odd { 
-        float: left;
-        width: 240px;
-        } 
+    float: left;
+    width: 240px;
+} 
 .even { 
-         float: right;
-         width: 240px;
-         }
+    float: right;
+    width: 240px;
+}
 .menu { 
-        font-weight: bold;
+    font-weight: bold;
 }
 .admin { 
 
-       }
+}
 .system { 
-          font-style: italic;
+    font-style: italic;
 }
 .textmode { 
-            display: none;
-            }
+    display: none;
+}
 

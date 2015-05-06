@@ -19,123 +19,123 @@
 */
 
 #title { 
-  text-align: left;
-  width: 66%;
+    text-align: left;
+    width: 66%;
 } 
 
 #control { 
-           margin: 10px;
-           position: absolute;
-           width: 25%;
-           right: 0px;
-           top: 0px;
-           z-index: 0;
+    margin: 10px;
+    position: absolute;
+    width: 25%;
+    right: 0px;
+    top: 0px;
+    z-index: 0;
 }
 
 #logoqqx { 
-           margin-left: auto;
-           margin-right: auto;
-           margin-top: auto;
-           margin-bottom: auto;
-           width: 175px;
-           height: 75px;
-           text-align: center;
- }
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 175px;
+    height: 75px;
+    text-align: center;
+}
 
 #logoqqx img { 
-               border-width: 0px;
-               border-style: none;
- }
+    border-width: 0px;
+    border-style: none;
+}
 
 #controlfocus {  
-                text-align: center;
-                margin-bottom: 1em;
-         } 
+    text-align: center;
+    margin-bottom: 1em;
+} 
 
 #parents {  
-           margin-bottom: 1em;
-           } 
+    margin-bottom: 1em;
+} 
 
 #nav { 
-           margin-bottom: 1em;
-       }  
+    margin-bottom: 1em;
+}  
 
 #langs { 
-           text-align: center;
-           margin-bottom: 1em;
-         } 
+    text-align: center;
+    margin-bottom: 1em;
+} 
 
 #children { 
-           margin-bottom: 1em;
-            } 
+    margin-bottom: 1em;
+} 
 
 #google { 
-         text-align: center;
-           margin-bottom: 5em;
-         } 
+    text-align: center;
+    margin-bottom: 5em;
+} 
 
 #message { 
-           /* clear: both; */
-           text-align: center;
-           padding: 2px;
-           width: 66%;
-           }
+    /* clear: both; */
+    text-align: center;
+    padding: 2px;
+    width: 66%;
+}
 #content { 
-           text-align: justify;
-           padding: 2px;
-           width: 66%;
-           }
+    text-align: justify;
+    padding: 2px;
+    width: 66%;
+}
 #edit { 
-        padding: 2px;
-        width: 66%;
-        }
+    padding: 2px;
+    width: 66%;
+}
 
 #tree { 
-        padding: 2px;
-        width: 66%;
-        }
+    padding: 2px;
+    width: 66%;
+}
 
 
 #actions { 
-           margin: 10px;
-           position: fixed;
-           width: 25%;
-           right: 0px;
-           bottom: 0px;
-           z-index: 1;
-           /* opacity: 0.5; */
-           }
+    margin: 10px;
+    position: fixed;
+    width: 25%;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    /* opacity: 0.5; */
+}
 
 #actionsfocus { 
-                text-align: center;
- }
+    text-align: center;
+}
 
 #actionslist { 
- }
+}
 
 #infos {  
-         clear: both;
-         text-align: right;
-         padding: 2px;
-         width: 66%;
-         margin-top: 10em;
+    clear: both;
+    text-align: right;
+    padding: 2px;
+    width: 66%;
+    margin-top: 10em;
 }
 
 #absoluteurl { 
-               display: inline;
-               }
+    display: inline;
+}
 
 #rights { 
-          display: inline;
-          }
+    display: inline;
+}
 
 #lastupdate { 
-              display: inline;
-              }
+    display: inline;
+}
 
 #credits { 
-           display: inline;
-           }
+    display: inline;
+}
 
 #block1 {
     max-width: 1000px;    
