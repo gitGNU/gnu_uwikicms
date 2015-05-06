@@ -55,6 +55,7 @@
   </head>
   <body>
 
+    <div id="main">
     <div id="block1" class="block">
 
     <div id="title" class="default">
