@@ -21,7 +21,7 @@
 ?>
   </div>
 
-  <div id="block4">
+  <div id="block4" class="block">
   <div id="actions" class="box admin">
 
     <?php if ($this->need_actions_focus()) { ?>
@@ -110,7 +110,7 @@
 
   </div>
 
-  <div id="block5">
+  <div id="block5" class="block">
 
   <div id="infos" class="box system">
     <div id="credits">

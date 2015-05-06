@@ -93,3 +93,24 @@
 #credits { 
            display: inline;
            }
+
+#block1 {
+    max-width: 1000px;    
+}
+
+#block2 {
+    max-width: 750px;    
+}
+
+#block3 {
+    max-width: 1500px;    
+}
+
+#block4 {
+    max-width: 750px;    
+}
+
+#block5 {
+    max-width: 1000px;    
+}
+

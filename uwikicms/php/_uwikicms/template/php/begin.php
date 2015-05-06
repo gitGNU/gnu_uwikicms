@@ -55,7 +55,7 @@
   </head>
   <body>
 
-    <div id="block1">
+    <div id="block1" class="block">
 
     <div id="title" class="default">
     <h1><?php echo $this->get_title(); ?></h1>
@@ -63,7 +63,7 @@
 
     </div>
 
-    <div id="block2">
+    <div id="block2" class="block">
 
     <div id="control" class="box menu">
 
@@ -192,4 +192,4 @@ if (count($langs)>0) {
 
     </div>
 
-    <div id="block3">
+    <div id="block3" class="block">

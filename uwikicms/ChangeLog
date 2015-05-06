@@ -1,3 +1,7 @@
+2015-05-06 : Christian Mauduit <ufoot@ufoot.org>
+
+	* Introduced max-width in CSS.
+
 2015-04-27 : Christian Mauduit <ufoot@ufoot.org>
 
 	* Fixed layout for some sites.

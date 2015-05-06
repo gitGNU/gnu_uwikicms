@@ -112,15 +112,23 @@
            display: inline;
            }
 
-/*
+#block1 {
+    max-width: 1000px;    
+}
+
 #block2 {
-          float: left;
-          width: 20%;
-          }
+    max-width: 750px;    
+}
 
 #block3 {
-          float: left;
-          width: 80%;
-          }
-*/
+    max-width: 1500px;    
+}
+
+#block4 {
+    max-width: 750px;    
+}
+
+#block5 {
+    max-width: 1000px;    
+}
 
