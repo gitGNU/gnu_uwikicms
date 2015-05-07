@@ -111,7 +111,10 @@
 
 #main {
     max-width: 1500px;    
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
 #block1 {
