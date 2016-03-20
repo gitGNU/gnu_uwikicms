@@ -1,3 +1,7 @@
+2016-03-20 : Christian Mauduit <ufoot@ufoot.org>
+
+	* Added ORDER BY in image select request to garantee order
+
 2015-05-06 : Christian Mauduit <ufoot@ufoot.org>
 
 	* Introduced max-width in CSS.
