@@ -1,3 +1,7 @@
+2016-12-08 : Christian Mauduit <ufoot@ufoot.org>
+
+	* Added some icons for links, bump version to 1.1.9.
+
 2016-03-20 : Christian Mauduit <ufoot@ufoot.org>
 
 	* Added ORDER BY in image select request to garantee order
